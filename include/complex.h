@@ -149,6 +149,13 @@ double_complex dce_itheta( double theta );
 								/* c = a * b* */
 #define CMUL_J(a,b,c) { (c).real = (a).real*(b).real + (a).imag*(b).imag; \
 	  	        (c).imag = (a).imag*(b).real - (a).real*(b).imag; }
+/* NDS: Redefining MCMULJ_ */
+#ifdef NDS
+								/* c = a* * b */
+#define MCMULJ_(ar,ai,br,bi,c) { (c).real = (ar)*(br) + (ai)*(bi); \
+		        (c).imag = (ar)*(bi) - (ai)*(br); }
+#endif
+
 								/* c = a* * b */
 #define CMULJ_(a,b,c) { (c).real = (a).real*(b).real + (a).imag*(b).imag; \
 		        (c).imag = (a).real*(b).imag - (a).imag*(b).real; }

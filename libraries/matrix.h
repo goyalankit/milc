@@ -28,6 +28,8 @@ register int i,j;
     }
 }
 
+#ifndef NDS
+
 static inline void mult_su3_nn( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
   int j;
   register float a0r,a0i,a1r,a1i,a2r,a2i;
@@ -67,6 +69,8 @@ static inline void mult_su3_nn( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
     
   }
 }
+
+#endif
 
 static inline void mult_adj_su3_mat_hwvec( su3_matrix *mat,
        half_wilson_vector *src, half_wilson_vector *dest ){
@@ -184,11 +188,7 @@ static inline void su3_projector( su3_vector *a, su3_vector *b, su3_matrix *c ){
     }
 }
 
-//#ifndef NDS
-/*
- * NDS: instrumented code START
- *
- *
+#ifndef NDS
 static inline void mult_su3_an( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
   int j;
 
@@ -229,91 +229,7 @@ static inline void mult_su3_an( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
   
     }
 }
-*/
-//#else
-
-
-//Find:      (.{3})=(\w)->e(\[[\d]\])(\[(.*)\]).(imag)
-//Replace:   $1=$2m.imag$3$4
-
-static inline su3_matrix_mod su3_matrix_to_su3_matrix_mod( su3_matrix *a){
-    int i, j;
-    su3_matrix_mod s3mm;
-    for(i=0; i<3; i++){
-        for(j=0; j<3; j++){
-            s3mm.real[i][j] = a->e[i][j].real;
-            s3mm.imag[i][j] = a->e[i][j].imag;
-        }
-    }
-    return s3mm;
-}
-
-static inline su3_matrix su3_matrix_mod_to_su3_matrix( su3_matrix_mod s3mm){
-    int i, j;
-    su3_matrix a;
-    for(i=0; i<3; i++){
-        for(j=0; j<3; j++){
-             a.e[i][j].real = s3mm.real[i][j];
-             a.e[i][j].imag = s3mm.imag[i][j];
-        }
-    }
-    return a;
-}
-
-static inline void mult_su3_an( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
-    int j;
-    //assert(false);
-    su3_matrix_mod am = su3_matrix_to_su3_matrix_mod(a);
-    su3_matrix_mod bm = su3_matrix_to_su3_matrix_mod(b);
-    su3_matrix_mod cm = su3_matrix_to_su3_matrix_mod(c);
-
-    register float a0r,a0i,a1r,a1i,a2r,a2i;
-    register float b0r,b0i,b1r,b1i,b2r,b2i;
-    
-    for(j=0;j<3;j++){
-
-        a0r=am.real[0][0]; a0i=am.imag[0][0];
-        b0r=bm.real[0][j]; b0i=bm.imag[0][j];
-        a1r=am.real[1][0]; a1i=am.imag[1][0];
-        b1r=bm.real[1][j]; b1i=bm.imag[1][j];
-        a2r=am.real[2][0]; a2i=am.imag[2][0];
-        b2r=bm.real[2][j]; b2i=bm.imag[2][j];
-
-        cm.real[0][j] = a0r*b0r + a0i*b0i + a1r*b1r + a1i*b1i + a2r*b2r + a2i*b2i;
-        cm.imag[0][j] = a0r*b0i - a0i*b0r + a1r*b1i - a1i*b1r + a2r*b2i - a2i*b2r;
-
-        a0r=am.real[0][1]; a0i=am.imag[0][1];
-        b0r=bm.real[0][j]; b0i=bm.imag[0][j];
-        a1r=am.real[1][1]; a1i=am.imag[1][1];
-        b1r=bm.real[1][j]; b1i=bm.imag[1][j];
-        a2r=am.real[2][1]; a2i=am.imag[2][1];
-        b2r=bm.real[2][j]; b2i=bm.imag[2][j];
-
-
-        cm.real[1][j] = a0r*b0r + a0i*b0i + a1r*b1r + a1i*b1i + a2r*b2r + a2i*b2i;
-        cm.imag[1][j] = a0r*b0i - a0i*b0r + a1r*b1i - a1i*b1r + a2r*b2i - a2i*b2r;
-
-        a0r=am.real[0][2]; a0i=am.imag[0][2];
-        b0r=bm.real[0][j]; b0i=bm.imag[0][j];
-        a1r=am.real[1][2]; a1i=am.imag[1][2];
-        b1r=bm.real[1][j]; b1i=bm.imag[1][j];
-        a2r=am.real[2][2]; a2i=am.imag[2][2];
-        b2r=bm.real[2][j]; b2i=bm.imag[2][j];
-
-
-        cm.real[2][j] = a0r*b0r + a0i*b0i + a1r*b1r + a1i*b1i + a2r*b2r + a2i*b2i;
-        cm.imag[2][j] = a0r*b0i - a0i*b0r + a1r*b1i - a1i*b1r + a2r*b2i - a2i*b2r;
-        
-        *a = su3_matrix_mod_to_su3_matrix(am);
-        *b = su3_matrix_mod_to_su3_matrix(bm);
-        *c = su3_matrix_mod_to_su3_matrix(cm);
-    }
-}
-
-//#endif /* End of "ifdef NDS" */
-
-/* NDS END */
-
+#endif
 
 static inline void mult_su3_mat_hwvec( su3_matrix *mat, half_wilson_vector *src,
 	half_wilson_vector *dest ){

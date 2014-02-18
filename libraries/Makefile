@@ -70,7 +70,7 @@ OCFLAGS = # -funroll-loops -march=amdfam10
 
 #----------------------------------------------------------------------
 # 4. Code alternatives 
-CODETYPE         = -DQSINLINE  # usually unchanged
+CODETYPE         = -DQSINLINE -DNDS # usually unchanged
 
 #----------------------------------------------------------------------
 # End of user choices.  PLEASE, ALSO, CHECK include/config.h.

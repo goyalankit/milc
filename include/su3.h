@@ -465,6 +465,34 @@ void clear_wvec( wilson_vector *dest );
 void copy_wvec( wilson_vector *src, wilson_vector *dest );
 void dump_wilson_vec( wilson_vector *src );
 
+#ifdef NDS
+static inline su3_matrix_mod su3_matrix_to_su3_matrix_mod( su3_matrix *a){
+    int i, j;
+    su3_matrix_mod s3mm;
+    for(i=0; i<3; i++){
+        for(j=0; j<3; j++){
+            s3mm.real[i][j] = a->e[i][j].real;
+            s3mm.imag[i][j] = a->e[i][j].imag;
+        }
+    }
+    return s3mm;
+}
+
+static inline su3_matrix su3_matrix_mod_to_su3_matrix( su3_matrix_mod s3mm){
+    int i, j;
+    su3_matrix a;
+    for(i=0; i<3; i++){
+        for(j=0; j<3; j++){
+             a.e[i][j].real = s3mm.real[i][j];
+             a.e[i][j].imag = s3mm.imag[i][j];
+        }
+    }
+    return a;
+}
+#endif
+
+
+
 float gaussian_rand_no( double_prn *prn_pt );
 #include "../include/int32type.h"
 void byterevn(int32type w[], int n);

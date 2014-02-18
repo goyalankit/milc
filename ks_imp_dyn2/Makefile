@@ -76,7 +76,7 @@ ILIB             =           # not needed in most cases
 
 #----------------------------------------------------------------------
 # 9. Code alternatives 
-CODETYPE         = -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME # -DSSE -DSSE_INLINE -DP3
+CODETYPE         = -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME -DNDS # -DSSE -DSSE_INLINE -DP3 -DNDS->(n)ew (d)ata (s)tructure
 
 #----------------------------------------------------------------------
 # 10. Choose MILC library make file in libraries directory.  
