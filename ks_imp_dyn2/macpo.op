@@ -1,0 +1,151 @@
+Overall reuse distance:	    1.83 (count:   360449)
+
+Latency summary:
+L1:	    3.00 ( 96.62%)
+L2:	    9.00 (  0.00%)
+L3:	   30.00 (  0.00%)
+Mem:	  350.00 (  3.38%)
+Total:	   14.71 (count:   360449)
+
+variable: sites_on_node	(avg_dist: 5.52, count: 1507, avg_cpa: 3.23, numa_hit_ratio: 100.00)
+ dist	  cpa	   use ln#	 reuse ln#	     count	  function:
+    7	    3	      1969	      1969	       143	quark_stuff4.c
+    4	    3	      1969	      1969	       167	quark_stuff4.c
+    5	    3	      1969	      1969	       519	quark_stuff4.c
+    6	    3	      1969	      1969	       676	quark_stuff4.c
+
+variable: src_pth	(avg_dist: 4.51, count: 1506, avg_cpa: 46.55, numa_hit_ratio: 100.00)
+ dist	  cpa	   use ln#	 reuse ln#	     count	  function:
+    0	  350	         0	      1970	       189	quark_stuff4.c
+    6	    3	      1970	      1970	       226	quark_stuff4.c
+    7	    3	      1970	      1970	       229	quark_stuff4.c
+    5	    3	      1970	      1970	       387	quark_stuff4.c
+    4	    3	      1970	      1970	       475	quark_stuff4.c
+
+variable: forwardlink[0]	(avg_dist: 4.98, count: 1506, avg_cpa: 3.23, numa_hit_ratio: 100.00)
+ dist	  cpa	   use ln#	 reuse ln#	     count	  function:
+    6	    3	      1970	      1970	       418	quark_stuff4.c
+    5	    3	      1970	      1970	       481	quark_stuff4.c
+    4	    3	      1970	      1970	       550	quark_stuff4.c
+
+variable: mate[0]	(avg_dist: 1.72, count: 152543, avg_cpa: 16.52, numa_hit_ratio: 100.00)
+ dist	  cpa	   use ln#	 reuse ln#	     count	  function:
+    1	    3	       279	       279	      1561	  matrix.h
+    1	    3	       277	       277	      1561	  matrix.h
+    1	    3	       275	       275	      1561	  matrix.h
+    1	    3	       269	       269	      1561	  matrix.h
+    1	    3	       285	       285	      1562	  matrix.h
+    1	    3	       243	       243	      1507	  matrix.h
+    1	    3	       257	       257	      1507	  matrix.h
+    1	    3	       237	       237	      1507	  matrix.h
+    1	    3	       255	       255	      1507	  matrix.h
+    1	    3	       235	       235	      1507	  matrix.h
+    1	    3	       131	       131	      1024	  matrix.h
+    1	    3	        90	        90	      1025	  matrix.h
+    1	    3	        88	        88	      1025	  matrix.h
+    1	    3	        92	        92	      1025	  matrix.h
+    0	  350	         0	        78	      1318	  matrix.h
+
+variable: srch[0]c[0]real	(avg_dist: 0.00, count: 2851, avg_cpa: 350.00, numa_hit_ratio: 100.00)
+ dist	  cpa	   use ln#	 reuse ln#	     count	  function:
+    0	  350	         0	       268	       655	  matrix.h
+    0	  350	         0	       238	       655	  matrix.h
+    0	  350	         0	       234	       659	  matrix.h
+    0	  350	         0	       114	       292	  matrix.h
+    0	  350	         0	        83	       293	  matrix.h
+    0	  350	         0	        79	       294	  matrix.h
+
+variable: srch[0]c[0]imag[srch[0]c[0]real]	(avg_dist: 1.00, count: 76268, avg_cpa: 3.00, numa_hit_ratio: 100.00)
+ dist	  cpa	   use ln#	 reuse ln#	     count	  function:
+    1	    3	       266	       266	      1561	  matrix.h
+    1	    3	       278	       278	      1561	  matrix.h
+    1	    3	       268	       268	      1561	  matrix.h
+    1	    3	       280	       280	      1561	  matrix.h
+    1	    3	       270	       270	      1561	  matrix.h
+    1	    3	       236	       236	      1507	  matrix.h
+    1	    3	       258	       258	      1507	  matrix.h
+    1	    3	       248	       248	      1507	  matrix.h
+    1	    3	       238	       238	      1507	  matrix.h
+    1	    3	       254	       254	      1507	  matrix.h
+    1	    3	        89	        89	      1171	  matrix.h
+    1	    3	        81	        81	      1171	  matrix.h
+    1	    3	        91	        91	      1171	  matrix.h
+    1	    3	        83	        83	      1171	  matrix.h
+    1	    3	        79	        79	      1171	  matrix.h
+
+variable: srch[0]c[0]real[srch[0]c[0]imag]	(avg_dist: 2.54, count: 73084, avg_cpa: 3.00, numa_hit_ratio: 100.00)
+ dist	  cpa	   use ln#	 reuse ln#	     count	  function:
+    2	    3	       288	       290	      1560	  matrix.h
+    2	    3	       278	       280	      1561	  matrix.h
+    3	    3	       258	       266	      3066	  matrix.h
+    2	    3	       268	       270	      3067	  matrix.h
+    2	    3	       254	       256	      1507	  matrix.h
+    2	    3	       244	       246	      1507	  matrix.h
+    2	    3	       234	       236	      3067	  matrix.h
+    2	    3	       124	       126	      1024	  matrix.h
+    2	    3	        99	       101	      1024	  matrix.h
+    2	    3	       114	       116	      1024	  matrix.h
+    2	    3	        89	        91	      1025	  matrix.h
+    3	    3	       103	       112	      1170	  matrix.h
+
+variable: desth[0]c[0]realmatrix.h	(avg_dist: 0.00, count: 3180, avg_cpa: 350.00, numa_hit_ratio: 100.00)
+ dist	  cpa	   use ln#	 reuse ln#	     count	  function:
+    0	  350	         0	       260	       765	  matrix.h
+    0	  350	         0	       282	       768	  matrix.h
+    0	  350	         0	       240	       769	  matrix.h
+    0	  350	         0	       128	       292	  matrix.h
+    0	  350	         0	        85	       293	  matrix.h
+    0	  350	         0	       105	       293	  matrix.h
+
+variable: desth[0]c[0]realmatrix.h[desth[0]c[0]im	(avg_dist: 3.41, count: 22242, avg_cpa: 3.00, numa_hit_ratio: 100.00)
+ dist	  cpa	   use ln#	 reuse ln#	     count	  function:
+    3	    3	       293	       240	       779	  matrix.h
+    5	    3	       241	       250	       135	  matrix.h
+    5	    3	       261	       272	       131	  matrix.h
+    4	    3	       283	       292	       607	  matrix.h
+    4	    3	       261	       272	       667	  matrix.h
+    4	    3	       273	       282	       529	  matrix.h
+    6	    3	       293	       240	       252	  matrix.h
+    3	    3	       273	       282	      1671	  matrix.h
+    5	    3	       293	       240	       505	  matrix.h
+    3	    3	       241	       250	      2268	  matrix.h
+    3	    3	       251	       260	      1828	  matrix.h
+    3	    3	       261	       272	      2269	  matrix.h
+    3	    3	       283	       292	      2459	  matrix.h
+    4	    3	       293	       240	       762	  matrix.h
+    4	    3	       241	       250	       664	  matrix.h
+    4	    3	       251	       260	       474	  matrix.h
+    4	    3	        96	       105	       292	  matrix.h
+    3	    3	       139	        85	       438	  matrix.h
+    4	    3	       106	       118	       584	  matrix.h
+    4	    3	       119	       128	       438	  matrix.h
+    3	    3	        86	        95	       585	  matrix.h
+    3	    3	        96	       105	       585	  matrix.h
+    4	    3	       129	       138	       585	  matrix.h
+    4	    3	        86	        95	       585	  matrix.h
+    3	    3	       106	       118	       586	  matrix.h
+    3	    3	       119	       128	       440	  matrix.h
+    3	    3	       129	       138	       585	  matrix.h
+    4	    3	       139	        85	       440	  matrix.h
+
+variable: desth[0]c[0]imagmatrix.h[desth[0]c[0]re	(avg_dist: 1.00, count: 25422, avg_cpa: 3.00, numa_hit_ratio: 100.00)
+ dist	  cpa	   use ln#	 reuse ln#	     count	  function:
+    1	    3	       272	       273	      3067	  matrix.h
+    1	    3	       282	       283	      3067	  matrix.h
+    1	    3	       292	       293	      3066	  matrix.h
+    1	    3	       240	       241	      3067	  matrix.h
+    1	    3	       250	       251	      3067	  matrix.h
+    1	    3	       260	       261	      3067	  matrix.h
+    1	    3	        95	        96	      1170	  matrix.h
+    1	    3	       105	       106	      1170	  matrix.h
+    1	    3	       118	       119	      1170	  matrix.h
+    1	    3	       128	       129	      1170	  matrix.h
+    1	    3	       138	       139	      1170	  matrix.h
+    1	    3	        85	        86	      1171	  matrix.h
+
+Stride metrics:
+var:              mate[0], dominant stride:     1(12661),    16(585),    17(585)
+var:      srch[0]c[0]real, dominant stride:     1(2812),     0(0),     0(0)
+var: srch[0]c[0]imag[srch[0]c[0]real], dominant stride:     1(7411),     0(0),     0(0)
+var: srch[0]c[0]real[srch[0]c[0]imag], dominant stride:     1(6350),     0(0),     0(0)
+var: desth[0]c[0]realmatrix.h, dominant stride:     1(3175),     0(0),     0(0)

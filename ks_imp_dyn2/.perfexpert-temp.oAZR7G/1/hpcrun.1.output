@@ -1,0 +1,122 @@
+SU3 with improved KS action
+Microcanonical simulation with refreshing
+MIMD version 6
+Machine = Scalar processor, with 1 nodes
+R algorithm
+type 0 for no prompts  or 1 for prompts
+nflavors1 4
+nflavors2 4
+nx 8
+ny 8
+nz 16
+nt 10
+iseed 5682304
+LAYOUT = Hypercubes, options = EVENFIRST,
+ON EACH NODE 8 x 8 x 16 x 10
+Mallocing 11.6 MBytes per node for lattice
+Made lattice
+Made nn gathers
+Made 3nn gathers
+Finished setup
+
+
+warms 0
+trajecs 2
+traj_between_meas 1
+beta 5.6
+mass1 0.01
+mass2 0.01
+u0 0.8441
+microcanonical_time_step 0.02
+steps_per_trajectory 2
+max_cg_iterations 2
+error_per_site 1e-05
+error_for_propagator 0.0001
+fresh 
+forget 
+unit gauge configuration loaded
+CHECK PLAQ: 3.000000e+00 3.000000e+00
+Unitarity checked.  Max deviation 0.00e+00
+Time to check unitarity = 1.819134e-03
+Symanzik 1x1 + 1x2 + 1x1x1 action
+loop coefficients: nloop rep loop_coeff  multiplicity
+                    0 0      1.000000e+00     6
+                    1 0      -7.762509e-02     12
+                    2 0      -1.031171e-02     16
+"O(a^2): couplings(pi)=0, Naik term, No O(a^2) errors, tadpole weights"
+path coefficients: npath  path_coeff  multiplicity
+                    0      6.250000e-01     8
+                    1      -5.847914e-02     8
+                    2      -8.771871e-02     48
+                    3      3.077829e-02     192
+                    4      -7.199551e-03     384
+                    5      -1.231132e-01     48
+WARMUPS COMPLETED
+LLTIME(long): time =  1.087999e-02 (Naik) mflops = 1.697883e+03
+LLTIME(Fat): time = 1.874082e-01 (Asqtad opt) mflops = 3.367578e+03
+LLTIME(long): time =  8.485079e-03 (Naik) mflops = 2.177111e+03
+LLTIME(Fat): time = 1.819992e-01 (Asqtad opt) mflops = 3.467662e+03
+LLTIME(long): time =  8.880138e-03 (Naik) mflops = 2.080256e+03
+LLTIME(Fat): time = 1.824229e-01 (Asqtad opt) mflops = 3.459608e+03
+CG not converged after 10 iterations, res. = 7.179489e+02 wanted 2.749016e-05
+CG not converged after 10 iterations, res. = 6.463907e+02 wanted 2.755823e-05
+GFTIME:   time = 5.482609e-01 (Symanzik1) mflops = 2.857692e+03
+FFTIME:  time = 1.170684e+00 mflops = 3.795928e+03
+LLTIME(long): time =  8.922815e-03 (Naik) mflops = 2.070306e+03
+LLTIME(Fat): time = 1.821532e-01 (Asqtad opt) mflops = 3.464730e+03
+LLTIME(long): time =  8.360147e-03 (Naik) mflops = 2.209645e+03
+LLTIME(Fat): time = 1.816471e-01 (Asqtad opt) mflops = 3.474384e+03
+LLTIME(long): time =  8.368015e-03 (Naik) mflops = 2.207568e+03
+LLTIME(Fat): time = 1.818180e-01 (Asqtad opt) mflops = 3.471118e+03
+CG not converged after 10 iterations, res. = 6.797984e+02 wanted 2.727059e-05
+CG not converged after 10 iterations, res. = 7.128679e+02 wanted 2.760318e-05
+GFTIME:   time = 5.481651e-01 (Symanzik1) mflops = 2.858192e+03
+FFTIME:  time = 1.166750e+00 mflops = 3.808727e+03
+PLAQ:	2.974770	2.974742
+P_LOOP:	2.937583e+00	-3.463258e-05
+LLTIME(long): time =  8.926153e-03 (Naik) mflops = 2.069532e+03
+LLTIME(Fat): time = 1.818240e-01 (Asqtad opt) mflops = 3.471004e+03
+CG not converged after 10 iterations, res. = 1.098224e+03 wanted 2.725606e-03
+PBP: mass 1.000000e-02     4.889897e-04  3.386260e+00  3.208557e-03  3.465727e-02 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.462128e+00 ( 1 of 1 )
+CG not converged after 10 iterations, res. = 1.123325e+03 wanted 2.675687e-03
+PBP: mass 1.000000e-02     -9.278622e-04  3.406495e+00  -2.402931e-04  -3.705311e-02 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.436975e+00 ( 1 of 1 )
+LLTIME(long): time =  8.459806e-03 (Naik) mflops = 2.183615e+03
+LLTIME(Fat): time = 1.820960e-01 (Asqtad opt) mflops = 3.465818e+03
+LLTIME(long): time =  8.417845e-03 (Naik) mflops = 2.194500e+03
+LLTIME(Fat): time = 1.820419e-01 (Asqtad opt) mflops = 3.466849e+03
+LLTIME(long): time =  8.306980e-03 (Naik) mflops = 2.223788e+03
+LLTIME(Fat): time = 1.817129e-01 (Asqtad opt) mflops = 3.473126e+03
+CG not converged after 10 iterations, res. = 6.748991e+02 wanted 2.729084e-05
+CG not converged after 10 iterations, res. = 6.788121e+02 wanted 2.737116e-05
+GFTIME:   time = 5.466459e-01 (Symanzik1) mflops = 2.866135e+03
+FFTIME:  time = 1.166955e+00 mflops = 3.808058e+03
+LLTIME(long): time =  8.973837e-03 (Naik) mflops = 2.058535e+03
+LLTIME(Fat): time = 1.819780e-01 (Asqtad opt) mflops = 3.468066e+03
+LLTIME(long): time =  8.434057e-03 (Naik) mflops = 2.190282e+03
+LLTIME(Fat): time = 1.819789e-01 (Asqtad opt) mflops = 3.468048e+03
+LLTIME(long): time =  8.260012e-03 (Naik) mflops = 2.236433e+03
+LLTIME(Fat): time = 1.820788e-01 (Asqtad opt) mflops = 3.466145e+03
+CG not converged after 10 iterations, res. = 7.051191e+02 wanted 2.723379e-05
+CG not converged after 10 iterations, res. = 7.008862e+02 wanted 2.686867e-05
+GFTIME:   time = 5.475979e-01 (Symanzik1) mflops = 2.861152e+03
+FFTIME:  time = 1.168028e+00 mflops = 3.804559e+03
+PLAQ:	2.950223	2.950230
+P_LOOP:	2.876729e+00	-7.990203e-05
+LLTIME(long): time =  8.843184e-03 (Naik) mflops = 2.088949e+03
+LLTIME(Fat): time = 1.818628e-01 (Asqtad opt) mflops = 3.470262e+03
+CG not converged after 10 iterations, res. = 1.131854e+03 wanted 2.719356e-03
+PBP: mass 1.000000e-02     5.423958e-03  3.499549e+00  -3.261945e-03  6.796712e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.468638e+00 ( 1 of 1 )
+CG not converged after 10 iterations, res. = 1.150704e+03 wanted 2.709226e-03
+PBP: mass 1.000000e-02     3.925378e-03  3.562567e+00  -1.350290e-03  -2.254403e-02 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.463148e+00 ( 1 of 1 )
+RUNNING COMPLETED
+average cg iters for step= 2.000000e+01
+total_iters = 120
+NERSC_TIME   10.522 secs
+
+
+exit: Mon Jan 27 15:29:03 2014
+

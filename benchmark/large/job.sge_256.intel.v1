@@ -1,0 +1,13 @@
+#$ -N MILC_256.intel.v1
+
+#$ -cwd
+#$ -o $JOB_NAME.o$JOB_ID
+#$ -j y
+
+#$ -q systest
+#$ -pe 16way 256
+#$ -V
+#$ -l h_rt=02:00:00
+#$ -A A-ccsc
+
+ibrun tacc_affinity ../../ks_imp_dyn2/su3_rmd.intel.v1 < large.in

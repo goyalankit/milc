@@ -1,0 +1,1393 @@
+TACC: Setting memory limits for job 536332 to 3984588 KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#$ -N M256tg09.8
+#$ -cwd
+#$ -o $JOB_NAME.o$JOB_ID
+#$ -j y
+
+#$ -q systest
+#$ -pe 8way 512
+#$ -V
+#$ -l h_rt=24:00:00
+#$ -hold_jid M256tg09.8
+#$ -A A-ccsc
+
+# 1. Front and Back in parallel
+ibrun ./tacc_affinity_03 su3_rmd < large.in > $JOB_NAME.$JOB_ID.1.03 &
+ibrun ./tacc_affinity_12 su3_rmd < large.in > $JOB_NAME.$JOB_ID.1.12 &
+wait
+
+# 2. Front
+ibrun ./tacc_affinity_03 su3_rmd < large.in > $JOB_NAME.$JOB_ID.2.03
+# 2. Back
+ibrun ./tacc_affinity_12 su3_rmd < large.in > $JOB_NAME.$JOB_ID.2.12
+
+# 3. 2x mixed
+ibrun ./tacc_affinity    su3_rmd    < large.in > $JOB_NAME.$JOB_ID.3.1 &
+ibrun ./tacc_affinity    su3_rmd    < large.in > $JOB_NAME.$JOB_ID.3.2 &
+wait
+
+# 4. 1x mixed
+ibrun ./tacc_affinity    su3_rmd    < large.in > $JOB_NAME.$JOB_ID.4.1
+--------------------------------------------------------------------------------
+TACC: Done.
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd Exit code -5 signaled from i154-103.ranger.tacc.utexas.edu
+Killing remote processes...execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+Exit code -5 signaled from i154-103.ranger.tacc.utexas.edu
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd Killing remote processes...execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_03 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+MPI process terminated unexpectedly
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+
+MPI process terminated unexpectedly
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+MPI process terminated unexpectedly
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+
+execv: No such file or directory
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+execv: No such file or directory
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd ./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd ./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd MPI process terminated unexpectedly
+
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+DONE
+DONE
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+Exit code -5 signaled from i129-308.ranger.tacc.utexas.edu
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+Killing remote processes...
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+MPI process terminated unexpectedly
+
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+
+MPI process terminated unexpectedly
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd ./tacc_affinity_03 
+su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+bash: line 1: 20617 Segmentation fault      /usr/bin/env MPISPAWN_LD_LIBRARY_PATH=/usr/mvapich/lib/shared:/opt/apps/intel10_1/mvapich/1.0.1/lib:/opt/apps/intel10_1/mvapich/1.0.1/lib/shared:/opt/apps/intel/10.1/cc/lib:/opt/apps/intel/10.1/fc/lib:/share/apps/teragrid/globus-4.0.8-r1/lib:/share/apps/teragrid/globus-4.0.8-r1/myproxy-3.4/lib:/share/apps/teragrid/srb-client-3.4.1-r1/lib:/opt/gsi-openssh-4.1/lib:/opt/gsi-openssh-4.1/lib:/opt/apps/binutils-amd/070220/lib64 MPISPAWN_MPIRUN_MPD=0 MPISPAWN_MPIRUN_HOST=i110-109.ranger.tacc.utexas.edu MPISPAWN_CHECKIN_PORT=44079 MPISPAWN_MPIRUN_PORT=44079 MPISPAWN_GLOBAL_NPROCS=256 MPISPAWN_MPIRUN_ID=20573 MPISPAWN_ARGC=2 MPISPAWN_ARGV_0=./tacc_affinity_03 MPISPAWN_ARGV_1=su3_rmd MPISPAWN_GENERIC_ENV_COUNT=103 MPISPAWN_GENERIC_NAME_0=TACC_ENVLEN MPISPAWN_GENERIC_VALUE_0=5719 MPISPAWN_GENERIC_NAME_1=IIDB_DIR MPISPAWN_GENERIC_VALUE_1=/opt/apps/intel/10.1/idb MPISPAWN_GENERIC_NAME_2=ARCHIVER MPISPAWN_GENERIC_VALUE_2=ranch.tacc.utexas.edu MPISPAWN_GENERIC_NAME_3=SGE_TASK_ID MPISPAWN_GENERIC_VALUE_3=undefined MPISPAWN_GENERIC_NAME_4=WORK MPISPAWN_GENERIC_VALUE_4=/work/00901/lars MPISPAWN_GENERIC_NAME_5=SGE_STDERR_PATH MPISPAWN_GENERIC_VALUE_5=/share/home/00901/lars/tacc/milc_kg/benchmark/large/M256tg09.8.o536332 MPISPAWN_GENERIC_NAME_6=ICC_LIB MPISPAWN_GENERIC_VALUE_6=/opt/apps/intel/10.1/cc/lib MPISPAWN_GENERIC_NAME_7=VIADEV_SRQ_SIZE MPISPAWN_GENERIC_VALUE_7=2048 MPISPAWN_GENERIC_NAME_8=TACC_BINUTILS_LIB MPISPAWN_GENERIC_VALUE_8=/opt/apps/binutils-amd/070220/lib64 MPISPAWN_GENERIC_NAME_9=JOB_ID MPISPAWN_GENERIC_VALUE_9=536332 MPISPAWN_GENERIC_NAME_10=IIDB_BIN MPISPAWN_GENERIC_VALUE_10=/opt/apps/intel/10.1/idb/bin MPISPAWN_GENERIC_NAME_11=HISTSIZE MPISPAWN_GENERIC_VALUE_11=1000 MPISPAWN_GENERIC_NAME_12=SGE_CWD_PATH MPISPAWN_GENERIC_VALUE_12=/share/home/00901/lars/tacc/milc_kg/benchmark/large MPISPAWN_GENERIC_NAME_13=RSHCOMMAND MPISPAWN_GENERIC_VALUE_13=/share/apps/teragrid/globus-4.0.8-r1/bin/ssh MPISPAWN_GENERIC_NAME_14=SHLIB_PATH MPISPAWN_GENERIC_VALUE_14=/share/apps/teragrid/globus-4.0.8-r1/lib:/share/apps/teragrid/globus-4.0.8-r1/myproxy-3.4/lib:/opt/gsi-openssh-4.1/lib:/opt/gsi-openssh-4.1/lib MPISPAWN_GENERIC_NAME_15=TG_CLUSTER_PFS MPISPAWN_GENERIC_VALUE_15=/scratch/00901/lars MPISPAWN_GENERIC_NAME_16=FCEDIT MPISPAWN_GENERIC_VALUE_16=/share/home/00901/lars/my_bash/my_ed.bash MPISPAWN_GENERIC_NAME_17=ARC MPISPAWN_GENERIC_VALUE_17=lx24-amd64 MPISPAWN_GENERIC_NAME_18=GPT_LOCATION MPISPAWN_GENERIC_VALUE_18=/share/apps/teragrid/globus-4.0.8-r1 MPISPAWN_GENERIC_NAME_19=TG_COMMUNITY MPISPAWN_GENERIC_VALUE_19=/scratch/projects/tg MPISPAWN_GENERIC_NAME_20=SGE_EXECD_PORT MPISPAWN_GENERIC_VALUE_20=537 MPISPAWN_GENERIC_NAME_21=HOSTNAME MPISPAWN_GENERIC_VALUE_21=i110-109.ranger.tacc.utexas.edu MPISPAWN_GENERIC_NAME_22=SGE_O_WORKDIR MPISPAWN_GENERIC_VALUE_22=/share/home/00901/lars/tacc/milc_kg/benchmark/large MPISPAWN_GENERIC_NAME_23=SGE_TASK_STEPSIZE MPISPAWN_GENERIC_VALUE_23=undefined MPISPAWN_GENERIC_NAME_24=SGE_ARCH MPISPAWN_GENERIC_VALUE_24=lx24-amd64 MPISPAWN_GENERIC_NAME_25=APPS MPISPAWN_GENERIC_VALUE_25=/opt/apps MPISPAWN_GENERIC_NAME_26=SHELL MPISPAWN_GENERIC_VALUE_26=/bin/csh MPISPAWN_GENERIC_NAME_27=TG_NODE_SCRATCH MPISPAWN_GENERIC_VALUE_27=/tmp MPISPAWN_GENERIC_NAME_28=TMP MPISPAWN_GENERIC_VALUE_28=/tmp/536332.1.systest MPISPAWN_GENERIC_NAME_29=HISTCONTROL MPISPAWN_GENERIC_VALUE_29=erasedups MPISPAWN_GENERIC_NAME_30=JOB_NAME MPISPAWN_GENERIC_VALUE_30=M256tg09.8 MPISPAWN_GENERIC_NAME_31=VIADEV_DEFAULT_TIME_OUT MPISPAWN_GENERIC_VALUE_31=23 MPISPAWN_GENERIC_NAME_32=SGE_O_HOST MPISPAWN_GENERIC_VALUE_32=login3 MPISPAWN_GENERIC_NAME_33=SGE_O_HOME MPISPAWN_GENERIC_VALUE_33=/share/home/00901/lars MPISPAWN_GENERIC_NAME_34=LANG MPISPAWN_GENERIC_VALUE_34=en_US.iso885915 MPISPAWN_GENERIC_NAME_35=NSLOTS MPISPAWN_GENERIC_VALUE_35=512 MPISPAWN_GENERIC_NAME_36=SGE_STDOUT_PATH MPISPAWN_GENERIC_VALUE_36=/share/home/00901/lars/tacc/milc_kg/benchmark/large/M256tg09.8.o536332 MPISPAWN_GENERIC_NAME_37=LD_LIBRARY_PATH MPISPAWN_GENERIC_VALUE_37=/opt/apps/intel10_1/mvapich/1.0.1/lib:/opt/apps/intel10_1/mvapich/1.0.1/lib/shared:/opt/apps/intel/10.1/cc/lib:/opt/apps/intel/10.1/fc/lib:/share/apps/teragrid/globus-4.0.8-r1/lib:/share/apps/teragrid/globus-4.0.8-r1/myproxy-3.4/lib:/share/apps/teragrid/srb-client-3.4.1-r1/lib:/opt/gsi-openssh-4.1/lib:/opt/gsi-openssh-4.1/lib:/opt/apps/binutils-amd/070220/lib64 MPISPAWN_GENERIC_NAME_38=ANT_HOME MPISPAWN_GENERIC_VALUE_38=/opt/rocks MPISPAWN_GENERIC_NAME_39=SGE_O_LOGNAME MPISPAWN_GENERIC_VALUE_39=lars MPISPAWN_GENERIC_NAME_40=NHOSTS MPISPAWN_GENERIC_VALUE_40=32 MPISPAWN_GENERIC_NAME_41=SGE_BINARY_PATH MPISPAWN_GENERIC_VALUE_41=/opt/sge/bin/lx24-amd64 MPISPAWN_GENERIC_NAME_42=GLOBUS_LOCATION MPISPAWN_GENERIC_VALUE_42=/share/apps/teragrid/globus-4.0.8-r1 MPISPAWN_GENERIC_NAME_43=SGE_ACCOUNT MPISPAWN_GENERIC_VALUE_43=A-ccsc MPISPAWN_GENERIC_NAME_44=TACC_BINUTILS_DIR MPISPAWN_GENERIC_VALUE_44=/opt/apps/binutils-amd/070220 MPISPAWN_GENERIC_NAME_45=SGE_STDIN_PATH MPISPAWN_GENERIC_VALUE_45=/dev/null MPISPAWN_GENERIC_NAME_46=SRB_HOME MPISPAWN_GENERIC_VALUE_46=/share/apps/teragrid/srb-client-3.4.1-r1 MPISPAWN_GENERIC_NAME_47=TMPDIR MPISPAWN_GENERIC_VALUE_47=/tmp/536332.1.systest MPISPAWN_GENERIC_NAME_48=SCRATCH MPISPAWN_GENERIC_VALUE_48=/scratch/00901/lars MPISPAWN_GENERIC_NAME_49=LOGNAME MPISPAWN_GENERIC_VALUE_49=lars MPISPAWN_GENERIC_NAME_50=ICC_INC MPISPAWN_GENERIC_VALUE_50=/opt/apps/intel/10.1/cc/include MPISPAWN_GENERIC_NAME_51=PATH MPISPAWN_GENERIC_VALUE_51=/tmp/536332.1.systest:/opt/apps/intel10_1/mvapich/1.0.1/bin:/opt/apps/intel/10.1/idb/bin:/opt/apps/intel/10.1/cc/bin:/opt/apps/intel/10.1/fc/bin:/share/apps/teragrid/tgusage-2.9-r2/bin:/share/apps/teragrid/tgresid-2.0.3/bin:/share/apps/teragrid/tg-policy-0.2/bin:/share/apps/teragrid/globus-4.0.8-r1/sbin:/share/apps/teragrid/globus-4.0.8-r1/bin:/share/apps/teragrid/globus-4.0.8-r1/myproxy-3.4/bin:/share/apps/teragrid/srb-client-3.4.1-r1/bin:/share/apps/teragrid/gx-map-0.5.3.3-r1/sbin:/share/apps/teragrid/gx-map-0.5.3.3-r1/bin:/opt/apps/binutils-amd/070220/bin:/usr/local/first:/opt/sge/bin/lx24-amd64:/usr/kerberos/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/gsi-openssh-4.1/bin:/usr/X11R6/bin:/opt/ofed/bin:/opt/ofed/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/apps/teragrid/sofenv-1.4.2Emulator:/usr/local/bin:/share/sge/default/pe_scripts:~/bin:.:/opt/apps/pki_apps MPISPAWN_GENERIC_NAME_52=GLOBUS_PATH MPISPAWN_GENERIC_VALUE_52=/share/apps/teragrid/globus-4.0.8-r1 MPISPAWN_GENERIC_NAME_53=GLOBUS_TCP_PORT_RANGE MPISPAWN_GENERIC_VALUE_53=50000,51000 MPISPAWN_GENERIC_NAME_54=SASL_PATH MPISPAWN_GENERIC_VALUE_54=/share/apps/teragrid/globus-4.0.8-r1/sasl MPISPAWN_GENERIC_NAME_55=TACC_BINUTILS_INC MPISPAWN_GENERIC_VALUE_55=/opt/apps/binutils-amd/070220/include MPISPAWN_GENERIC_NAME_56=MAIL MPISPAWN_GENERIC_VALUE_56=/var/spool/mail/lars MPISPAWN_GENERIC_NAME_57=SYSTEM MPISPAWN_GENERIC_VALUE_57=linux MPISPAWN_GENERIC_NAME_58=SGE_O_MAIL MPISPAWN_GENERIC_VALUE_58=/var/spool/mail/lars MPISPAWN_GENERIC_NAME_59=IIDB_MAN MPISPAWN_GENERIC_VALUE_59=/opt/apps/intel/10.1/idb/man MPISPAWN_GENERIC_NAME_60=LIBPATH MPISPAWN_GENERIC_VALUE_60=/share/apps/teragrid/globus-4.0.8-r1/lib:/share/apps/teragrid/globus-4.0.8-r1/myproxy-3.4/lib:/opt/gsi-openssh-4.1/lib:/opt/gsi-openssh-4.1/lib:/usr/lib:/lib MPISPAWN_GENERIC_NAME_61=ARCHIVE MPISPAWN_GENERIC_VALUE_61=/home/00016/lars MPISPAWN_GENERIC_NAME_62=_ MPISPAWN_GENERIC_VALUE_62=/share/sge/default/pe_scripts/build_env.pl MPISPAWN_GENERIC_NAME_63=PE_HOSTFILE MPISPAWN_GENERIC_VALUE_63=/share/sge/execd_spool//i110-109/active_jobs/536332.1/pe_hostfile MPISPAWN_GENERIC_NAME_64=TG_CLUSTER_SCRATCH MPISPAWN_GENERIC_VALUE_64=/scratch/00901/lars MPISPAWN_GENERIC_NAME_65=ENVIRONMENT MPISPAWN_GENERIC_VALUE_65=BATCH MPISPAWN_GENERIC_NAME_66=SGE_O_SHELL MPISPAWN_GENERIC_VALUE_66=/bin/bash MPISPAWN_GENERIC_NAME_67=SGE_TASK_LAST MPISPAWN_GENERIC_VALUE_67=undefined MPISPAWN_GENERIC_NAME_68=SGE_ROOT MPISPAWN_GENERIC_VALUE_68=/opt/sge MPISPAWN_GENERIC_NAME_69=SSH_ASKPASS MPISPAWN_GENERIC_VALUE_69=/usr/libexec/openssh/gnome-ssh-askpass MPISPAWN_GENERIC_NAME_70=QUEUE MPISPAWN_GENERIC_VALUE_70=systest MPISPAWN_GENERIC_NAME_71=ICC_BIN MPISPAWN_GENERIC_VALUE_71=/opt/apps/intel/10.1/cc/bin MPISPAWN_GENERIC_NAME_72=SGE_QMASTER_PORT MPISPAWN_GENERIC_VALUE_72=536 MPISPAWN_GENERIC_NAME_73=NQUEUES MPISPAWN_GENERIC_VALUE_73=32 MPISPAWN_GENERIC_NAME_74=PURGE MPISPAWN_GENERIC_VALUE_74=168 MPISPAWN_GENERIC_NAME_75=USER MPISPAWN_GENERIC_VALUE_75=lars MPISPAWN_GENERIC_NAME_76=TG_CLUSTER_HOME MPISPAWN_GENERIC_VALUE_76=/share/home/00901/lars MPISPAWN_GENERIC_NAME_77=SGE_CELL MPISPAWN_GENERIC_VALUE_77=default MPISPAWN_GENERIC_NAME_78=ICC_DOC MPISPAWN_GENERIC_VALUE_78=/opt/apps/intel/10.1/cc/doc MPISPAWN_GENERIC_NAME_79=G_BROKEN_FILENAMES MPISPAWN_GENERIC_VALUE_79=1 MPISPAWN_GENERIC_NAME_80=TG_APPS_PREFIX MPISPAWN_GENERIC_VALUE_80=/share/apps/teragrid MPISPAWN_GENERIC_NAME_81=ENV MPISPAWN_GENERIC_VALUE_81=/share/home/00901/lars/.kshenv MPISPAWN_GENERIC_NAME_82=ROCKS_ROOT MPISPAWN_GENERIC_VALUE_82=/opt/rocks MPISPAWN_GENERIC_NAME_83=TACC_BINUTILS_BIN MPISPAWN_GENERIC_VALUE_83=/opt/apps/binutils-amd/070220/bin MPISPAWN_GENERIC_NAME_84=OMP_NUM_THREADS MPISPAWN_GENERIC_VALUE_84=1 MPISPAWN_GENERIC_NAME_85=JOB_SCRIPT MPISPAWN_GENERIC_VALUE_85=/share/sge/execd_spool//i110-109/job_scripts/536332 MPISPAWN_GENERIC_NAME_86=SGE_JOB_SPOOL_DIR MPISPAWN_GENERIC_VALUE_86=/share/sge/execd_spool//i110-109/active_jobs/536332.1 MPISPAWN_GENERIC_NAME_87=PE MPISPAWN_GENERIC_VALUE_87=8way MPISPAWN_GENERIC_NAME_88=TG_EXAMPLES MPISPAWN_GENERIC_VALUE_88=/scratch/projects/tg/tg-examples MPISPAWN_GENERIC_NAME_89=SGE_TASK_FIRST MPISPAWN_GENERIC_VALUE_89=undefined MPISPAWN_GENERIC_NAME_90=SOFTENV_MODULECMD MPISPAWN_GENERIC_VALUE_90=/opt/modules/bin/modulecmd MPISPAWN_GENERIC_NAME_91=MYPROXY_SERVER MPISPAWN_GENERIC_VALUE_91=myproxy.teragrid.org MPISPAWN_GENERIC_NAME_92=HISTFILESIZE MPISPAWN_GENERIC_VALUE_92=1000 MPISPAWN_GENERIC_NAME_93=REQUEST MPISPAWN_GENERIC_VALUE_93=M256tg09.8 MPISPAWN_GENERIC_NAME_94=MPICH_HOME MPISPAWN_GENERIC_VALUE_94=/opt/apps/intel10_1/mvapich/1.0.1 MPISPAWN_GENERIC_NAME_95=RESTARTED MPISPAWN_GENERIC_VALUE_95=0 MPISPAWN_GENERIC_NAME_96=SGE_O_PATH MPISPAWN_GENERIC_VALUE_96=/opt/apps/intel10_1/mvapich/1.0.1/bin:/opt/apps/intel/10.1/idb/bin:/opt/apps/intel/10.1/cc/bin:/opt/apps/intel/10.1/fc/bin:/share/apps/teragrid/tgusage-2.9-r2/bin:/share/apps/teragrid/tgresid-2.0.3/bin:/share/apps/teragrid/tg-policy-0.2/bin:/share/apps/teragrid/globus-4.0.8-r1/sbin:/share/apps/teragrid/globus-4.0.8-r1/bin:/share/apps/teragrid/globus-4.0.8-r1/myproxy-3.4/bin:/share/apps/teragrid/srb-client-3.4.1-r1/bin:/share/apps/teragrid/gx-map-0.5.3.3-r1/sbin:/share/apps/teragrid/gx-map-0.5.3.3-r1/bin:/opt/apps/binutils-amd/070220/bin:/usr/local/first:/opt/sge/bin/lx24-amd64:/usr/kerberos/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/gsi-openssh-4.1/bin:/usr/X11R6/bin:/opt/ofed/bin:/opt/ofed/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/apps/teragrid/sofenv-1.4.2Emulator:/usr/local/bin:/share/sge/default/pe_scripts:~/bin:.:/opt/apps/pki_apps MPISPAWN_GENERIC_NAME_97=GLOBUS_HOSTNAME MPISPAWN_GENERIC_VALUE_97=ranger.tacc.utexas.edu MPISPAWN_GENERIC_NAME_98=ICC_DIR MPISPAWN_GENERIC_VALUE_98=/opt/apps/intel/10.1/cc MPISPAWN_GENERIC_NAME_99=ICC_MAN MPISPAWN_GENERIC_VALUE_99=/opt/apps/intel/10.1/cc/man MPISPAWN_GENERIC_NAME_100=BASH_ENV MPISPAWN_GENERIC_VALUE_100=/usr/local/etc/bash_functions MPISPAWN_GENERIC_NAME_101=X509_USER_PROXY MPISPAWN_GENERIC_VALUE_101=/share/home/00901/lars/.globus/userproxy.pem MPISPAWN_GENERIC_NAME_102=REQNAME MPISPAWN_GENERIC_VALUE_102=M256tg09.8 MPISPAWN_ID=2 MPISPAWN_LOCAL_NPROCS=8 MPISPAWN_WORKING_DIR=/share/home/00901/lars/tacc/milc_kg/benchmark/large MPISPAWN_MPIRUN_RANK_0=16 MPISPAWN_VIADEV_DEFAULT_PORT_0=-1 MPISPAWN_MPIRUN_RANK_1=17 MPISPAWN_VIADEV_DEFAULT_PORT_1=-1 MPISPAWN_MPIRUN_RANK_2=18 MPISPAWN_VIADEV_DEFAULT_PORT_2=-1 MPISPAWN_MPIRUN_RANK_3=19 MPISPAWN_VIADEV_DEFAULT_PORT_3=-1 MPISPAWN_MPIRUN_RANK_4=20 MPISPAWN_VIADEV_DEFAULT_PORT_4=-1 MPISPAWN_MPIRUN_RANK_5=21 MPISPAWN_VIADEV_DEFAULT_PORT_5=-1 MPISPAWN_MPIRUN_RANK_6=22 MPISPAWN_VIADEV_DEFAULT_PORT_6=-1 MPISPAWN_MPIRUN_RANK_7=23 MPISPAWN_VIADEV_DEFAULT_PORT_7=-1 /share/apps/intel10_1/mvapich/1.0.1/bin/mpispawn
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+
+MPI process terminated unexpectedly
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_03 su3_rmd 
+MPI process terminated unexpectedly
+DONE
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+./tacc_affinity_12 execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+./tacc_affinity_12 su3_rmd execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+Exit code -5 signaled from i112-312.ranger.tacc.utexas.edu
+Killing remote processes...
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+MPI process terminated unexpectedly
+
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+./tacc_affinity_12 su3_rmd 
+MPI process terminated unexpectedly
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity_12 su3_rmd 
+DONE
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd Exit code -5 signaled from i181-209.ranger.tacc.utexas.edu
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+Killing remote processes...execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+bash: line 1: 27267 Segmentation fault      /usr/bin/env MPISPAWN_LD_LIBRARY_PATH=/usr/mvapich/lib/shared:/opt/apps/intel10_1/mvapich/1.0.1/lib:/opt/apps/intel10_1/mvapich/1.0.1/lib/shared:/opt/apps/intel/10.1/cc/lib:/opt/apps/intel/10.1/fc/lib:/share/apps/teragrid/globus-4.0.8-r1/lib:/share/apps/teragrid/globus-4.0.8-r1/myproxy-3.4/lib:/share/apps/teragrid/srb-client-3.4.1-r1/lib:/opt/gsi-openssh-4.1/lib:/opt/gsi-openssh-4.1/lib:/opt/apps/binutils-amd/070220/lib64 MPISPAWN_MPIRUN_MPD=0 MPISPAWN_MPIRUN_HOST=i110-109.ranger.tacc.utexas.edu MPISPAWN_CHECKIN_PORT=48512 MPISPAWN_MPIRUN_PORT=48512 MPISPAWN_GLOBAL_NPROCS=256 MPISPAWN_MPIRUN_ID=21292 MPISPAWN_ARGC=2 MPISPAWN_ARGV_0=./tacc_affinity MPISPAWN_ARGV_1=su3_rmd MPISPAWN_GENERIC_ENV_COUNT=103 MPISPAWN_GENERIC_NAME_0=TACC_ENVLEN MPISPAWN_GENERIC_VALUE_0=5719 MPISPAWN_GENERIC_NAME_1=IIDB_DIR MPISPAWN_GENERIC_VALUE_1=/opt/apps/intel/10.1/idb MPISPAWN_GENERIC_NAME_2=ARCHIVER MPISPAWN_GENERIC_VALUE_2=ranch.tacc.utexas.edu MPISPAWN_GENERIC_NAME_3=SGE_TASK_ID MPISPAWN_GENERIC_VALUE_3=undefined MPISPAWN_GENERIC_NAME_4=WORK MPISPAWN_GENERIC_VALUE_4=/work/00901/lars MPISPAWN_GENERIC_NAME_5=SGE_STDERR_PATH MPISPAWN_GENERIC_VALUE_5=/share/home/00901/lars/tacc/milc_kg/benchmark/large/M256tg09.8.o536332 MPISPAWN_GENERIC_NAME_6=ICC_LIB MPISPAWN_GENERIC_VALUE_6=/opt/apps/intel/10.1/cc/lib MPISPAWN_GENERIC_NAME_7=VIADEV_SRQ_SIZE MPISPAWN_GENERIC_VALUE_7=2048 MPISPAWN_GENERIC_NAME_8=TACC_BINUTILS_LIB MPISPAWN_GENERIC_VALUE_8=/opt/apps/binutils-amd/070220/lib64 MPISPAWN_GENERIC_NAME_9=JOB_ID MPISPAWN_GENERIC_VALUE_9=536332 MPISPAWN_GENERIC_NAME_10=IIDB_BIN MPISPAWN_GENERIC_VALUE_10=/opt/apps/intel/10.1/idb/bin MPISPAWN_GENERIC_NAME_11=HISTSIZE MPISPAWN_GENERIC_VALUE_11=1000 MPISPAWN_GENERIC_NAME_12=SGE_CWD_PATH MPISPAWN_GENERIC_VALUE_12=/share/home/00901/lars/tacc/milc_kg/benchmark/large MPISPAWN_GENERIC_NAME_13=RSHCOMMAND MPISPAWN_GENERIC_VALUE_13=/share/apps/teragrid/globus-4.0.8-r1/bin/ssh MPISPAWN_GENERIC_NAME_14=SHLIB_PATH MPISPAWN_GENERIC_VALUE_14=/share/apps/teragrid/globus-4.0.8-r1/lib:/share/apps/teragrid/globus-4.0.8-r1/myproxy-3.4/lib:/opt/gsi-openssh-4.1/lib:/opt/gsi-openssh-4.1/lib MPISPAWN_GENERIC_NAME_15=TG_CLUSTER_PFS MPISPAWN_GENERIC_VALUE_15=/scratch/00901/lars MPISPAWN_GENERIC_NAME_16=FCEDIT MPISPAWN_GENERIC_VALUE_16=/share/home/00901/lars/my_bash/my_ed.bash MPISPAWN_GENERIC_NAME_17=ARC MPISPAWN_GENERIC_VALUE_17=lx24-amd64 MPISPAWN_GENERIC_NAME_18=GPT_LOCATION MPISPAWN_GENERIC_VALUE_18=/share/apps/teragrid/globus-4.0.8-r1 MPISPAWN_GENERIC_NAME_19=TG_COMMUNITY MPISPAWN_GENERIC_VALUE_19=/scratch/projects/tg MPISPAWN_GENERIC_NAME_20=SGE_EXECD_PORT MPISPAWN_GENERIC_VALUE_20=537 MPISPAWN_GENERIC_NAME_21=HOSTNAME MPISPAWN_GENERIC_VALUE_21=i110-109.ranger.tacc.utexas.edu MPISPAWN_GENERIC_NAME_22=SGE_O_WORKDIR MPISPAWN_GENERIC_VALUE_22=/share/home/00901/lars/tacc/milc_kg/benchmark/large MPISPAWN_GENERIC_NAME_23=SGE_TASK_STEPSIZE MPISPAWN_GENERIC_VALUE_23=undefined MPISPAWN_GENERIC_NAME_24=SGE_ARCH MPISPAWN_GENERIC_VALUE_24=lx24-amd64 MPISPAWN_GENERIC_NAME_25=APPS MPISPAWN_GENERIC_VALUE_25=/opt/apps MPISPAWN_GENERIC_NAME_26=SHELL MPISPAWN_GENERIC_VALUE_26=/bin/csh MPISPAWN_GENERIC_NAME_27=TG_NODE_SCRATCH MPISPAWN_GENERIC_VALUE_27=/tmp MPISPAWN_GENERIC_NAME_28=TMP MPISPAWN_GENERIC_VALUE_28=/tmp/536332.1.systest MPISPAWN_GENERIC_NAME_29=HISTCONTROL MPISPAWN_GENERIC_VALUE_29=erasedups MPISPAWN_GENERIC_NAME_30=JOB_NAME MPISPAWN_GENERIC_VALUE_30=M256tg09.8 MPISPAWN_GENERIC_NAME_31=VIADEV_DEFAULT_TIME_OUT MPISPAWN_GENERIC_VALUE_31=23 MPISPAWN_GENERIC_NAME_32=SGE_O_HOST MPISPAWN_GENERIC_VALUE_32=login3 MPISPAWN_GENERIC_NAME_33=SGE_O_HOME MPISPAWN_GENERIC_VALUE_33=/share/home/00901/lars MPISPAWN_GENERIC_NAME_34=LANG MPISPAWN_GENERIC_VALUE_34=en_US.iso885915 MPISPAWN_GENERIC_NAME_35=NSLOTS MPISPAWN_GENERIC_VALUE_35=512 MPISPAWN_GENERIC_NAME_36=SGE_STDOUT_PATH MPISPAWN_GENERIC_VALUE_36=/share/home/00901/lars/tacc/milc_kg/benchmark/large/M256tg09.8.o536332 MPISPAWN_GENERIC_NAME_37=LD_LIBRARY_PATH MPISPAWN_GENERIC_VALUE_37=/opt/apps/intel10_1/mvapich/1.0.1/lib:/opt/apps/intel10_1/mvapich/1.0.1/lib/shared:/opt/apps/intel/10.1/cc/lib:/opt/apps/intel/10.1/fc/lib:/share/apps/teragrid/globus-4.0.8-r1/lib:/share/apps/teragrid/globus-4.0.8-r1/myproxy-3.4/lib:/share/apps/teragrid/srb-client-3.4.1-r1/lib:/opt/gsi-openssh-4.1/lib:/opt/gsi-openssh-4.1/lib:/opt/apps/binutils-amd/070220/lib64 MPISPAWN_GENERIC_NAME_38=ANT_HOME MPISPAWN_GENERIC_VALUE_38=/opt/rocks MPISPAWN_GENERIC_NAME_39=SGE_O_LOGNAME MPISPAWN_GENERIC_VALUE_39=lars MPISPAWN_GENERIC_NAME_40=NHOSTS MPISPAWN_GENERIC_VALUE_40=32 MPISPAWN_GENERIC_NAME_41=SGE_BINARY_PATH MPISPAWN_GENERIC_VALUE_41=/opt/sge/bin/lx24-amd64 MPISPAWN_GENERIC_NAME_42=GLOBUS_LOCATION MPISPAWN_GENERIC_VALUE_42=/share/apps/teragrid/globus-4.0.8-r1 MPISPAWN_GENERIC_NAME_43=SGE_ACCOUNT MPISPAWN_GENERIC_VALUE_43=A-ccsc MPISPAWN_GENERIC_NAME_44=TACC_BINUTILS_DIR MPISPAWN_GENERIC_VALUE_44=/opt/apps/binutils-amd/070220 MPISPAWN_GENERIC_NAME_45=SGE_STDIN_PATH MPISPAWN_GENERIC_VALUE_45=/dev/null MPISPAWN_GENERIC_NAME_46=SRB_HOME MPISPAWN_GENERIC_VALUE_46=/share/apps/teragrid/srb-client-3.4.1-r1 MPISPAWN_GENERIC_NAME_47=TMPDIR MPISPAWN_GENERIC_VALUE_47=/tmp/536332.1.systest MPISPAWN_GENERIC_NAME_48=SCRATCH MPISPAWN_GENERIC_VALUE_48=/scratch/00901/lars MPISPAWN_GENERIC_NAME_49=LOGNAME MPISPAWN_GENERIC_VALUE_49=lars MPISPAWN_GENERIC_NAME_50=ICC_INC MPISPAWN_GENERIC_VALUE_50=/opt/apps/intel/10.1/cc/include MPISPAWN_GENERIC_NAME_51=PATH MPISPAWN_GENERIC_VALUE_51=/tmp/536332.1.systest:/opt/apps/intel10_1/mvapich/1.0.1/bin:/opt/apps/intel/10.1/idb/bin:/opt/apps/intel/10.1/cc/bin:/opt/apps/intel/10.1/fc/bin:/share/apps/teragrid/tgusage-2.9-r2/bin:/share/apps/teragrid/tgresid-2.0.3/bin:/share/apps/teragrid/tg-policy-0.2/bin:/share/apps/teragrid/globus-4.0.8-r1/sbin:/share/apps/teragrid/globus-4.0.8-r1/bin:/share/apps/teragrid/globus-4.0.8-r1/myproxy-3.4/bin:/share/apps/teragrid/srb-client-3.4.1-r1/bin:/share/apps/teragrid/gx-map-0.5.3.3-r1/sbin:/share/apps/teragrid/gx-map-0.5.3.3-r1/bin:/opt/apps/binutils-amd/070220/bin:/usr/local/first:/opt/sge/bin/lx24-amd64:/usr/kerberos/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/gsi-openssh-4.1/bin:/usr/X11R6/bin:/opt/ofed/bin:/opt/ofed/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/apps/teragrid/sofenv-1.4.2Emulator:/usr/local/bin:/share/sge/default/pe_scripts:~/bin:.:/opt/apps/pki_apps MPISPAWN_GENERIC_NAME_52=GLOBUS_PATH MPISPAWN_GENERIC_VALUE_52=/share/apps/teragrid/globus-4.0.8-r1 MPISPAWN_GENERIC_NAME_53=GLOBUS_TCP_PORT_RANGE MPISPAWN_GENERIC_VALUE_53=50000,51000 MPISPAWN_GENERIC_NAME_54=SASL_PATH MPISPAWN_GENERIC_VALUE_54=/share/apps/teragrid/globus-4.0.8-r1/sasl MPISPAWN_GENERIC_NAME_55=TACC_BINUTILS_INC MPISPAWN_GENERIC_VALUE_55=/opt/apps/binutils-amd/070220/include MPISPAWN_GENERIC_NAME_56=MAIL MPISPAWN_GENERIC_VALUE_56=/var/spool/mail/lars MPISPAWN_GENERIC_NAME_57=SYSTEM MPISPAWN_GENERIC_VALUE_57=linux MPISPAWN_GENERIC_NAME_58=SGE_O_MAIL MPISPAWN_GENERIC_VALUE_58=/var/spool/mail/lars MPISPAWN_GENERIC_NAME_59=IIDB_MAN MPISPAWN_GENERIC_VALUE_59=/opt/apps/intel/10.1/idb/man MPISPAWN_GENERIC_NAME_60=LIBPATH MPISPAWN_GENERIC_VALUE_60=/share/apps/teragrid/globus-4.0.8-r1/lib:/share/apps/teragrid/globus-4.0.8-r1/myproxy-3.4/lib:/opt/gsi-openssh-4.1/lib:/opt/gsi-openssh-4.1/lib:/usr/lib:/lib MPISPAWN_GENERIC_NAME_61=ARCHIVE MPISPAWN_GENERIC_VALUE_61=/home/00016/lars MPISPAWN_GENERIC_NAME_62=_ MPISPAWN_GENERIC_VALUE_62=/share/sge/default/pe_scripts/build_env.pl MPISPAWN_GENERIC_NAME_63=PE_HOSTFILE MPISPAWN_GENERIC_VALUE_63=/share/sge/execd_spool//i110-109/active_jobs/536332.1/pe_hostfile MPISPAWN_GENERIC_NAME_64=TG_CLUSTER_SCRATCH MPISPAWN_GENERIC_VALUE_64=/scratch/00901/lars MPISPAWN_GENERIC_NAME_65=ENVIRONMENT MPISPAWN_GENERIC_VALUE_65=BATCH MPISPAWN_GENERIC_NAME_66=SGE_O_SHELL MPISPAWN_GENERIC_VALUE_66=/bin/bash MPISPAWN_GENERIC_NAME_67=SGE_TASK_LAST MPISPAWN_GENERIC_VALUE_67=undefined MPISPAWN_GENERIC_NAME_68=SGE_ROOT MPISPAWN_GENERIC_VALUE_68=/opt/sge MPISPAWN_GENERIC_NAME_69=SSH_ASKPASS MPISPAWN_GENERIC_VALUE_69=/usr/libexec/openssh/gnome-ssh-askpass MPISPAWN_GENERIC_NAME_70=QUEUE MPISPAWN_GENERIC_VALUE_70=systest MPISPAWN_GENERIC_NAME_71=ICC_BIN MPISPAWN_GENERIC_VALUE_71=/opt/apps/intel/10.1/cc/bin MPISPAWN_GENERIC_NAME_72=SGE_QMASTER_PORT MPISPAWN_GENERIC_VALUE_72=536 MPISPAWN_GENERIC_NAME_73=NQUEUES MPISPAWN_GENERIC_VALUE_73=32 MPISPAWN_GENERIC_NAME_74=PURGE MPISPAWN_GENERIC_VALUE_74=168 MPISPAWN_GENERIC_NAME_75=USER MPISPAWN_GENERIC_VALUE_75=lars MPISPAWN_GENERIC_NAME_76=TG_CLUSTER_HOME MPISPAWN_GENERIC_VALUE_76=/share/home/00901/lars MPISPAWN_GENERIC_NAME_77=SGE_CELL MPISPAWN_GENERIC_VALUE_77=default MPISPAWN_GENERIC_NAME_78=ICC_DOC MPISPAWN_GENERIC_VALUE_78=/opt/apps/intel/10.1/cc/doc MPISPAWN_GENERIC_NAME_79=G_BROKEN_FILENAMES MPISPAWN_GENERIC_VALUE_79=1 MPISPAWN_GENERIC_NAME_80=TG_APPS_PREFIX MPISPAWN_GENERIC_VALUE_80=/share/apps/teragrid MPISPAWN_GENERIC_NAME_81=ENV MPISPAWN_GENERIC_VALUE_81=/share/home/00901/lars/.kshenv MPISPAWN_GENERIC_NAME_82=ROCKS_ROOT MPISPAWN_GENERIC_VALUE_82=/opt/rocks MPISPAWN_GENERIC_NAME_83=TACC_BINUTILS_BIN MPISPAWN_GENERIC_VALUE_83=/opt/apps/binutils-amd/070220/bin MPISPAWN_GENERIC_NAME_84=OMP_NUM_THREADS MPISPAWN_GENERIC_VALUE_84=1 MPISPAWN_GENERIC_NAME_85=JOB_SCRIPT MPISPAWN_GENERIC_VALUE_85=/share/sge/execd_spool//i110-109/job_scripts/536332 MPISPAWN_GENERIC_NAME_86=SGE_JOB_SPOOL_DIR MPISPAWN_GENERIC_VALUE_86=/share/sge/execd_spool//i110-109/active_jobs/536332.1 MPISPAWN_GENERIC_NAME_87=PE MPISPAWN_GENERIC_VALUE_87=8way MPISPAWN_GENERIC_NAME_88=TG_EXAMPLES MPISPAWN_GENERIC_VALUE_88=/scratch/projects/tg/tg-examples MPISPAWN_GENERIC_NAME_89=SGE_TASK_FIRST MPISPAWN_GENERIC_VALUE_89=undefined MPISPAWN_GENERIC_NAME_90=SOFTENV_MODULECMD MPISPAWN_GENERIC_VALUE_90=/opt/modules/bin/modulecmd MPISPAWN_GENERIC_NAME_91=MYPROXY_SERVER MPISPAWN_GENERIC_VALUE_91=myproxy.teragrid.org MPISPAWN_GENERIC_NAME_92=HISTFILESIZE MPISPAWN_GENERIC_VALUE_92=1000 MPISPAWN_GENERIC_NAME_93=REQUEST MPISPAWN_GENERIC_VALUE_93=M256tg09.8 MPISPAWN_GENERIC_NAME_94=MPICH_HOME MPISPAWN_GENERIC_VALUE_94=/opt/apps/intel10_1/mvapich/1.0.1 MPISPAWN_GENERIC_NAME_95=RESTARTED MPISPAWN_GENERIC_VALUE_95=0 MPISPAWN_GENERIC_NAME_96=SGE_O_PATH MPISPAWN_GENERIC_VALUE_96=/opt/apps/intel10_1/mvapich/1.0.1/bin:/opt/apps/intel/10.1/idb/bin:/opt/apps/intel/10.1/cc/bin:/opt/apps/intel/10.1/fc/bin:/share/apps/teragrid/tgusage-2.9-r2/bin:/share/apps/teragrid/tgresid-2.0.3/bin:/share/apps/teragrid/tg-policy-0.2/bin:/share/apps/teragrid/globus-4.0.8-r1/sbin:/share/apps/teragrid/globus-4.0.8-r1/bin:/share/apps/teragrid/globus-4.0.8-r1/myproxy-3.4/bin:/share/apps/teragrid/srb-client-3.4.1-r1/bin:/share/apps/teragrid/gx-map-0.5.3.3-r1/sbin:/share/apps/teragrid/gx-map-0.5.3.3-r1/bin:/opt/apps/binutils-amd/070220/bin:/usr/local/first:/opt/sge/bin/lx24-amd64:/usr/kerberos/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/gsi-openssh-4.1/bin:/usr/X11R6/bin:/opt/ofed/bin:/opt/ofed/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/apps/teragrid/sofenv-1.4.2Emulator:/usr/local/bin:/share/sge/default/pe_scripts:~/bin:.:/opt/apps/pki_apps MPISPAWN_GENERIC_NAME_97=GLOBUS_HOSTNAME MPISPAWN_GENERIC_VALUE_97=ranger.tacc.utexas.edu MPISPAWN_GENERIC_NAME_98=ICC_DIR MPISPAWN_GENERIC_VALUE_98=/opt/apps/intel/10.1/cc MPISPAWN_GENERIC_NAME_99=ICC_MAN MPISPAWN_GENERIC_VALUE_99=/opt/apps/intel/10.1/cc/man MPISPAWN_GENERIC_NAME_100=BASH_ENV MPISPAWN_GENERIC_VALUE_100=/usr/local/etc/bash_functions MPISPAWN_GENERIC_NAME_101=X509_USER_PROXY MPISPAWN_GENERIC_VALUE_101=/share/home/00901/lars/.globus/userproxy.pem MPISPAWN_GENERIC_NAME_102=REQNAME MPISPAWN_GENERIC_VALUE_102=M256tg09.8 MPISPAWN_ID=13 MPISPAWN_LOCAL_NPROCS=8 MPISPAWN_WORKING_DIR=/share/home/00901/lars/tacc/milc_kg/benchmark/large MPISPAWN_MPIRUN_RANK_0=104 MPISPAWN_VIADEV_DEFAULT_PORT_0=-1 MPISPAWN_MPIRUN_RANK_1=105 MPISPAWN_VIADEV_DEFAULT_PORT_1=-1 MPISPAWN_MPIRUN_RANK_2=106 MPISPAWN_VIADEV_DEFAULT_PORT_2=-1 MPISPAWN_MPIRUN_RANK_3=107 MPISPAWN_VIADEV_DEFAULT_PORT_3=-1 MPISPAWN_MPIRUN_RANK_4=108 MPISPAWN_VIADEV_DEFAULT_PORT_4=-1 MPISPAWN_MPIRUN_RANK_5=109 MPISPAWN_VIADEV_DEFAULT_PORT_5=-1 MPISPAWN_MPIRUN_RANK_6=110 MPISPAWN_VIADEV_DEFAULT_PORT_6=-1 MPISPAWN_MPIRUN_RANK_7=111 MPISPAWN_VIADEV_DEFAULT_PORT_7=-1 /share/apps/intel10_1/mvapich/1.0.1/bin/mpispawn
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd Exit code -5 signaled from i110-109.ranger.tacc.utexas.edu
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+Killing remote processes...execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+DONE
+DONE
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+Exit code -5 signaled from i112-312.ranger.tacc.utexas.edu
+Killing remote processes...execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+execv: No such file or directory
+./tacc_affinity su3_rmd execv: No such file or directory
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+./tacc_affinity su3_rmd 
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+
+MPI process terminated unexpectedly
+execv: No such file or directory
+./tacc_affinity su3_rmd 
+DONE
+TACC: Cleaning up after job: 536332
+TACC: Done.

@@ -1,0 +1,1095 @@
+TACC: Setting memory limits for job 108648 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/bash	 
+#$ -V				# Inherit the submission environment
+#$ -cwd				# Start job in submission directory
+#$ -N Milc-1			# Job Name
+#$ -j y				# Combine stderr and stdout
+#$ -o $JOB_NAME.o$JOB_ID	# Name of the output file (eg. myMPI.oJobID)
+#$ -pe 1way 8			# Requests 16 tasks/node, 32 cores total
+#$ -q normal
+#$ -l h_rt=03:00:00		# Run time (hh:mm:ss) - 1.5 hours
+#$ -P hpc
+
+# Test script
+~/apps/perfexpert_run_exp -o exp-1.xml ./su3_rmd
+--------------------------------------------------------------------------------
+TACC: Done.
+PerfExpert: Generating program structure using hpcstruct...done!
+
+PerfExpert: Program execution #1 of 5
+TACC: Starting up job 108648
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+SU3 with improved KS action
+Microcanonical simulation with refreshing
+MIMD version 6
+Machine = Scalar processor, with 1 nodes
+R algorithm
+type 0 for no prompts  or 1 for prompts
+nflavors1 4
+nflavors2 4
+nx 8
+ny 8
+nz 16
+nt 16
+iseed 5682304
+LAYOUT = Hypercubes, options = EVENFIRST,
+ON EACH NODE 8 x 8 x 16 x 16
+Mallocing 18.5 MBytes per node for lattice
+Made lattice
+Made nn gathers
+Made 3nn gathers
+Finished setup
+
+
+warms 0
+trajecs 2
+traj_between_meas 1
+beta 5.6
+mass1 0.01
+mass2 0.01
+u0 0.8441
+microcanonical_time_step 0.02
+steps_per_trajectory 5
+max_cg_iterations 200
+error_per_site 1e-05
+error_for_propagator 0.0001
+fresh 
+forget 
+unit gauge configuration loaded
+CHECK PLAQ: 3.000000e+00 3.000000e+00
+Unitarity checked.  Max deviation 0.00e+00
+Time to check unitarity = 4.442930e-03
+Symanzik 1x1 + 1x2 + 1x1x1 action
+loop coefficients: nloop rep loop_coeff  multiplicity
+                    0 0      1.000000e+00     6
+                    1 0      -7.762509e-02     12
+                    2 0      -1.031171e-02     16
+"O(a^2): couplings(pi)=0, Naik term, No O(a^2) errors, tadpole weights"
+path coefficients: npath  path_coeff  multiplicity
+                    0      6.250000e-01     8
+                    1      -5.847914e-02     8
+                    2      -8.771871e-02     48
+                    3      3.077829e-02     192
+                    4      -7.199551e-03     384
+                    5      -1.231132e-01     48
+WARMUPS COMPLETED
+LLTIME(long): time =  3.367400e-02 (Naik) mflops = 8.777316e+02
+LLTIME(Fat): time = 6.424901e-01 (Asqtad opt) mflops = 1.571664e+03
+LLTIME(long): time =  2.983499e-02 (Naik) mflops = 9.906737e+02
+LLTIME(Fat): time = 5.388751e-01 (Asqtad opt) mflops = 1.873864e+03
+LLTIME(long): time =  2.680397e-02 (Naik) mflops = 1.102700e+03
+LLTIME(Fat): time = 5.349500e-01 (Asqtad opt) mflops = 1.887613e+03
+CONGRAD5: time = 2.883530e-01 iters = 39 mflops = 2.630334e+03
+TESTCONG: reduce_time = 1.120567e-05 iters = 39 time/iter = 2.873250e-07
+CONGRAD5: time = 2.633231e-01 iters = 36 mflops = 2.658791e+03
+TESTCONG: reduce_time = 1.025200e-05 iters = 36 time/iter = 2.847777e-07
+GFTIME:   time = 1.723056e+00 (Symanzik1) mflops = -1.037778e+03
+FFTIME:  time = 3.184612e+00 mflops = 2.232652e+03
+LLTIME(long): time =  2.618194e-02 (Naik) mflops = 1.128898e+03
+LLTIME(Fat): time = 5.360770e-01 (Asqtad opt) mflops = 1.883645e+03
+LLTIME(long): time =  2.622318e-02 (Naik) mflops = 1.127122e+03
+LLTIME(Fat): time = 5.348222e-01 (Asqtad opt) mflops = 1.888064e+03
+LLTIME(long): time =  2.624798e-02 (Naik) mflops = 1.126058e+03
+LLTIME(Fat): time = 5.351121e-01 (Asqtad opt) mflops = 1.887041e+03
+CONGRAD5: time = 2.855010e-01 iters = 39 mflops = 2.656609e+03
+TESTCONG: reduce_time = 1.335144e-05 iters = 39 time/iter = 3.423446e-07
+CONGRAD5: time = 2.852201e-01 iters = 39 mflops = 2.659225e+03
+TESTCONG: reduce_time = 1.287460e-05 iters = 39 time/iter = 3.301180e-07
+GFTIME:   time = 1.721113e+00 (Symanzik1) mflops = -1.038950e+03
+FFTIME:  time = 3.181887e+00 mflops = 2.234564e+03
+LLTIME(long): time =  2.622294e-02 (Naik) mflops = 1.127133e+03
+LLTIME(Fat): time = 5.354741e-01 (Asqtad opt) mflops = 1.885766e+03
+LLTIME(long): time =  2.627587e-02 (Naik) mflops = 1.124862e+03
+LLTIME(Fat): time = 5.345550e-01 (Asqtad opt) mflops = 1.889008e+03
+LLTIME(long): time =  2.624011e-02 (Naik) mflops = 1.126395e+03
+LLTIME(Fat): time = 5.348942e-01 (Asqtad opt) mflops = 1.887810e+03
+CONGRAD5: time = 2.926371e-01 iters = 40 mflops = 2.658283e+03
+TESTCONG: reduce_time = 9.059906e-06 iters = 40 time/iter = 2.264977e-07
+CONGRAD5: time = 2.925789e-01 iters = 40 mflops = 2.658812e+03
+TESTCONG: reduce_time = 1.192093e-05 iters = 40 time/iter = 2.980232e-07
+GFTIME:   time = 1.722458e+00 (Symanzik1) mflops = -1.038138e+03
+FFTIME:  time = 3.184119e+00 mflops = 2.232998e+03
+LLTIME(long): time =  2.620888e-02 (Naik) mflops = 1.127738e+03
+LLTIME(Fat): time = 5.350370e-01 (Asqtad opt) mflops = 1.887306e+03
+LLTIME(long): time =  2.622199e-02 (Naik) mflops = 1.127174e+03
+LLTIME(Fat): time = 5.350041e-01 (Asqtad opt) mflops = 1.887422e+03
+LLTIME(long): time =  2.625895e-02 (Naik) mflops = 1.125587e+03
+LLTIME(Fat): time = 5.352409e-01 (Asqtad opt) mflops = 1.886587e+03
+CONGRAD5: time = 2.926571e-01 iters = 40 mflops = 2.658101e+03
+TESTCONG: reduce_time = 7.867813e-06 iters = 40 time/iter = 1.966953e-07
+CONGRAD5: time = 2.926421e-01 iters = 40 mflops = 2.658238e+03
+TESTCONG: reduce_time = 1.621246e-05 iters = 40 time/iter = 4.053116e-07
+GFTIME:   time = 1.720860e+00 (Symanzik1) mflops = -1.039102e+03
+FFTIME:  time = 3.182774e+00 mflops = 2.233942e+03
+LLTIME(long): time =  2.622199e-02 (Naik) mflops = 1.127174e+03
+LLTIME(Fat): time = 5.348620e-01 (Asqtad opt) mflops = 1.887924e+03
+LLTIME(long): time =  2.626610e-02 (Naik) mflops = 1.125281e+03
+LLTIME(Fat): time = 5.349240e-01 (Asqtad opt) mflops = 1.887705e+03
+LLTIME(long): time =  2.628517e-02 (Naik) mflops = 1.124464e+03
+LLTIME(Fat): time = 5.353131e-01 (Asqtad opt) mflops = 1.886333e+03
+CONGRAD5: time = 3.000450e-01 iters = 41 mflops = 2.657468e+03
+TESTCONG: reduce_time = 9.298325e-06 iters = 41 time/iter = 2.267884e-07
+CONGRAD5: time = 2.998209e-01 iters = 41 mflops = 2.659455e+03
+TESTCONG: reduce_time = 1.168251e-05 iters = 41 time/iter = 2.849393e-07
+GFTIME:   time = 1.722049e+00 (Symanzik1) mflops = -1.038385e+03
+FFTIME:  time = 3.182625e+00 mflops = 2.234046e+03
+PLAQ:	2.851605	2.851636
+P_LOOP:	2.438382e+00	-6.110910e-04
+LLTIME(long): time =  2.637506e-02 (Naik) mflops = 1.120632e+03
+LLTIME(Fat): time = 5.345240e-01 (Asqtad opt) mflops = 1.889118e+03
+CONGRAD5: time = 2.778409e-01 iters = 38 mflops = 2.659856e+03
+TESTCONG: reduce_time = 1.001358e-05 iters = 38 time/iter = 2.635153e-07
+PBP: mass 1.000000e-02     1.098148e-02  -1.056381e-03  -4.110835e-03  -4.047673e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.491269e+00 ( 1 of 1 )
+CONGRAD5: time = 2.779219e-01 iters = 38 mflops = 2.659080e+03
+TESTCONG: reduce_time = 9.298325e-06 iters = 38 time/iter = 2.446928e-07
+PBP: mass 1.000000e-02     4.027176e-03  5.938651e-03  3.706708e-03  3.640591e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500073e+00 ( 1 of 1 )
+LLTIME(long): time =  2.627015e-02 (Naik) mflops = 1.125107e+03
+LLTIME(Fat): time = 5.351279e-01 (Asqtad opt) mflops = 1.886986e+03
+LLTIME(long): time =  2.626181e-02 (Naik) mflops = 1.125465e+03
+LLTIME(Fat): time = 5.351751e-01 (Asqtad opt) mflops = 1.886819e+03
+LLTIME(long): time =  2.628183e-02 (Naik) mflops = 1.124607e+03
+LLTIME(Fat): time = 5.353510e-01 (Asqtad opt) mflops = 1.886199e+03
+CONGRAD5: time = 3.072631e-01 iters = 42 mflops = 2.658334e+03
+TESTCONG: reduce_time = 1.120567e-05 iters = 42 time/iter = 2.668017e-07
+CONGRAD5: time = 3.071499e-01 iters = 42 mflops = 2.659314e+03
+TESTCONG: reduce_time = 1.168251e-05 iters = 42 time/iter = 2.781550e-07
+GFTIME:   time = 1.721394e+00 (Symanzik1) mflops = -1.038780e+03
+FFTIME:  time = 3.182885e+00 mflops = 2.233864e+03
+LLTIME(long): time =  2.614403e-02 (Naik) mflops = 1.130535e+03
+LLTIME(Fat): time = 5.349259e-01 (Asqtad opt) mflops = 1.887698e+03
+LLTIME(long): time =  2.625799e-02 (Naik) mflops = 1.125628e+03
+LLTIME(Fat): time = 5.349569e-01 (Asqtad opt) mflops = 1.887589e+03
+LLTIME(long): time =  2.624202e-02 (Naik) mflops = 1.126313e+03
+LLTIME(Fat): time = 5.351520e-01 (Asqtad opt) mflops = 1.886901e+03
+CONGRAD5: time = 3.072062e-01 iters = 42 mflops = 2.658827e+03
+TESTCONG: reduce_time = 1.502037e-05 iters = 42 time/iter = 3.576279e-07
+CONGRAD5: time = 3.071380e-01 iters = 42 mflops = 2.659417e+03
+TESTCONG: reduce_time = 1.382828e-05 iters = 42 time/iter = 3.292447e-07
+GFTIME:   time = 1.722255e+00 (Symanzik1) mflops = -1.038261e+03
+FFTIME:  time = 3.181549e+00 mflops = 2.234802e+03
+LLTIME(long): time =  2.621412e-02 (Naik) mflops = 1.127512e+03
+LLTIME(Fat): time = 5.351751e-01 (Asqtad opt) mflops = 1.886819e+03
+LLTIME(long): time =  2.628112e-02 (Naik) mflops = 1.124638e+03
+LLTIME(Fat): time = 5.349760e-01 (Asqtad opt) mflops = 1.887521e+03
+LLTIME(long): time =  2.623510e-02 (Naik) mflops = 1.126610e+03
+LLTIME(Fat): time = 5.350780e-01 (Asqtad opt) mflops = 1.887161e+03
+CONGRAD5: time = 3.073499e-01 iters = 42 mflops = 2.657583e+03
+TESTCONG: reduce_time = 1.025200e-05 iters = 42 time/iter = 2.440952e-07
+CONGRAD5: time = 3.074141e-01 iters = 42 mflops = 2.657029e+03
+TESTCONG: reduce_time = 1.239777e-05 iters = 42 time/iter = 2.951849e-07
+GFTIME:   time = 1.721345e+00 (Symanzik1) mflops = -1.038810e+03
+FFTIME:  time = 3.182636e+00 mflops = 2.234039e+03
+LLTIME(long): time =  2.623510e-02 (Naik) mflops = 1.126610e+03
+LLTIME(Fat): time = 5.354209e-01 (Asqtad opt) mflops = 1.885953e+03
+LLTIME(long): time =  2.634311e-02 (Naik) mflops = 1.121991e+03
+LLTIME(Fat): time = 5.352061e-01 (Asqtad opt) mflops = 1.886710e+03
+LLTIME(long): time =  2.623081e-02 (Naik) mflops = 1.126795e+03
+LLTIME(Fat): time = 5.351582e-01 (Asqtad opt) mflops = 1.886879e+03
+CONGRAD5: time = 3.073058e-01 iters = 42 mflops = 2.657964e+03
+TESTCONG: reduce_time = 1.192093e-05 iters = 42 time/iter = 2.838316e-07
+CONGRAD5: time = 3.145659e-01 iters = 43 mflops = 2.658444e+03
+TESTCONG: reduce_time = 1.668930e-05 iters = 43 time/iter = 3.881233e-07
+GFTIME:   time = 1.721827e+00 (Symanzik1) mflops = -1.038519e+03
+FFTIME:  time = 3.182850e+00 mflops = 2.233888e+03
+LLTIME(long): time =  2.624798e-02 (Naik) mflops = 1.126058e+03
+LLTIME(Fat): time = 5.352430e-01 (Asqtad opt) mflops = 1.886580e+03
+LLTIME(long): time =  2.633786e-02 (Naik) mflops = 1.122215e+03
+LLTIME(Fat): time = 5.353031e-01 (Asqtad opt) mflops = 1.886368e+03
+LLTIME(long): time =  2.627397e-02 (Naik) mflops = 1.124944e+03
+LLTIME(Fat): time = 5.356560e-01 (Asqtad opt) mflops = 1.885125e+03
+CONGRAD5: time = 3.146191e-01 iters = 43 mflops = 2.657995e+03
+TESTCONG: reduce_time = 9.775162e-06 iters = 43 time/iter = 2.273293e-07
+CONGRAD5: time = 3.145030e-01 iters = 43 mflops = 2.658976e+03
+TESTCONG: reduce_time = 5.006790e-06 iters = 43 time/iter = 1.164370e-07
+GFTIME:   time = 1.721760e+00 (Symanzik1) mflops = -1.038559e+03
+FFTIME:  time = 3.181411e+00 mflops = 2.234899e+03
+PLAQ:	2.728658	2.728632
+P_LOOP:	2.015115e+00	-8.904692e-03
+LLTIME(long): time =  2.621293e-02 (Naik) mflops = 1.127563e+03
+LLTIME(Fat): time = 5.343599e-01 (Asqtad opt) mflops = 1.889698e+03
+CONGRAD5: time = 2.852380e-01 iters = 39 mflops = 2.659058e+03
+TESTCONG: reduce_time = 5.960464e-06 iters = 39 time/iter = 1.528324e-07
+PBP: mass 1.000000e-02     5.909385e-03  4.715598e-03  1.207033e-03  1.188714e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.510268e+00 ( 1 of 1 )
+CONGRAD5: time = 2.851889e-01 iters = 39 mflops = 2.659516e+03
+TESTCONG: reduce_time = 1.430511e-05 iters = 39 time/iter = 3.667978e-07
+PBP: mass 1.000000e-02     5.793783e-03  4.912961e-03  -8.240791e-03  -8.208900e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.494302e+00 ( 1 of 1 )
+RUNNING COMPLETED
+average cg iters for step= 8.150000e+01
+total_iters = 972
+NERSC_TIME   76.646 secs
+
+
+exit: Sun Oct 23 17:27:27 2011
+
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+
+PerfExpert: Program execution #2 of 5
+TACC: Starting up job 108648
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+SU3 with improved KS action
+Microcanonical simulation with refreshing
+MIMD version 6
+Machine = Scalar processor, with 1 nodes
+R algorithm
+type 0 for no prompts  or 1 for prompts
+nflavors1 4
+nflavors2 4
+nx 8
+ny 8
+nz 16
+nt 16
+iseed 5682304
+LAYOUT = Hypercubes, options = EVENFIRST,
+ON EACH NODE 8 x 8 x 16 x 16
+Mallocing 18.5 MBytes per node for lattice
+Made lattice
+Made nn gathers
+Made 3nn gathers
+Finished setup
+
+
+warms 0
+trajecs 2
+traj_between_meas 1
+beta 5.6
+mass1 0.01
+mass2 0.01
+u0 0.8441
+microcanonical_time_step 0.02
+steps_per_trajectory 5
+max_cg_iterations 200
+error_per_site 1e-05
+error_for_propagator 0.0001
+fresh 
+forget 
+unit gauge configuration loaded
+CHECK PLAQ: 3.000000e+00 3.000000e+00
+Unitarity checked.  Max deviation 0.00e+00
+Time to check unitarity = 4.285097e-03
+Symanzik 1x1 + 1x2 + 1x1x1 action
+loop coefficients: nloop rep loop_coeff  multiplicity
+                    0 0      1.000000e+00     6
+                    1 0      -7.762509e-02     12
+                    2 0      -1.031171e-02     16
+"O(a^2): couplings(pi)=0, Naik term, No O(a^2) errors, tadpole weights"
+path coefficients: npath  path_coeff  multiplicity
+                    0      6.250000e-01     8
+                    1      -5.847914e-02     8
+                    2      -8.771871e-02     48
+                    3      3.077829e-02     192
+                    4      -7.199551e-03     384
+                    5      -1.231132e-01     48
+WARMUPS COMPLETED
+LLTIME(long): time =  3.344607e-02 (Naik) mflops = 8.837132e+02
+LLTIME(Fat): time = 6.411350e-01 (Asqtad opt) mflops = 1.574986e+03
+LLTIME(long): time =  2.969098e-02 (Naik) mflops = 9.954786e+02
+LLTIME(Fat): time = 6.179039e-01 (Asqtad opt) mflops = 1.634200e+03
+LLTIME(long): time =  3.023410e-02 (Naik) mflops = 9.775961e+02
+LLTIME(Fat): time = 6.170290e-01 (Asqtad opt) mflops = 1.636518e+03
+CONGRAD5: time = 3.367860e-01 iters = 39 mflops = 2.252066e+03
+TESTCONG: reduce_time = 9.298325e-06 iters = 39 time/iter = 2.384186e-07
+CONGRAD5: time = 3.088121e-01 iters = 36 mflops = 2.267142e+03
+TESTCONG: reduce_time = 6.914139e-06 iters = 36 time/iter = 1.920594e-07
+GFTIME:   time = 1.993613e+00 (Symanzik1) mflops = -8.969394e+02
+FFTIME:  time = 3.678829e+00 mflops = 1.932716e+03
+LLTIME(long): time =  2.969003e-02 (Naik) mflops = 9.955106e+02
+LLTIME(Fat): time = 6.048012e-01 (Asqtad opt) mflops = 1.669604e+03
+LLTIME(long): time =  2.966380e-02 (Naik) mflops = 9.963907e+02
+LLTIME(Fat): time = 6.293728e-01 (Asqtad opt) mflops = 1.604421e+03
+LLTIME(long): time =  2.982211e-02 (Naik) mflops = 9.911014e+02
+LLTIME(Fat): time = 6.280482e-01 (Asqtad opt) mflops = 1.607804e+03
+CONGRAD5: time = 3.218870e-01 iters = 39 mflops = 2.356307e+03
+TESTCONG: reduce_time = 1.287460e-05 iters = 39 time/iter = 3.301180e-07
+CONGRAD5: time = 3.220780e-01 iters = 39 mflops = 2.354909e+03
+TESTCONG: reduce_time = 9.059906e-06 iters = 39 time/iter = 2.323053e-07
+GFTIME:   time = 1.968966e+00 (Symanzik1) mflops = -9.081669e+02
+FFTIME:  time = 3.168765e+00 mflops = 2.243818e+03
+LLTIME(long): time =  2.613807e-02 (Naik) mflops = 1.130793e+03
+LLTIME(Fat): time = 5.331950e-01 (Asqtad opt) mflops = 1.893826e+03
+LLTIME(long): time =  2.611399e-02 (Naik) mflops = 1.131835e+03
+LLTIME(Fat): time = 5.332370e-01 (Asqtad opt) mflops = 1.893677e+03
+LLTIME(long): time =  2.613592e-02 (Naik) mflops = 1.130886e+03
+LLTIME(Fat): time = 5.331619e-01 (Asqtad opt) mflops = 1.893944e+03
+CONGRAD5: time = 2.913699e-01 iters = 40 mflops = 2.669844e+03
+TESTCONG: reduce_time = 1.120567e-05 iters = 40 time/iter = 2.801418e-07
+CONGRAD5: time = 2.913380e-01 iters = 40 mflops = 2.670137e+03
+TESTCONG: reduce_time = 1.263618e-05 iters = 40 time/iter = 3.159046e-07
+GFTIME:   time = 1.710940e+00 (Symanzik1) mflops = -1.045127e+03
+FFTIME:  time = 3.168710e+00 mflops = 2.243857e+03
+LLTIME(long): time =  2.611399e-02 (Naik) mflops = 1.131835e+03
+LLTIME(Fat): time = 5.333779e-01 (Asqtad opt) mflops = 1.893177e+03
+LLTIME(long): time =  2.612400e-02 (Naik) mflops = 1.131402e+03
+LLTIME(Fat): time = 5.331020e-01 (Asqtad opt) mflops = 1.894157e+03
+LLTIME(long): time =  2.615309e-02 (Naik) mflops = 1.130143e+03
+LLTIME(Fat): time = 5.326509e-01 (Asqtad opt) mflops = 1.895761e+03
+CONGRAD5: time = 2.914600e-01 iters = 40 mflops = 2.669019e+03
+TESTCONG: reduce_time = 6.914139e-06 iters = 40 time/iter = 1.728535e-07
+CONGRAD5: time = 2.912331e-01 iters = 40 mflops = 2.671099e+03
+TESTCONG: reduce_time = 1.049042e-05 iters = 40 time/iter = 2.622604e-07
+GFTIME:   time = 1.710771e+00 (Symanzik1) mflops = -1.045230e+03
+FFTIME:  time = 3.168409e+00 mflops = 2.244070e+03
+LLTIME(long): time =  2.599096e-02 (Naik) mflops = 1.137193e+03
+LLTIME(Fat): time = 5.334511e-01 (Asqtad opt) mflops = 1.892917e+03
+LLTIME(long): time =  2.606511e-02 (Naik) mflops = 1.133958e+03
+LLTIME(Fat): time = 5.333130e-01 (Asqtad opt) mflops = 1.893407e+03
+LLTIME(long): time =  2.609897e-02 (Naik) mflops = 1.132487e+03
+LLTIME(Fat): time = 5.332680e-01 (Asqtad opt) mflops = 1.893567e+03
+CONGRAD5: time = 2.983711e-01 iters = 41 mflops = 2.672377e+03
+TESTCONG: reduce_time = 1.430511e-05 iters = 41 time/iter = 3.489052e-07
+CONGRAD5: time = 2.986341e-01 iters = 41 mflops = 2.670024e+03
+TESTCONG: reduce_time = 7.152557e-06 iters = 41 time/iter = 1.744526e-07
+GFTIME:   time = 1.711114e+00 (Symanzik1) mflops = -1.045021e+03
+FFTIME:  time = 3.168860e+00 mflops = 2.243751e+03
+PLAQ:	2.851605	2.851636
+P_LOOP:	2.438382e+00	-6.110910e-04
+LLTIME(long): time =  2.620888e-02 (Naik) mflops = 1.127738e+03
+LLTIME(Fat): time = 5.328982e-01 (Asqtad opt) mflops = 1.894881e+03
+CONGRAD5: time = 2.766740e-01 iters = 38 mflops = 2.671074e+03
+TESTCONG: reduce_time = 7.867813e-06 iters = 38 time/iter = 2.070477e-07
+PBP: mass 1.000000e-02     1.098148e-02  -1.056381e-03  -4.110835e-03  -4.047673e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.491269e+00 ( 1 of 1 )
+CONGRAD5: time = 2.765532e-01 iters = 38 mflops = 2.672241e+03
+TESTCONG: reduce_time = 9.775162e-06 iters = 38 time/iter = 2.572411e-07
+PBP: mass 1.000000e-02     4.027176e-03  5.938651e-03  3.706708e-03  3.640591e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500073e+00 ( 1 of 1 )
+LLTIME(long): time =  2.606106e-02 (Naik) mflops = 1.134134e+03
+LLTIME(Fat): time = 5.331819e-01 (Asqtad opt) mflops = 1.893873e+03
+LLTIME(long): time =  2.607083e-02 (Naik) mflops = 1.133709e+03
+LLTIME(Fat): time = 5.331860e-01 (Asqtad opt) mflops = 1.893858e+03
+LLTIME(long): time =  2.614212e-02 (Naik) mflops = 1.130617e+03
+LLTIME(Fat): time = 5.331271e-01 (Asqtad opt) mflops = 1.894068e+03
+CONGRAD5: time = 3.058360e-01 iters = 42 mflops = 2.670739e+03
+TESTCONG: reduce_time = 1.668930e-05 iters = 42 time/iter = 3.973643e-07
+CONGRAD5: time = 3.056419e-01 iters = 42 mflops = 2.672435e+03
+TESTCONG: reduce_time = 1.192093e-05 iters = 42 time/iter = 2.838316e-07
+GFTIME:   time = 1.710539e+00 (Symanzik1) mflops = -1.045372e+03
+FFTIME:  time = 3.168073e+00 mflops = 2.244308e+03
+LLTIME(long): time =  2.608490e-02 (Naik) mflops = 1.133098e+03
+LLTIME(Fat): time = 5.331759e-01 (Asqtad opt) mflops = 1.893894e+03
+LLTIME(long): time =  2.606511e-02 (Naik) mflops = 1.133958e+03
+LLTIME(Fat): time = 5.331879e-01 (Asqtad opt) mflops = 1.893852e+03
+LLTIME(long): time =  2.610397e-02 (Naik) mflops = 1.132270e+03
+LLTIME(Fat): time = 5.328550e-01 (Asqtad opt) mflops = 1.895035e+03
+CONGRAD5: time = 3.060942e-01 iters = 42 mflops = 2.668486e+03
+TESTCONG: reduce_time = 1.192093e-05 iters = 42 time/iter = 2.838316e-07
+CONGRAD5: time = 3.058190e-01 iters = 42 mflops = 2.670887e+03
+TESTCONG: reduce_time = 1.072884e-05 iters = 42 time/iter = 2.554485e-07
+GFTIME:   time = 1.711368e+00 (Symanzik1) mflops = -1.044866e+03
+FFTIME:  time = 3.166803e+00 mflops = 2.245208e+03
+LLTIME(long): time =  2.602100e-02 (Naik) mflops = 1.135880e+03
+LLTIME(Fat): time = 5.332000e-01 (Asqtad opt) mflops = 1.893808e+03
+LLTIME(long): time =  2.615309e-02 (Naik) mflops = 1.130143e+03
+LLTIME(Fat): time = 5.331681e-01 (Asqtad opt) mflops = 1.893922e+03
+LLTIME(long): time =  2.612782e-02 (Naik) mflops = 1.131236e+03
+LLTIME(Fat): time = 5.330081e-01 (Asqtad opt) mflops = 1.894490e+03
+CONGRAD5: time = 3.058429e-01 iters = 42 mflops = 2.670678e+03
+TESTCONG: reduce_time = 1.001358e-05 iters = 42 time/iter = 2.384186e-07
+CONGRAD5: time = 3.057940e-01 iters = 42 mflops = 2.671105e+03
+TESTCONG: reduce_time = 5.722046e-06 iters = 42 time/iter = 1.362392e-07
+GFTIME:   time = 1.710939e+00 (Symanzik1) mflops = -1.045128e+03
+FFTIME:  time = 3.167919e+00 mflops = 2.244417e+03
+LLTIME(long): time =  2.612400e-02 (Naik) mflops = 1.131402e+03
+LLTIME(Fat): time = 5.329502e-01 (Asqtad opt) mflops = 1.894696e+03
+LLTIME(long): time =  2.610588e-02 (Naik) mflops = 1.132187e+03
+LLTIME(Fat): time = 5.331950e-01 (Asqtad opt) mflops = 1.893826e+03
+LLTIME(long): time =  2.609396e-02 (Naik) mflops = 1.132704e+03
+LLTIME(Fat): time = 5.337808e-01 (Asqtad opt) mflops = 1.891748e+03
+CONGRAD5: time = 3.056939e-01 iters = 42 mflops = 2.671980e+03
+TESTCONG: reduce_time = 1.001358e-05 iters = 42 time/iter = 2.384186e-07
+CONGRAD5: time = 3.130379e-01 iters = 43 mflops = 2.671420e+03
+TESTCONG: reduce_time = 8.821487e-06 iters = 43 time/iter = 2.051509e-07
+GFTIME:   time = 1.710990e+00 (Symanzik1) mflops = -1.045097e+03
+FFTIME:  time = 3.169553e+00 mflops = 2.243260e+03
+LLTIME(long): time =  2.609205e-02 (Naik) mflops = 1.132787e+03
+LLTIME(Fat): time = 5.334220e-01 (Asqtad opt) mflops = 1.893020e+03
+LLTIME(long): time =  2.614498e-02 (Naik) mflops = 1.130494e+03
+LLTIME(Fat): time = 5.330460e-01 (Asqtad opt) mflops = 1.894356e+03
+LLTIME(long): time =  2.619195e-02 (Naik) mflops = 1.128466e+03
+LLTIME(Fat): time = 5.329702e-01 (Asqtad opt) mflops = 1.894625e+03
+CONGRAD5: time = 3.131428e-01 iters = 43 mflops = 2.670525e+03
+TESTCONG: reduce_time = 1.645088e-05 iters = 43 time/iter = 3.825787e-07
+CONGRAD5: time = 3.129470e-01 iters = 43 mflops = 2.672196e+03
+TESTCONG: reduce_time = 1.430511e-05 iters = 43 time/iter = 3.326771e-07
+GFTIME:   time = 1.711771e+00 (Symanzik1) mflops = -1.044620e+03
+FFTIME:  time = 3.169064e+00 mflops = 2.243606e+03
+PLAQ:	2.728658	2.728632
+P_LOOP:	2.015115e+00	-8.904692e-03
+LLTIME(long): time =  2.605510e-02 (Naik) mflops = 1.134394e+03
+LLTIME(Fat): time = 5.326738e-01 (Asqtad opt) mflops = 1.895679e+03
+CONGRAD5: time = 2.838509e-01 iters = 39 mflops = 2.672052e+03
+TESTCONG: reduce_time = 1.001358e-05 iters = 39 time/iter = 2.567585e-07
+PBP: mass 1.000000e-02     5.909385e-03  4.715598e-03  1.207033e-03  1.188714e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.510268e+00 ( 1 of 1 )
+CONGRAD5: time = 2.839530e-01 iters = 39 mflops = 2.671092e+03
+TESTCONG: reduce_time = 1.025200e-05 iters = 39 time/iter = 2.628718e-07
+PBP: mass 1.000000e-02     5.793783e-03  4.912961e-03  -8.240791e-03  -8.208900e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.494302e+00 ( 1 of 1 )
+RUNNING COMPLETED
+average cg iters for step= 8.150000e+01
+total_iters = 972
+NERSC_TIME   77.989 secs
+
+
+exit: Sun Oct 23 17:28:47 2011
+
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+
+PerfExpert: Program execution #3 of 5
+TACC: Starting up job 108648
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+SU3 with improved KS action
+Microcanonical simulation with refreshing
+MIMD version 6
+Machine = Scalar processor, with 1 nodes
+R algorithm
+type 0 for no prompts  or 1 for prompts
+nflavors1 4
+nflavors2 4
+nx 8
+ny 8
+nz 16
+nt 16
+iseed 5682304
+LAYOUT = Hypercubes, options = EVENFIRST,
+ON EACH NODE 8 x 8 x 16 x 16
+Mallocing 18.5 MBytes per node for lattice
+Made lattice
+Made nn gathers
+Made 3nn gathers
+Finished setup
+
+
+warms 0
+trajecs 2
+traj_between_meas 1
+beta 5.6
+mass1 0.01
+mass2 0.01
+u0 0.8441
+microcanonical_time_step 0.02
+steps_per_trajectory 5
+max_cg_iterations 200
+error_per_site 1e-05
+error_for_propagator 0.0001
+fresh 
+forget 
+unit gauge configuration loaded
+CHECK PLAQ: 3.000000e+00 3.000000e+00
+Unitarity checked.  Max deviation 0.00e+00
+Time to check unitarity = 4.607201e-03
+Symanzik 1x1 + 1x2 + 1x1x1 action
+loop coefficients: nloop rep loop_coeff  multiplicity
+                    0 0      1.000000e+00     6
+                    1 0      -7.762509e-02     12
+                    2 0      -1.031171e-02     16
+"O(a^2): couplings(pi)=0, Naik term, No O(a^2) errors, tadpole weights"
+path coefficients: npath  path_coeff  multiplicity
+                    0      6.250000e-01     8
+                    1      -5.847914e-02     8
+                    2      -8.771871e-02     48
+                    3      3.077829e-02     192
+                    4      -7.199551e-03     384
+                    5      -1.231132e-01     48
+WARMUPS COMPLETED
+LLTIME(long): time =  3.452897e-02 (Naik) mflops = 8.559982e+02
+LLTIME(Fat): time = 6.579502e-01 (Asqtad opt) mflops = 1.534734e+03
+LLTIME(long): time =  3.043890e-02 (Naik) mflops = 9.710185e+02
+LLTIME(Fat): time = 6.579030e-01 (Asqtad opt) mflops = 1.534844e+03
+LLTIME(long): time =  3.143620e-02 (Naik) mflops = 9.402132e+02
+LLTIME(Fat): time = 6.579478e-01 (Asqtad opt) mflops = 1.534740e+03
+CONGRAD5: time = 3.515038e-01 iters = 39 mflops = 2.157770e+03
+TESTCONG: reduce_time = 1.597404e-05 iters = 39 time/iter = 4.095909e-07
+CONGRAD5: time = 3.214982e-01 iters = 36 mflops = 2.177683e+03
+TESTCONG: reduce_time = 1.335144e-05 iters = 36 time/iter = 3.708733e-07
+GFTIME:   time = 2.082928e+00 (Symanzik1) mflops = -8.584789e+02
+FFTIME:  time = 3.902355e+00 mflops = 1.822011e+03
+LLTIME(long): time =  3.065109e-02 (Naik) mflops = 9.642963e+02
+LLTIME(Fat): time = 6.473610e-01 (Asqtad opt) mflops = 1.559839e+03
+LLTIME(long): time =  3.055406e-02 (Naik) mflops = 9.673588e+02
+LLTIME(Fat): time = 6.589110e-01 (Asqtad opt) mflops = 1.532496e+03
+LLTIME(long): time =  3.150415e-02 (Naik) mflops = 9.381854e+02
+LLTIME(Fat): time = 6.472700e-01 (Asqtad opt) mflops = 1.560058e+03
+CONGRAD5: time = 3.600318e-01 iters = 39 mflops = 2.106660e+03
+TESTCONG: reduce_time = 1.192093e-05 iters = 39 time/iter = 3.056648e-07
+CONGRAD5: time = 3.485570e-01 iters = 39 mflops = 2.176013e+03
+TESTCONG: reduce_time = 8.106232e-06 iters = 39 time/iter = 2.078521e-07
+GFTIME:   time = 2.072040e+00 (Symanzik1) mflops = -8.629899e+02
+FFTIME:  time = 3.880657e+00 mflops = 1.832198e+03
+LLTIME(long): time =  2.761579e-02 (Naik) mflops = 1.070284e+03
+LLTIME(Fat): time = 5.653012e-01 (Asqtad opt) mflops = 1.786267e+03
+LLTIME(long): time =  2.706003e-02 (Naik) mflops = 1.092265e+03
+LLTIME(Fat): time = 5.615840e-01 (Asqtad opt) mflops = 1.798090e+03
+LLTIME(long): time =  2.702498e-02 (Naik) mflops = 1.093682e+03
+LLTIME(Fat): time = 5.608709e-01 (Asqtad opt) mflops = 1.800376e+03
+CONGRAD5: time = 3.160641e-01 iters = 40 mflops = 2.461248e+03
+TESTCONG: reduce_time = 1.406670e-05 iters = 40 time/iter = 3.516674e-07
+CONGRAD5: time = 3.156362e-01 iters = 40 mflops = 2.464586e+03
+TESTCONG: reduce_time = 5.960464e-06 iters = 40 time/iter = 1.490116e-07
+GFTIME:   time = 1.782294e+00 (Symanzik1) mflops = -1.003285e+03
+FFTIME:  time = 3.370699e+00 mflops = 2.109394e+03
+LLTIME(long): time =  2.702117e-02 (Naik) mflops = 1.093836e+03
+LLTIME(Fat): time = 5.612340e-01 (Asqtad opt) mflops = 1.799212e+03
+LLTIME(long): time =  2.701688e-02 (Naik) mflops = 1.094010e+03
+LLTIME(Fat): time = 5.616601e-01 (Asqtad opt) mflops = 1.797847e+03
+LLTIME(long): time =  2.704906e-02 (Naik) mflops = 1.092708e+03
+LLTIME(Fat): time = 5.612359e-01 (Asqtad opt) mflops = 1.799205e+03
+CONGRAD5: time = 3.156099e-01 iters = 40 mflops = 2.464790e+03
+TESTCONG: reduce_time = 1.025200e-05 iters = 40 time/iter = 2.563000e-07
+CONGRAD5: time = 3.156259e-01 iters = 40 mflops = 2.464666e+03
+TESTCONG: reduce_time = 1.311302e-05 iters = 40 time/iter = 3.278255e-07
+GFTIME:   time = 1.783188e+00 (Symanzik1) mflops = -1.002782e+03
+FFTIME:  time = 3.371923e+00 mflops = 2.108628e+03
+LLTIME(long): time =  2.697182e-02 (Naik) mflops = 1.095838e+03
+LLTIME(Fat): time = 5.618570e-01 (Asqtad opt) mflops = 1.797217e+03
+LLTIME(long): time =  2.703595e-02 (Naik) mflops = 1.093238e+03
+LLTIME(Fat): time = 5.615389e-01 (Asqtad opt) mflops = 1.798235e+03
+LLTIME(long): time =  2.703691e-02 (Naik) mflops = 1.093200e+03
+LLTIME(Fat): time = 5.612681e-01 (Asqtad opt) mflops = 1.799102e+03
+CONGRAD5: time = 3.236330e-01 iters = 41 mflops = 2.463779e+03
+TESTCONG: reduce_time = 9.298325e-06 iters = 41 time/iter = 2.267884e-07
+CONGRAD5: time = 3.235061e-01 iters = 41 mflops = 2.464745e+03
+TESTCONG: reduce_time = 2.121925e-05 iters = 41 time/iter = 5.175428e-07
+GFTIME:   time = 1.783834e+00 (Symanzik1) mflops = -1.002419e+03
+FFTIME:  time = 3.373917e+00 mflops = 2.107382e+03
+PLAQ:	2.851605	2.851636
+P_LOOP:	2.438382e+00	-6.110910e-04
+LLTIME(long): time =  2.707911e-02 (Naik) mflops = 1.091496e+03
+LLTIME(Fat): time = 5.585420e-01 (Asqtad opt) mflops = 1.807883e+03
+CONGRAD5: time = 2.995331e-01 iters = 38 mflops = 2.467229e+03
+TESTCONG: reduce_time = 9.059906e-06 iters = 38 time/iter = 2.384186e-07
+PBP: mass 1.000000e-02     1.098148e-02  -1.056381e-03  -4.110835e-03  -4.047673e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.491269e+00 ( 1 of 1 )
+CONGRAD5: time = 2.996418e-01 iters = 38 mflops = 2.466333e+03
+TESTCONG: reduce_time = 9.059906e-06 iters = 38 time/iter = 2.384186e-07
+PBP: mass 1.000000e-02     4.027176e-03  5.938651e-03  3.706708e-03  3.640591e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500073e+00 ( 1 of 1 )
+LLTIME(long): time =  2.708411e-02 (Naik) mflops = 1.091294e+03
+LLTIME(Fat): time = 5.622270e-01 (Asqtad opt) mflops = 1.796034e+03
+LLTIME(long): time =  2.700591e-02 (Naik) mflops = 1.094454e+03
+LLTIME(Fat): time = 5.618701e-01 (Asqtad opt) mflops = 1.797175e+03
+LLTIME(long): time =  2.709603e-02 (Naik) mflops = 1.090814e+03
+LLTIME(Fat): time = 5.618119e-01 (Asqtad opt) mflops = 1.797361e+03
+CONGRAD5: time = 3.316970e-01 iters = 42 mflops = 2.462512e+03
+TESTCONG: reduce_time = 1.358986e-05 iters = 42 time/iter = 3.235681e-07
+CONGRAD5: time = 3.316381e-01 iters = 42 mflops = 2.462950e+03
+TESTCONG: reduce_time = 6.198883e-06 iters = 42 time/iter = 1.475925e-07
+GFTIME:   time = 1.783052e+00 (Symanzik1) mflops = -1.002859e+03
+FFTIME:  time = 3.375851e+00 mflops = 2.106175e+03
+LLTIME(long): time =  2.703500e-02 (Naik) mflops = 1.093277e+03
+LLTIME(Fat): time = 5.619762e-01 (Asqtad opt) mflops = 1.796835e+03
+LLTIME(long): time =  2.710700e-02 (Naik) mflops = 1.090373e+03
+LLTIME(Fat): time = 5.620692e-01 (Asqtad opt) mflops = 1.796538e+03
+LLTIME(long): time =  2.706409e-02 (Naik) mflops = 1.092102e+03
+LLTIME(Fat): time = 5.618510e-01 (Asqtad opt) mflops = 1.797236e+03
+CONGRAD5: time = 3.316801e-01 iters = 42 mflops = 2.462638e+03
+TESTCONG: reduce_time = 1.382828e-05 iters = 42 time/iter = 3.292447e-07
+CONGRAD5: time = 3.314879e-01 iters = 42 mflops = 2.464066e+03
+TESTCONG: reduce_time = 1.502037e-05 iters = 42 time/iter = 3.576279e-07
+GFTIME:   time = 1.784477e+00 (Symanzik1) mflops = -1.002058e+03
+FFTIME:  time = 3.377792e+00 mflops = 2.104964e+03
+LLTIME(long): time =  2.702188e-02 (Naik) mflops = 1.093807e+03
+LLTIME(Fat): time = 5.632720e-01 (Asqtad opt) mflops = 1.792702e+03
+LLTIME(long): time =  2.709389e-02 (Naik) mflops = 1.090901e+03
+LLTIME(Fat): time = 5.627892e-01 (Asqtad opt) mflops = 1.794240e+03
+LLTIME(long): time =  2.705216e-02 (Naik) mflops = 1.092583e+03
+LLTIME(Fat): time = 5.623121e-01 (Asqtad opt) mflops = 1.795762e+03
+CONGRAD5: time = 3.319969e-01 iters = 42 mflops = 2.460288e+03
+TESTCONG: reduce_time = 7.867813e-06 iters = 42 time/iter = 1.873289e-07
+CONGRAD5: time = 3.321102e-01 iters = 42 mflops = 2.459449e+03
+TESTCONG: reduce_time = 1.430511e-05 iters = 42 time/iter = 3.405980e-07
+GFTIME:   time = 1.784070e+00 (Symanzik1) mflops = -1.002287e+03
+FFTIME:  time = 3.380610e+00 mflops = 2.103210e+03
+LLTIME(long): time =  2.703786e-02 (Naik) mflops = 1.093161e+03
+LLTIME(Fat): time = 5.630841e-01 (Asqtad opt) mflops = 1.793300e+03
+LLTIME(long): time =  2.708602e-02 (Naik) mflops = 1.091217e+03
+LLTIME(Fat): time = 5.628438e-01 (Asqtad opt) mflops = 1.794066e+03
+LLTIME(long): time =  2.710795e-02 (Naik) mflops = 1.090334e+03
+LLTIME(Fat): time = 5.624230e-01 (Asqtad opt) mflops = 1.795408e+03
+CONGRAD5: time = 3.321040e-01 iters = 42 mflops = 2.459495e+03
+TESTCONG: reduce_time = 1.263618e-05 iters = 42 time/iter = 3.008615e-07
+CONGRAD5: time = 3.401129e-01 iters = 43 mflops = 2.458759e+03
+TESTCONG: reduce_time = 1.716614e-05 iters = 43 time/iter = 3.992125e-07
+GFTIME:   time = 1.785910e+00 (Symanzik1) mflops = -1.001254e+03
+FFTIME:  time = 3.381028e+00 mflops = 2.102950e+03
+LLTIME(long): time =  2.706409e-02 (Naik) mflops = 1.092102e+03
+LLTIME(Fat): time = 5.626481e-01 (Asqtad opt) mflops = 1.794690e+03
+LLTIME(long): time =  2.710605e-02 (Naik) mflops = 1.090411e+03
+LLTIME(Fat): time = 5.627699e-01 (Asqtad opt) mflops = 1.794301e+03
+LLTIME(long): time =  2.708697e-02 (Naik) mflops = 1.091179e+03
+LLTIME(Fat): time = 5.626390e-01 (Asqtad opt) mflops = 1.794719e+03
+CONGRAD5: time = 3.401141e-01 iters = 43 mflops = 2.458750e+03
+TESTCONG: reduce_time = 1.192093e-05 iters = 43 time/iter = 2.772309e-07
+CONGRAD5: time = 3.401358e-01 iters = 43 mflops = 2.458594e+03
+TESTCONG: reduce_time = 1.358986e-05 iters = 43 time/iter = 3.160432e-07
+GFTIME:   time = 1.784651e+00 (Symanzik1) mflops = -1.001960e+03
+FFTIME:  time = 3.378859e+00 mflops = 2.104300e+03
+PLAQ:	2.728658	2.728632
+P_LOOP:	2.015115e+00	-8.904692e-03
+LLTIME(long): time =  2.695799e-02 (Naik) mflops = 1.096400e+03
+LLTIME(Fat): time = 5.601890e-01 (Asqtad opt) mflops = 1.802568e+03
+CONGRAD5: time = 3.083961e-01 iters = 39 mflops = 2.459384e+03
+TESTCONG: reduce_time = 7.152557e-06 iters = 39 time/iter = 1.833989e-07
+PBP: mass 1.000000e-02     5.909385e-03  4.715598e-03  1.207033e-03  1.188714e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.510268e+00 ( 1 of 1 )
+CONGRAD5: time = 3.084922e-01 iters = 39 mflops = 2.458618e+03
+TESTCONG: reduce_time = 1.740456e-05 iters = 39 time/iter = 4.462707e-07
+PBP: mass 1.000000e-02     5.793783e-03  4.912961e-03  -8.240791e-03  -8.208900e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.494302e+00 ( 1 of 1 )
+RUNNING COMPLETED
+average cg iters for step= 8.150000e+01
+total_iters = 972
+NERSC_TIME   83.068 secs
+
+
+exit: Sun Oct 23 17:30:11 2011
+
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+
+PerfExpert: Program execution #4 of 5
+TACC: Starting up job 108648
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+SU3 with improved KS action
+Microcanonical simulation with refreshing
+MIMD version 6
+Machine = Scalar processor, with 1 nodes
+R algorithm
+type 0 for no prompts  or 1 for prompts
+nflavors1 4
+nflavors2 4
+nx 8
+ny 8
+nz 16
+nt 16
+iseed 5682304
+LAYOUT = Hypercubes, options = EVENFIRST,
+ON EACH NODE 8 x 8 x 16 x 16
+Mallocing 18.5 MBytes per node for lattice
+Made lattice
+Made nn gathers
+Made 3nn gathers
+Finished setup
+
+
+warms 0
+trajecs 2
+traj_between_meas 1
+beta 5.6
+mass1 0.01
+mass2 0.01
+u0 0.8441
+microcanonical_time_step 0.02
+steps_per_trajectory 5
+max_cg_iterations 200
+error_per_site 1e-05
+error_for_propagator 0.0001
+fresh 
+forget 
+unit gauge configuration loaded
+CHECK PLAQ: 3.000000e+00 3.000000e+00
+Unitarity checked.  Max deviation 0.00e+00
+Time to check unitarity = 4.289865e-03
+Symanzik 1x1 + 1x2 + 1x1x1 action
+loop coefficients: nloop rep loop_coeff  multiplicity
+                    0 0      1.000000e+00     6
+                    1 0      -7.762509e-02     12
+                    2 0      -1.031171e-02     16
+"O(a^2): couplings(pi)=0, Naik term, No O(a^2) errors, tadpole weights"
+path coefficients: npath  path_coeff  multiplicity
+                    0      6.250000e-01     8
+                    1      -5.847914e-02     8
+                    2      -8.771871e-02     48
+                    3      3.077829e-02     192
+                    4      -7.199551e-03     384
+                    5      -1.231132e-01     48
+WARMUPS COMPLETED
+LLTIME(long): time =  3.385210e-02 (Naik) mflops = 8.731138e+02
+LLTIME(Fat): time = 6.407461e-01 (Asqtad opt) mflops = 1.575942e+03
+LLTIME(long): time =  2.992010e-02 (Naik) mflops = 9.878555e+02
+LLTIME(Fat): time = 6.053820e-01 (Asqtad opt) mflops = 1.668003e+03
+LLTIME(long): time =  3.045607e-02 (Naik) mflops = 9.704712e+02
+LLTIME(Fat): time = 6.167011e-01 (Asqtad opt) mflops = 1.637387e+03
+CONGRAD5: time = 3.252258e-01 iters = 39 mflops = 2.332116e+03
+TESTCONG: reduce_time = 1.597404e-05 iters = 39 time/iter = 4.095909e-07
+CONGRAD5: time = 3.207300e-01 iters = 36 mflops = 2.182899e+03
+TESTCONG: reduce_time = 1.215935e-05 iters = 36 time/iter = 3.377597e-07
+GFTIME:   time = 1.994478e+00 (Symanzik1) mflops = -8.965503e+02
+FFTIME:  time = 3.667719e+00 mflops = 1.938570e+03
+LLTIME(long): time =  2.991915e-02 (Naik) mflops = 9.878870e+02
+LLTIME(Fat): time = 6.168041e-01 (Asqtad opt) mflops = 1.637114e+03
+LLTIME(long): time =  2.993107e-02 (Naik) mflops = 9.874935e+02
+LLTIME(Fat): time = 5.695019e-01 (Asqtad opt) mflops = 1.773091e+03
+LLTIME(long): time =  2.638984e-02 (Naik) mflops = 1.120004e+03
+LLTIME(Fat): time = 5.334969e-01 (Asqtad opt) mflops = 1.892755e+03
+CONGRAD5: time = 2.845011e-01 iters = 39 mflops = 2.665946e+03
+TESTCONG: reduce_time = 1.263618e-05 iters = 39 time/iter = 3.240047e-07
+CONGRAD5: time = 2.843921e-01 iters = 39 mflops = 2.666967e+03
+TESTCONG: reduce_time = 6.675720e-06 iters = 39 time/iter = 1.711723e-07
+GFTIME:   time = 1.711821e+00 (Symanzik1) mflops = -1.044589e+03
+FFTIME:  time = 3.167599e+00 mflops = 2.244644e+03
+LLTIME(long): time =  2.632499e-02 (Naik) mflops = 1.122764e+03
+LLTIME(Fat): time = 5.321879e-01 (Asqtad opt) mflops = 1.897410e+03
+LLTIME(long): time =  2.636385e-02 (Naik) mflops = 1.121109e+03
+LLTIME(Fat): time = 5.325880e-01 (Asqtad opt) mflops = 1.895985e+03
+LLTIME(long): time =  2.637696e-02 (Naik) mflops = 1.120551e+03
+LLTIME(Fat): time = 5.325570e-01 (Asqtad opt) mflops = 1.896095e+03
+CONGRAD5: time = 2.918150e-01 iters = 40 mflops = 2.665772e+03
+TESTCONG: reduce_time = 9.775162e-06 iters = 40 time/iter = 2.443790e-07
+CONGRAD5: time = 2.917478e-01 iters = 40 mflops = 2.666386e+03
+TESTCONG: reduce_time = 1.120567e-05 iters = 40 time/iter = 2.801418e-07
+GFTIME:   time = 1.710992e+00 (Symanzik1) mflops = -1.045095e+03
+FFTIME:  time = 3.168902e+00 mflops = 2.243721e+03
+LLTIME(long): time =  2.632093e-02 (Naik) mflops = 1.122936e+03
+LLTIME(Fat): time = 5.332749e-01 (Asqtad opt) mflops = 1.893543e+03
+LLTIME(long): time =  2.638221e-02 (Naik) mflops = 1.120328e+03
+LLTIME(Fat): time = 5.329258e-01 (Asqtad opt) mflops = 1.894783e+03
+LLTIME(long): time =  2.639890e-02 (Naik) mflops = 1.119620e+03
+LLTIME(Fat): time = 5.329740e-01 (Asqtad opt) mflops = 1.894612e+03
+CONGRAD5: time = 2.917480e-01 iters = 40 mflops = 2.666384e+03
+TESTCONG: reduce_time = 1.001358e-05 iters = 40 time/iter = 2.503395e-07
+CONGRAD5: time = 2.917740e-01 iters = 40 mflops = 2.666146e+03
+TESTCONG: reduce_time = 7.629395e-06 iters = 40 time/iter = 1.907349e-07
+GFTIME:   time = 1.711668e+00 (Symanzik1) mflops = -1.044683e+03
+FFTIME:  time = 3.164237e+00 mflops = 2.247029e+03
+LLTIME(long): time =  2.634215e-02 (Naik) mflops = 1.122032e+03
+LLTIME(Fat): time = 5.326729e-01 (Asqtad opt) mflops = 1.895683e+03
+LLTIME(long): time =  2.641296e-02 (Naik) mflops = 1.119024e+03
+LLTIME(Fat): time = 5.326900e-01 (Asqtad opt) mflops = 1.895621e+03
+LLTIME(long): time =  2.642989e-02 (Naik) mflops = 1.118307e+03
+LLTIME(Fat): time = 5.327160e-01 (Asqtad opt) mflops = 1.895529e+03
+CONGRAD5: time = 2.991781e-01 iters = 41 mflops = 2.665169e+03
+TESTCONG: reduce_time = 8.821487e-06 iters = 41 time/iter = 2.151582e-07
+CONGRAD5: time = 2.990191e-01 iters = 41 mflops = 2.666586e+03
+TESTCONG: reduce_time = 1.287460e-05 iters = 41 time/iter = 3.140147e-07
+GFTIME:   time = 1.711533e+00 (Symanzik1) mflops = -1.044765e+03
+FFTIME:  time = 3.168184e+00 mflops = 2.244230e+03
+PLAQ:	2.851605	2.851636
+P_LOOP:	2.438382e+00	-6.110910e-04
+LLTIME(long): time =  2.652192e-02 (Naik) mflops = 1.114427e+03
+LLTIME(Fat): time = 5.328569e-01 (Asqtad opt) mflops = 1.895028e+03
+CONGRAD5: time = 2.771230e-01 iters = 38 mflops = 2.666746e+03
+TESTCONG: reduce_time = 1.001358e-05 iters = 38 time/iter = 2.635153e-07
+PBP: mass 1.000000e-02     1.098148e-02  -1.056381e-03  -4.110835e-03  -4.047673e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.491269e+00 ( 1 of 1 )
+CONGRAD5: time = 2.771230e-01 iters = 38 mflops = 2.666746e+03
+TESTCONG: reduce_time = 1.025200e-05 iters = 38 time/iter = 2.697894e-07
+PBP: mass 1.000000e-02     4.027176e-03  5.938651e-03  3.706708e-03  3.640591e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500073e+00 ( 1 of 1 )
+LLTIME(long): time =  2.637410e-02 (Naik) mflops = 1.120673e+03
+LLTIME(Fat): time = 5.333509e-01 (Asqtad opt) mflops = 1.893273e+03
+LLTIME(long): time =  2.639413e-02 (Naik) mflops = 1.119822e+03
+LLTIME(Fat): time = 5.333200e-01 (Asqtad opt) mflops = 1.893383e+03
+LLTIME(long): time =  2.639198e-02 (Naik) mflops = 1.119913e+03
+LLTIME(Fat): time = 5.329740e-01 (Asqtad opt) mflops = 1.894612e+03
+CONGRAD5: time = 3.063278e-01 iters = 42 mflops = 2.666450e+03
+TESTCONG: reduce_time = 7.867813e-06 iters = 42 time/iter = 1.873289e-07
+CONGRAD5: time = 3.063071e-01 iters = 42 mflops = 2.666631e+03
+TESTCONG: reduce_time = 8.106232e-06 iters = 42 time/iter = 1.930055e-07
+GFTIME:   time = 1.712257e+00 (Symanzik1) mflops = -1.044323e+03
+FFTIME:  time = 3.169338e+00 mflops = 2.243412e+03
+LLTIME(long): time =  2.640820e-02 (Naik) mflops = 1.119226e+03
+LLTIME(Fat): time = 5.328760e-01 (Asqtad opt) mflops = 1.894960e+03
+LLTIME(long): time =  2.641106e-02 (Naik) mflops = 1.119105e+03
+LLTIME(Fat): time = 5.337930e-01 (Asqtad opt) mflops = 1.891705e+03
+LLTIME(long): time =  2.638412e-02 (Naik) mflops = 1.120247e+03
+LLTIME(Fat): time = 5.330150e-01 (Asqtad opt) mflops = 1.894466e+03
+CONGRAD5: time = 3.064659e-01 iters = 42 mflops = 2.665249e+03
+TESTCONG: reduce_time = 1.645088e-05 iters = 42 time/iter = 3.916877e-07
+CONGRAD5: time = 3.062429e-01 iters = 42 mflops = 2.667189e+03
+TESTCONG: reduce_time = 9.775162e-06 iters = 42 time/iter = 2.327419e-07
+GFTIME:   time = 1.711106e+00 (Symanzik1) mflops = -1.045026e+03
+FFTIME:  time = 3.169857e+00 mflops = 2.243045e+03
+LLTIME(long): time =  2.633786e-02 (Naik) mflops = 1.122215e+03
+LLTIME(Fat): time = 5.330272e-01 (Asqtad opt) mflops = 1.894423e+03
+LLTIME(long): time =  2.641201e-02 (Naik) mflops = 1.119064e+03
+LLTIME(Fat): time = 5.331590e-01 (Asqtad opt) mflops = 1.893954e+03
+LLTIME(long): time =  2.641106e-02 (Naik) mflops = 1.119105e+03
+LLTIME(Fat): time = 5.330899e-01 (Asqtad opt) mflops = 1.894200e+03
+CONGRAD5: time = 3.062601e-01 iters = 42 mflops = 2.667040e+03
+TESTCONG: reduce_time = 1.001358e-05 iters = 42 time/iter = 2.384186e-07
+CONGRAD5: time = 3.062658e-01 iters = 42 mflops = 2.666990e+03
+TESTCONG: reduce_time = 1.597404e-05 iters = 42 time/iter = 3.803344e-07
+GFTIME:   time = 1.711830e+00 (Symanzik1) mflops = -1.044584e+03
+FFTIME:  time = 3.166830e+00 mflops = 2.245189e+03
+LLTIME(long): time =  2.632093e-02 (Naik) mflops = 1.122936e+03
+LLTIME(Fat): time = 5.329211e-01 (Asqtad opt) mflops = 1.894800e+03
+LLTIME(long): time =  2.640104e-02 (Naik) mflops = 1.119529e+03
+LLTIME(Fat): time = 5.329230e-01 (Asqtad opt) mflops = 1.894793e+03
+LLTIME(long): time =  2.639103e-02 (Naik) mflops = 1.119954e+03
+LLTIME(Fat): time = 5.328500e-01 (Asqtad opt) mflops = 1.895052e+03
+CONGRAD5: time = 3.064179e-01 iters = 42 mflops = 2.665666e+03
+TESTCONG: reduce_time = 1.287460e-05 iters = 42 time/iter = 3.065382e-07
+CONGRAD5: time = 3.136330e-01 iters = 43 mflops = 2.666352e+03
+TESTCONG: reduce_time = 1.096725e-05 iters = 43 time/iter = 2.550524e-07
+GFTIME:   time = 1.711144e+00 (Symanzik1) mflops = -1.045003e+03
+FFTIME:  time = 3.166506e+00 mflops = 2.245419e+03
+LLTIME(long): time =  2.635098e-02 (Naik) mflops = 1.121656e+03
+LLTIME(Fat): time = 5.331190e-01 (Asqtad opt) mflops = 1.894096e+03
+LLTIME(long): time =  2.641106e-02 (Naik) mflops = 1.119105e+03
+LLTIME(Fat): time = 5.333462e-01 (Asqtad opt) mflops = 1.893289e+03
+LLTIME(long): time =  2.642918e-02 (Naik) mflops = 1.118337e+03
+LLTIME(Fat): time = 5.333998e-01 (Asqtad opt) mflops = 1.893099e+03
+CONGRAD5: time = 3.136981e-01 iters = 43 mflops = 2.665798e+03
+TESTCONG: reduce_time = 1.120567e-05 iters = 43 time/iter = 2.605971e-07
+CONGRAD5: time = 3.135200e-01 iters = 43 mflops = 2.667313e+03
+TESTCONG: reduce_time = 1.382828e-05 iters = 43 time/iter = 3.215879e-07
+GFTIME:   time = 1.711555e+00 (Symanzik1) mflops = -1.044752e+03
+FFTIME:  time = 3.167216e+00 mflops = 2.244915e+03
+PLAQ:	2.728658	2.728632
+P_LOOP:	2.015115e+00	-8.904692e-03
+LLTIME(long): time =  2.636409e-02 (Naik) mflops = 1.121098e+03
+LLTIME(Fat): time = 5.327940e-01 (Asqtad opt) mflops = 1.895252e+03
+CONGRAD5: time = 2.843199e-01 iters = 39 mflops = 2.667645e+03
+TESTCONG: reduce_time = 1.192093e-05 iters = 39 time/iter = 3.056648e-07
+PBP: mass 1.000000e-02     5.909385e-03  4.715598e-03  1.207033e-03  1.188714e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.510268e+00 ( 1 of 1 )
+CONGRAD5: time = 2.844820e-01 iters = 39 mflops = 2.666125e+03
+TESTCONG: reduce_time = 1.096725e-05 iters = 39 time/iter = 2.812117e-07
+PBP: mass 1.000000e-02     5.793783e-03  4.912961e-03  -8.240791e-03  -8.208900e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.494302e+00 ( 1 of 1 )
+RUNNING COMPLETED
+average cg iters for step= 8.150000e+01
+total_iters = 972
+NERSC_TIME   77.506 secs
+
+
+exit: Sun Oct 23 17:31:30 2011
+
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+
+PerfExpert: Program execution #5 of 5
+TACC: Starting up job 108648
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+SU3 with improved KS action
+Microcanonical simulation with refreshing
+MIMD version 6
+Machine = Scalar processor, with 1 nodes
+R algorithm
+type 0 for no prompts  or 1 for prompts
+nflavors1 4
+nflavors2 4
+nx 8
+ny 8
+nz 16
+nt 16
+iseed 5682304
+LAYOUT = Hypercubes, options = EVENFIRST,
+ON EACH NODE 8 x 8 x 16 x 16
+Mallocing 18.5 MBytes per node for lattice
+Made lattice
+Made nn gathers
+Made 3nn gathers
+Finished setup
+
+
+warms 0
+trajecs 2
+traj_between_meas 1
+beta 5.6
+mass1 0.01
+mass2 0.01
+u0 0.8441
+microcanonical_time_step 0.02
+steps_per_trajectory 5
+max_cg_iterations 200
+error_per_site 1e-05
+error_for_propagator 0.0001
+fresh 
+forget 
+unit gauge configuration loaded
+CHECK PLAQ: 3.000000e+00 3.000000e+00
+Unitarity checked.  Max deviation 0.00e+00
+Time to check unitarity = 4.304171e-03
+Symanzik 1x1 + 1x2 + 1x1x1 action
+loop coefficients: nloop rep loop_coeff  multiplicity
+                    0 0      1.000000e+00     6
+                    1 0      -7.762509e-02     12
+                    2 0      -1.031171e-02     16
+"O(a^2): couplings(pi)=0, Naik term, No O(a^2) errors, tadpole weights"
+path coefficients: npath  path_coeff  multiplicity
+                    0      6.250000e-01     8
+                    1      -5.847914e-02     8
+                    2      -8.771871e-02     48
+                    3      3.077829e-02     192
+                    4      -7.199551e-03     384
+                    5      -1.231132e-01     48
+WARMUPS COMPLETED
+LLTIME(long): time =  3.354096e-02 (Naik) mflops = 8.812131e+02
+LLTIME(Fat): time = 6.298189e-01 (Asqtad opt) mflops = 1.603284e+03
+LLTIME(long): time =  2.997494e-02 (Naik) mflops = 9.860483e+02
+LLTIME(Fat): time = 6.165919e-01 (Asqtad opt) mflops = 1.637677e+03
+LLTIME(long): time =  3.044891e-02 (Naik) mflops = 9.706992e+02
+LLTIME(Fat): time = 6.279211e-01 (Asqtad opt) mflops = 1.608130e+03
+CONGRAD5: time = 3.258598e-01 iters = 39 mflops = 2.327579e+03
+TESTCONG: reduce_time = 1.239777e-05 iters = 39 time/iter = 3.178914e-07
+CONGRAD5: time = 3.092790e-01 iters = 36 mflops = 2.263720e+03
+TESTCONG: reduce_time = 3.099442e-06 iters = 36 time/iter = 8.609560e-08
+GFTIME:   time = 1.995575e+00 (Symanzik1) mflops = -8.960574e+02
+FFTIME:  time = 3.412512e+00 mflops = 2.083548e+03
+LLTIME(long): time =  2.623296e-02 (Naik) mflops = 1.126702e+03
+LLTIME(Fat): time = 5.334790e-01 (Asqtad opt) mflops = 1.892818e+03
+LLTIME(long): time =  2.631307e-02 (Naik) mflops = 1.123272e+03
+LLTIME(Fat): time = 5.331988e-01 (Asqtad opt) mflops = 1.893813e+03
+LLTIME(long): time =  2.628684e-02 (Naik) mflops = 1.124393e+03
+LLTIME(Fat): time = 5.330279e-01 (Asqtad opt) mflops = 1.894420e+03
+CONGRAD5: time = 2.843280e-01 iters = 39 mflops = 2.667569e+03
+TESTCONG: reduce_time = 1.382828e-05 iters = 39 time/iter = 3.545712e-07
+CONGRAD5: time = 2.842960e-01 iters = 39 mflops = 2.667869e+03
+TESTCONG: reduce_time = 7.390976e-06 iters = 39 time/iter = 1.895122e-07
+GFTIME:   time = 1.711495e+00 (Symanzik1) mflops = -1.044788e+03
+FFTIME:  time = 3.162433e+00 mflops = 2.248311e+03
+LLTIME(long): time =  2.623796e-02 (Naik) mflops = 1.126487e+03
+LLTIME(Fat): time = 5.335019e-01 (Asqtad opt) mflops = 1.892737e+03
+LLTIME(long): time =  2.626014e-02 (Naik) mflops = 1.125536e+03
+LLTIME(Fat): time = 5.333219e-01 (Asqtad opt) mflops = 1.893376e+03
+LLTIME(long): time =  2.629709e-02 (Naik) mflops = 1.123955e+03
+LLTIME(Fat): time = 5.329411e-01 (Asqtad opt) mflops = 1.894728e+03
+CONGRAD5: time = 2.916040e-01 iters = 40 mflops = 2.667701e+03
+TESTCONG: reduce_time = 1.096725e-05 iters = 40 time/iter = 2.741814e-07
+CONGRAD5: time = 2.915189e-01 iters = 40 mflops = 2.668480e+03
+TESTCONG: reduce_time = 7.867813e-06 iters = 40 time/iter = 1.966953e-07
+GFTIME:   time = 1.712559e+00 (Symanzik1) mflops = -1.044139e+03
+FFTIME:  time = 3.163031e+00 mflops = 2.247886e+03
+LLTIME(long): time =  2.623296e-02 (Naik) mflops = 1.126702e+03
+LLTIME(Fat): time = 5.338731e-01 (Asqtad opt) mflops = 1.891421e+03
+LLTIME(long): time =  2.629805e-02 (Naik) mflops = 1.123914e+03
+LLTIME(Fat): time = 5.338669e-01 (Asqtad opt) mflops = 1.891443e+03
+LLTIME(long): time =  2.627611e-02 (Naik) mflops = 1.124852e+03
+LLTIME(Fat): time = 5.329559e-01 (Asqtad opt) mflops = 1.894676e+03
+CONGRAD5: time = 2.916121e-01 iters = 40 mflops = 2.667627e+03
+TESTCONG: reduce_time = 6.914139e-06 iters = 40 time/iter = 1.728535e-07
+CONGRAD5: time = 2.915192e-01 iters = 40 mflops = 2.668477e+03
+TESTCONG: reduce_time = 1.168251e-05 iters = 40 time/iter = 2.920628e-07
+GFTIME:   time = 1.712833e+00 (Symanzik1) mflops = -1.043972e+03
+FFTIME:  time = 3.164455e+00 mflops = 2.246874e+03
+LLTIME(long): time =  2.620602e-02 (Naik) mflops = 1.127861e+03
+LLTIME(Fat): time = 5.333531e-01 (Asqtad opt) mflops = 1.893265e+03
+LLTIME(long): time =  2.625799e-02 (Naik) mflops = 1.125628e+03
+LLTIME(Fat): time = 5.332389e-01 (Asqtad opt) mflops = 1.893670e+03
+LLTIME(long): time =  2.631783e-02 (Naik) mflops = 1.123069e+03
+LLTIME(Fat): time = 5.330632e-01 (Asqtad opt) mflops = 1.894295e+03
+CONGRAD5: time = 2.989030e-01 iters = 41 mflops = 2.667622e+03
+TESTCONG: reduce_time = 1.096725e-05 iters = 41 time/iter = 2.674940e-07
+CONGRAD5: time = 2.986951e-01 iters = 41 mflops = 2.669479e+03
+TESTCONG: reduce_time = 7.867813e-06 iters = 41 time/iter = 1.918979e-07
+GFTIME:   time = 1.711975e+00 (Symanzik1) mflops = -1.044495e+03
+FFTIME:  time = 3.166412e+00 mflops = 2.245485e+03
+PLAQ:	2.851605	2.851636
+P_LOOP:	2.438382e+00	-6.110910e-04
+LLTIME(long): time =  2.635098e-02 (Naik) mflops = 1.121656e+03
+LLTIME(Fat): time = 5.331459e-01 (Asqtad opt) mflops = 1.894001e+03
+CONGRAD5: time = 2.768910e-01 iters = 38 mflops = 2.668981e+03
+TESTCONG: reduce_time = 5.960464e-06 iters = 38 time/iter = 1.568543e-07
+PBP: mass 1.000000e-02     1.098148e-02  -1.056381e-03  -4.110835e-03  -4.047673e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.491269e+00 ( 1 of 1 )
+CONGRAD5: time = 2.768750e-01 iters = 38 mflops = 2.669135e+03
+TESTCONG: reduce_time = 7.152557e-06 iters = 38 time/iter = 1.882252e-07
+PBP: mass 1.000000e-02     4.027176e-03  5.938651e-03  3.706708e-03  3.640591e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500073e+00 ( 1 of 1 )
+LLTIME(long): time =  2.625418e-02 (Naik) mflops = 1.125792e+03
+LLTIME(Fat): time = 5.333891e-01 (Asqtad opt) mflops = 1.893137e+03
+LLTIME(long): time =  2.627897e-02 (Naik) mflops = 1.124730e+03
+LLTIME(Fat): time = 5.334809e-01 (Asqtad opt) mflops = 1.892811e+03
+LLTIME(long): time =  2.624798e-02 (Naik) mflops = 1.126058e+03
+LLTIME(Fat): time = 5.329130e-01 (Asqtad opt) mflops = 1.894829e+03
+CONGRAD5: time = 3.062360e-01 iters = 42 mflops = 2.667250e+03
+TESTCONG: reduce_time = 9.059906e-06 iters = 42 time/iter = 2.157120e-07
+CONGRAD5: time = 3.058829e-01 iters = 42 mflops = 2.670329e+03
+TESTCONG: reduce_time = 9.536743e-06 iters = 42 time/iter = 2.270653e-07
+GFTIME:   time = 1.712029e+00 (Symanzik1) mflops = -1.044462e+03
+FFTIME:  time = 3.164364e+00 mflops = 2.246939e+03
+LLTIME(long): time =  2.622485e-02 (Naik) mflops = 1.127051e+03
+LLTIME(Fat): time = 5.332320e-01 (Asqtad opt) mflops = 1.893695e+03
+LLTIME(long): time =  2.631211e-02 (Naik) mflops = 1.123313e+03
+LLTIME(Fat): time = 5.330498e-01 (Asqtad opt) mflops = 1.894342e+03
+LLTIME(long): time =  2.626991e-02 (Naik) mflops = 1.125117e+03
+LLTIME(Fat): time = 5.327029e-01 (Asqtad opt) mflops = 1.895576e+03
+CONGRAD5: time = 3.060851e-01 iters = 42 mflops = 2.668565e+03
+TESTCONG: reduce_time = 1.001358e-05 iters = 42 time/iter = 2.384186e-07
+CONGRAD5: time = 3.060598e-01 iters = 42 mflops = 2.668785e+03
+TESTCONG: reduce_time = 1.287460e-05 iters = 42 time/iter = 3.065382e-07
+GFTIME:   time = 1.712251e+00 (Symanzik1) mflops = -1.044327e+03
+FFTIME:  time = 3.162416e+00 mflops = 2.248323e+03
+LLTIME(long): time =  2.620792e-02 (Naik) mflops = 1.127779e+03
+LLTIME(Fat): time = 5.333452e-01 (Asqtad opt) mflops = 1.893293e+03
+LLTIME(long): time =  2.626586e-02 (Naik) mflops = 1.125291e+03
+LLTIME(Fat): time = 5.330122e-01 (Asqtad opt) mflops = 1.894476e+03
+LLTIME(long): time =  2.625799e-02 (Naik) mflops = 1.125628e+03
+LLTIME(Fat): time = 5.327549e-01 (Asqtad opt) mflops = 1.895391e+03
+CONGRAD5: time = 3.061259e-01 iters = 42 mflops = 2.668209e+03
+TESTCONG: reduce_time = 5.960464e-06 iters = 42 time/iter = 1.419158e-07
+CONGRAD5: time = 3.060908e-01 iters = 42 mflops = 2.668515e+03
+TESTCONG: reduce_time = 1.072884e-05 iters = 42 time/iter = 2.554485e-07
+GFTIME:   time = 1.722898e+00 (Symanzik1) mflops = -1.037873e+03
+FFTIME:  time = 3.164368e+00 mflops = 2.246936e+03
+LLTIME(long): time =  2.625585e-02 (Naik) mflops = 1.125720e+03
+LLTIME(Fat): time = 5.329409e-01 (Asqtad opt) mflops = 1.894729e+03
+LLTIME(long): time =  2.629709e-02 (Naik) mflops = 1.123955e+03
+LLTIME(Fat): time = 5.332010e-01 (Asqtad opt) mflops = 1.893805e+03
+LLTIME(long): time =  2.629495e-02 (Naik) mflops = 1.124046e+03
+LLTIME(Fat): time = 5.326569e-01 (Asqtad opt) mflops = 1.895739e+03
+CONGRAD5: time = 3.061650e-01 iters = 42 mflops = 2.667869e+03
+TESTCONG: reduce_time = 1.096725e-05 iters = 42 time/iter = 2.611251e-07
+CONGRAD5: time = 3.132789e-01 iters = 43 mflops = 2.669365e+03
+TESTCONG: reduce_time = 8.821487e-06 iters = 43 time/iter = 2.051509e-07
+GFTIME:   time = 1.712873e+00 (Symanzik1) mflops = -1.043948e+03
+FFTIME:  time = 3.162659e+00 mflops = 2.248150e+03
+LLTIME(long): time =  2.626014e-02 (Naik) mflops = 1.125536e+03
+LLTIME(Fat): time = 5.330009e-01 (Asqtad opt) mflops = 1.894516e+03
+LLTIME(long): time =  2.626395e-02 (Naik) mflops = 1.125373e+03
+LLTIME(Fat): time = 5.331910e-01 (Asqtad opt) mflops = 1.893841e+03
+LLTIME(long): time =  2.629399e-02 (Naik) mflops = 1.124087e+03
+LLTIME(Fat): time = 5.329232e-01 (Asqtad opt) mflops = 1.894792e+03
+CONGRAD5: time = 3.133321e-01 iters = 43 mflops = 2.668912e+03
+TESTCONG: reduce_time = 9.775162e-06 iters = 43 time/iter = 2.273293e-07
+CONGRAD5: time = 3.133290e-01 iters = 43 mflops = 2.668938e+03
+TESTCONG: reduce_time = 1.668930e-05 iters = 43 time/iter = 3.881233e-07
+GFTIME:   time = 1.712918e+00 (Symanzik1) mflops = -1.043920e+03
+FFTIME:  time = 3.164311e+00 mflops = 2.246976e+03
+PLAQ:	2.728658	2.728632
+P_LOOP:	2.015115e+00	-8.904692e-03
+LLTIME(long): time =  2.623487e-02 (Naik) mflops = 1.126620e+03
+LLTIME(Fat): time = 5.330310e-01 (Asqtad opt) mflops = 1.894409e+03
+CONGRAD5: time = 2.842300e-01 iters = 39 mflops = 2.668489e+03
+TESTCONG: reduce_time = 7.629395e-06 iters = 39 time/iter = 1.956255e-07
+PBP: mass 1.000000e-02     5.909385e-03  4.715598e-03  1.207033e-03  1.188714e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.510268e+00 ( 1 of 1 )
+CONGRAD5: time = 2.840910e-01 iters = 39 mflops = 2.669794e+03
+TESTCONG: reduce_time = 1.025200e-05 iters = 39 time/iter = 2.628718e-07
+PBP: mass 1.000000e-02     5.793783e-03  4.912961e-03  -8.240791e-03  -8.208900e-03 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.494302e+00 ( 1 of 1 )
+RUNNING COMPLETED
+average cg iters for step= 8.150000e+01
+total_iters = 972
+NERSC_TIME   77.061 secs
+
+
+exit: Sun Oct 23 17:32:49 2011
+
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+
+PerfExpert: Finished all measurements, summarizing the results...done!
+PerfExpert: Run the following command to analyze the measurement data:
+perfexpert <threshold-between-0-and-1> ./exp-1.xml
+TACC: Cleaning up after job: 108648
+TACC: Done.

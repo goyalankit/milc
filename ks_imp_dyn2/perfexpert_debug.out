@@ -1,0 +1,250 @@
+Linux c207-107.longhorn 2.6.18-164.11.1_lustre_perfctr_TACC #2 SMP Mon May 24 16:41:08 CDT 2010 x86_64 x86_64 x86_64 GNU/Linux
+
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 26
+model name	: Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz
+stepping	: 5
+cpu MHz		: 2527.083
+cache size	: 8192 KB
+physical id	: 1
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 16
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm syscall nx rdtscp lm constant_tsc ida nonstop_tsc pni monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr sse4_1 sse4_2 popcnt lahf_lm
+bogomips	: 5054.16
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management: [8]
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 26
+model name	: Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz
+stepping	: 5
+cpu MHz		: 2527.083
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm syscall nx rdtscp lm constant_tsc ida nonstop_tsc pni monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr sse4_1 sse4_2 popcnt lahf_lm
+bogomips	: 5054.04
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management: [8]
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 26
+model name	: Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz
+stepping	: 5
+cpu MHz		: 2527.083
+cache size	: 8192 KB
+physical id	: 1
+siblings	: 4
+core id		: 1
+cpu cores	: 4
+apicid		: 18
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm syscall nx rdtscp lm constant_tsc ida nonstop_tsc pni monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr sse4_1 sse4_2 popcnt lahf_lm
+bogomips	: 5054.03
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management: [8]
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 26
+model name	: Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz
+stepping	: 5
+cpu MHz		: 2527.083
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm syscall nx rdtscp lm constant_tsc ida nonstop_tsc pni monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr sse4_1 sse4_2 popcnt lahf_lm
+bogomips	: 5054.03
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management: [8]
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 26
+model name	: Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz
+stepping	: 5
+cpu MHz		: 2527.083
+cache size	: 8192 KB
+physical id	: 1
+siblings	: 4
+core id		: 2
+cpu cores	: 4
+apicid		: 20
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm syscall nx rdtscp lm constant_tsc ida nonstop_tsc pni monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr sse4_1 sse4_2 popcnt lahf_lm
+bogomips	: 5054.03
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management: [8]
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 26
+model name	: Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz
+stepping	: 5
+cpu MHz		: 2527.083
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 4
+apicid		: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm syscall nx rdtscp lm constant_tsc ida nonstop_tsc pni monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr sse4_1 sse4_2 popcnt lahf_lm
+bogomips	: 5054.04
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management: [8]
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 26
+model name	: Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz
+stepping	: 5
+cpu MHz		: 2527.083
+cache size	: 8192 KB
+physical id	: 1
+siblings	: 4
+core id		: 3
+cpu cores	: 4
+apicid		: 22
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm syscall nx rdtscp lm constant_tsc ida nonstop_tsc pni monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr sse4_1 sse4_2 popcnt lahf_lm
+bogomips	: 5054.03
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management: [8]
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 26
+model name	: Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz
+stepping	: 5
+cpu MHz		: 2527.083
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 3
+cpu cores	: 4
+apicid		: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm syscall nx rdtscp lm constant_tsc ida nonstop_tsc pni monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr sse4_1 sse4_2 popcnt lahf_lm
+bogomips	: 5054.03
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management: [8]
+
+Command: ibrun /opt/apps/perfexpert/2.0.6/extras/hpctoolkit/bin/hpcrun --event RESOURCE_STALLS:LOAD:STORE: 510079 --event SSEX_UOPS_RETIRED:PACKED_DOUBLE:510101 --event SSEX_UOPS_RETIRED:PACKED_SINGLE:510047 --event PAPI_TOT_INS:13000027 --output .perfexpert-temp-xyR1906/measurements /scratch/01174/ashay/gpuizer/milc/ks_imp_dyn2/su3_rmd 
+
+GNU gdb Fedora (6.8-37.el5)
+Copyright (C) 2008 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu"...
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+TACC: Starting up job 108354
+Detaching after fork from child process 5077.
+Detaching after fork from child process 5080.
+Detaching after fork from child process 5081.
+Detaching after fork from child process 5082.
+Detaching after fork from child process 5083.
+Detaching after fork from child process 5084.
+Detaching after fork from child process 5085.
+Detaching after fork from child process 5086.
+Detaching after fork from child process 5087.
+Detaching after fork from child process 5088.
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+Detaching after fork from child process 5089.
+Detaching after fork from child process 5090.
+Detaching after fork from child process 5093.
+Detaching after fork from child process 5094.
+Detaching after fork from child process 5095.
+Detaching after fork from child process 5096.
+TACC: Setup complete. Running job script.
+Detaching after fork from child process 5097.
+Detaching after fork from child process 5098.
+TACC: starting parallel tasks...
+Detaching after fork from child process 5100.
+Detaching after fork from child process 5101.
+/opt/apps/perfexpert/2.0.6/extras/hpctoolkit/bin/hpcrun: line 420: exec: 510079: not found
+Exit code -5 signaled from c207-107.longhorn
+MPI process (rank: 0) terminated unexpectedly on c207-107.longhorn
+TACC: MPI job exited with code: 1
+TACC: Shutting down parallel environment.
+Detaching after fork from child process 5319.
+TACC: Shutdown complete. Exiting.
+
+Program exited with code 01.
+No stack.
+/scratch/01174/ashay/gpuizer/milc/ks_imp_dyn2/.perfexpert-temp-xyR1906/stacktraces.cmd:3: Error in sourced command file:
+No registers.
+(gdb) quit
+
+Command: /opt/apps/perfexpert/2.0.6/extras/hpctoolkit/bin/hpcrun --monitor-debug --event RESOURCE_STALLS:LOAD:STORE: 510079 --event SSEX_UOPS_RETIRED:PACKED_DOUBLE:510101 --event SSEX_UOPS_RETIRED:PACKED_SINGLE:510047 --event PAPI_TOT_INS:13000027 --output .perfexpert-temp-xyR1906/measurements /scratch/01174/ashay/gpuizer/milc/ks_imp_dyn2/su3_rmd  >> perfexpert_debug.out 2>&1
+
+/opt/apps/perfexpert/2.0.6/extras/hpctoolkit/bin/hpcrun: line 420: exec: 510079: not found

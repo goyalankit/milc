@@ -1,0 +1,41 @@
+TACC: Setting limits for 7999
+TACC: Setting memory limits to 3984588
+TACC: Setting up parallel environment for MPD.
+running mpdallexit on i102-401.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-401.ranger.tacc.utexas.edu  via  
+RUNNING: mpd on i102-401.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-402.ranger.tacc.utexas.edu  via  i102-401.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-404.ranger.tacc.utexas.edu  via  i102-401.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-405.ranger.tacc.utexas.edu  via  i102-401.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-406.ranger.tacc.utexas.edu  via  i102-401.ranger.tacc.utexas.edu
+RUNNING: mpd on i102-402.ranger.tacc.utexas.edu
+RUNNING: mpd on i102-404.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-407.ranger.tacc.utexas.edu  via  i102-402.ranger.tacc.utexas.edu
+RUNNING: mpd on i102-406.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-408.ranger.tacc.utexas.edu  via  i102-402.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-409.ranger.tacc.utexas.edu  via  i102-402.ranger.tacc.utexas.edu
+RUNNING: mpd on i102-408.ranger.tacc.utexas.edu
+RUNNING: mpd on i102-407.ranger.tacc.utexas.edu
+mpdboot_i102-401.ranger.tacc.utexas.edu (handle_mpd_output 382): failed to handshake with mpd on i102-409.ranger.tacc.utexas.edu; recvd output={}
+
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+mpiexec_i102-401.ranger.tacc.utexas.edu: cannot connect to local mpd (/tmp/mpd2.console_minyard); possible causes:
+  1. no mpd is running on this host
+  2. an mpd is running but was started without a "console" (-n option)
+In case 1, you can start an mpd on this host with:
+    mpd &
+and you will be able to run jobs just on this host.
+For more details on starting mpds on a set of hosts, see
+the MPICH2 Installation Guide.
+TACC: Shutting down parallel environment.
+mpdallexit: cannot connect to local mpd (/tmp/mpd2.console_minyard); possible causes:
+  1. no mpd is running on this host
+  2. an mpd is running but was started without a "console" (-n option)
+In case 1, you can start an mpd on this host with:
+    mpd &
+and you will be able to run jobs just on this host.
+For more details on starting mpds on a set of hosts, see
+the MPICH2 Installation Guide.
+TACC: Shutdown complete. Exiting.
+TACC: Cleaning up after job: 7999

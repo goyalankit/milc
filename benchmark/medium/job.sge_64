@@ -1,0 +1,13 @@
+#$ -N MILC
+
+#$ -cwd
+#$ -o $JOB_NAME.64.o$JOB_ID
+#$ -j y
+
+#$ -q clean
+#$ -pe 16way 64 
+#$ -V
+#$ -l h_rt=02:00:00
+#$ -A A-ccsc
+
+ibrun ./su3_rmd < medium.in

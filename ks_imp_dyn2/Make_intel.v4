@@ -1,0 +1,71 @@
+#  MIMD version 6
+#  Standard application makefile for generic scalar workstation
+#  Do not use for making libraries
+
+#  Edit options below
+#  Copy this file into the application directory and run make there.
+#
+
+MAKEFILE = Make_intel.v4
+COMMTYPE = MPI
+
+#----------------------------------------------------------------------
+#  User choices - edit to suit 
+#----------------------------------------------------------------------
+# 1. Compiler
+CC               = mpicc  # ( cc89 gcc xlc gcc pgcc cl g++ )
+
+#----------------------------------------------------------------------
+# 2. Compiler optimization level
+OPT              = -O2 -xO -g
+
+#----------------------------------------------------------------------
+# 3. Other compiler optimization flags.  Uncomment stanza to suit.
+#-------------- Gnu C -------------------------------------
+OCFLAGS = -align  -no-prefetch -no-prec-div -no-prec-sqrt -fp-model fast -fp-speculation=fast               # ( -Wall, etc )
+
+#----------------------------------------------------------------------
+# 4. Choose large file support
+CLFS =                   #  Not researched for others
+
+#----------------------------------------------------------------------
+# 5. I/O routines
+# Both io_nonansi and io_ansi should work on a scalar machine
+# Solaris 2.6 gave "bad file number" errors with io_ansi.  CD
+MACHINE_DEP_IO   = io_ansi.o # (io_ansi.o io_nonansi.o)
+
+#----------------------------------------------------------------------
+# 6. Linker
+LD               = ${CC}
+
+#----------------------------------------------------------------------
+# 7. Extra linker flags
+LDFLAGS          = -O2 -xO -align  -no-prefetch -no-prec-div -no-prec-sqrt -fp-model fast -fp-speculation=fast
+#LDFLAGS          = -fast     # Sun SPARC
+
+#----------------------------------------------------------------------
+# 8. Extra load libraries
+ILIB             =         # not needed in most cases
+
+#----------------------------------------------------------------------
+# 9. Code alternatives 
+CODETYPE         = -DINLINE -DNOPREFETCH -DGFTIME # -DSSE -DSSE_INLINE -DP3
+
+#----------------------------------------------------------------------
+# 10. Choose MILC library make file in libraries directory.  
+#    CHECK IT FOR FURTHER OPTIONS!
+MAKELIBRARIES = Make_lib_intel.v4 # Generic.
+
+#----------------------------------------------------------------------
+# End of user choices.  PLEASE, ALSO, CHECK include/config.h.
+#----------------------------------------------------------------------
+
+# Routines that depend on both application and architecture
+MACHINE_DEP = com_mpi.o ${MACHINE_DEP_IO}
+
+# Complete set of compiler flags - do not change
+CFLAGS = ${OPT} ${OCFLAGS} -D${COMMTYPE} ${CODETYPE} ${CLFS} ${CMPI} -I${MYINCLUDEDIR} ${DEFINES}
+
+include Make_template
+
+

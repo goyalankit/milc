@@ -1,0 +1,20 @@
+#!/bin/sh
+#$ -V                     # Inherit the submission environment
+#$ -cwd                   # Start job in  submission directory
+#$ -N intel_v4_small      # Job Name
+#$ -j y                   # combine stderr & stdout into stdout
+#$ -o $JOB_NAME.o$JOB_ID  # Name of the output file (eg. myMPI.oJobID)
+#$ -pe 4way 16            # Requests (#1way #2) - [#1]cores/node, [#2]cores total
+#$ -q development         # Queue name
+#$ -l h_rt=01:00:00       # Run time (hh:mm:ss) 
+#$ -A RangerTechInsertion 
+
+set -x
+export hpcrun=/scratch/projects/hpctoolkit/pkgs/hpctoolkit/bin/hpcrun
+#export experiment="su3_rmd < small.in"
+
+date
+#time ibrun tacc_affinity $hpcrun -e PAPI_TOT_CYC su3_rmd < small.in
+time ibrun tacc_affinity su3_rmd < small.in
+#time mpirun -np 4 tacc_affinity $hpcrun -e PAPI_TOT_CYC $experiment
+

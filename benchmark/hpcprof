@@ -1,0 +1,4 @@
+#!bin/bash
+
+hpcprof -I ./example/dgae/ -S ./mangll_dgae_snell_N3.hpcstruct --force hpctoolkit-mangll_dgae_snell_N3-measurements-*/*.hpcrun
+

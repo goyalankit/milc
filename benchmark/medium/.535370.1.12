@@ -1,0 +1,71 @@
+TACC: Starting up job 535370
+TACC: Setting up parallel environment for OpenMPI mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+TACC: 03 Running 24 on socket 1
+TACC: 03 Running 26 on socket 1
+TACC: 03 Running 1 on socket 1
+TACC: 03 Running 25 on socket 1
+TACC: 03 Running 0 on socket 1
+TACC: 03 Running 17 on socket 1
+TACC: 03 Running 4 on socket 2
+TACC: 03 Running 33 on socket 1
+TACC: 03 Running 48 on socket 1
+TACC: 03 Running 27 on socket 1
+TACC: 03 Running 16 on socket 1
+TACC: 03 Running 37 on socket 2
+TACC: 03 Running 50 on socket 1
+TACC: 03 Running 2 on socket 1
+TACC: 03 Running 18 on socket 1
+TACC: 03 Running 40 on socket 1
+TACC: 03 Running 32 on socket 1
+TACC: 03 Running 21 on socket 2
+TACC: 03 Running 49 on socket 1
+TACC: 03 Running 3 on socket 1
+TACC: 03 Running 34 on socket 1
+TACC: 03 Running 41 on socket 1
+TACC: 03 Running 39 on socket 2
+TACC: 03 Running 22 on socket 2
+TACC: 03 Running 51 on socket 1
+TACC: 03 Running 28 on socket 2
+TACC: 03 Running 36 on socket 2
+TACC: 03 Running 7 on socket 2
+TACC: 03 Running 43 on socket 1
+TACC: 03 Running 6 on socket 2
+TACC: 03 Running 19 on socket 1
+TACC: 03 Running 9 on socket 1
+TACC: 03 Running 5 on socket 2
+TACC: 03 Running 15 on socket 2
+TACC: 03 Running 23 on socket 2
+TACC: 03 Running 20 on socket 2
+TACC: 03 Running 10 on socket 1
+TACC: 03 Running 11 on socket 1
+TACC: 03 Running 35 on socket 1
+TACC: 03 Running 42 on socket 1
+TACC: 03 Running 14 on socket 2
+TACC: 03 Running 38 on socket 2
+TACC: 03 Running 13 on socket 2
+TACC: 03 Running 44 on socket 2
+TACC: 03 Running 56 on socket 1
+TACC: 03 Running 8 on socket 1
+TACC: 03 Running 57 on socket 1
+TACC: 03 Running 12 on socket 2
+TACC: 03 Running 58 on socket 1
+TACC: 03 Running 45 on socket 2
+TACC: 03 Running 29 on socket 2
+TACC: 03 Running 61 on socket 2
+TACC: 03 Running 47 on socket 2
+TACC: 03 Running 52 on socket 2
+TACC: 03 Running 60 on socket 2
+TACC: 03 Running 54 on socket 2
+TACC: 03 Running 62 on socket 2
+TACC: 03 Running 30 on socket 2
+TACC: 03 Running 31 on socket 2
+TACC: 03 Running 59 on socket 1
+TACC: 03 Running 63 on socket 2
+TACC: 03 Running 46 on socket 2
+TACC: 03 Running 53 on socket 2
+TACC: 03 Running 55 on socket 2
+TACC: MPI job exited with code: 1
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.

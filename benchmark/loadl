@@ -1,0 +1,15 @@
+#@ job_type         = parallel
+#@ jobname          = big.1024
+#@ network.MPI      = csss,not_shared,US
+#@ class            = regular
+#@ node_usage       = not_shared
+#@ output           = $(jobname).out
+#@ error            = $(jobname).out
+#@ tasks_per_node   = 16
+#@ node             = 64
+#@ wall_clock_limit = 02:00:00
+#@ notification     = never
+#@ queue
+#
+#
+./su3_rmd < big.in

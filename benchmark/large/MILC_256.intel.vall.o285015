@@ -1,0 +1,2714 @@
+TACC: Setting memory limits for job 285015 to 1992294 KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#$ -N MILC_256.intel.vall
+
+#$ -cwd
+#$ -o $JOB_NAME.o$JOB_ID
+#$ -j y
+
+#$ -q systest
+#$ -pe 16way 256
+#$ -V
+#$ -l h_rt=10:00:00
+#$ -A A-ccsc
+
+ibrun tacc_affinity job_redirect ../../ks_imp_dyn2/su3_rmd.intel.v0 large.in
+ibrun tacc_affinity job_redirect ../../ks_imp_dyn2/su3_rmd.intel.v1 large.in
+ibrun tacc_affinity job_redirect ../../ks_imp_dyn2/su3_rmd.intel.v2 large.in
+ibrun tacc_affinity job_redirect ../../ks_imp_dyn2/su3_rmd.intel.v3 large.in
+ibrun tacc_affinity job_redirect ../../ks_imp_dyn2/su3_rmd.intel.v4 large.in
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Starting up job 285015
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+numactl: numactl: numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+
+
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+
+
+
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+MPI process terminated unexpectedly
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+numactl: execution of `job_redirect': No such file or directory
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: numactl: 
+
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: 
+
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+Child exited abnormally!
+Killing remote processes...DONE
+TACC: MPI job exited with code: 1
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 285015
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+numactl: 
+MPI process terminated unexpectedly
+numactl: numactl: numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+
+
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+
+
+
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+
+execution of `job_redirect': No such file or directory
+
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+Child exited abnormally!
+Killing remote processes...DONE
+TACC: MPI job exited with code: 1
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 285015
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+numactl: numactl: numactl: numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+MPI process terminated unexpectedly
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+
+execution of `job_redirect': No such file or directory
+
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+execution of `job_redirect': No such file or directory
+
+
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+MPI process terminated unexpectedly
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: numactl: 
+execution of `job_redirect': No such file or directory
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+Child exited abnormally!
+Killing remote processes...DONE
+TACC: MPI job exited with code: 1
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 285015
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: 
+MPI process terminated unexpectedly
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+MPI process terminated unexpectedly
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: 
+
+numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+Child exited abnormally!
+Killing remote processes...DONE
+TACC: MPI job exited with code: 1
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 285015
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+numactl: 
+MPI process terminated unexpectedly
+numactl: numactl: 
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+
+MPI process terminated unexpectedly
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+
+
+execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+
+
+
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+
+
+MPI process terminated unexpectedly
+numactl: execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+
+numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+
+
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: numactl: 
+execution of `job_redirect': No such file or directory
+
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: 
+execution of `job_redirect': No such file or directory
+numactl: execution of `job_redirect': No such file or directory
+
+numactl: 
+execution of `job_redirect': No such file or directory
+
+Child exited abnormally!
+Killing remote processes...DONE
+TACC: MPI job exited with code: 1
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+TACC: Cleaning up after job: 285015
+TACC: Done.

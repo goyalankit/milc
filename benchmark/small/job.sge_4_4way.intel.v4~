@@ -1,0 +1,15 @@
+#$ -N MILC_4_4.intel.v4 
+
+#$ -cwd
+#$ -o $JOB_NAME.o$JOB_ID
+#$ -j y
+
+#$ -q systest
+#$ -pe 4way 16 
+#$ -V
+#$ -l h_rt=00:05:00
+#$ -A A-ccsc
+
+#$ -l h='i172-*'
+
+ibrun ./numascript_4way.sh ../../ks_imp_dyn2/su3_rmd.intel.v4 < small.in

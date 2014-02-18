@@ -1,0 +1,26 @@
+TACC: Setting memory limits for job 521025 to 3984588 KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#$ -N MILC_64.2x2
+#$ -cwd
+#$ -o $JOB_NAME.o$JOB_ID
+#$ -j y
+
+#$ -q development
+#$ -pe 8way 128
+#$ -V
+#$ -l h_rt=00:30:00
+#$ -A A-ccsc
+
+ibrun ./tacc_affinity_03 su3_rmd_03 < medium.in > out_03.2x2.$JOB_ID &
+ibrun ./tacc_affinity_12 su3_rmd_12 < medium.in > out_12.2x2.$JOB_ID &
+wait
+
+ibrun ./tacc_affinity    su3_rmd    < medium.in > out_rr1.2x2.$JOB_ID &
+ibrun ./tacc_affinity    su3_rmd    < medium.in > out_rr2.2x2.$JOB_ID &
+wait
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 521025
+TACC: Done.

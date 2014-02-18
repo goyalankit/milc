@@ -1,0 +1,7 @@
+[39867, N]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff76dff898
+MEMORY: segment size: 4.0 meg, num segments: 1, total allocation: 4.0 meg, reclaims: 0
+MEMORY: total freeable: 0.0 meg, total non-freeable: 1.7 meg, malloc failures: 0
+SAMPLE ANOMALIES: blocks: 0 (async: 0, dlopen: 0), errors: 0 (segv: 0, soft: 0)
+SUMMARY: samples: 20058 (recorded: 20058, blocked: 0, errant: 0, trolled: 1),
+         frames: 108270 (trolled: 1)
+         intervals: 1064 (suspicious: 0)

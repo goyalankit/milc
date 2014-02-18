@@ -1,0 +1,43 @@
+TACC: Setting limits for 7998
+TACC: Setting memory limits to 7969177
+TACC: Setting up parallel environment for MPD.
+running mpdallexit on i102-107.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-107.ranger.tacc.utexas.edu  via  
+RUNNING: mpd on i102-107.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-109.ranger.tacc.utexas.edu  via  i102-107.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-110.ranger.tacc.utexas.edu  via  i102-107.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-111.ranger.tacc.utexas.edu  via  i102-107.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-112.ranger.tacc.utexas.edu  via  i102-107.ranger.tacc.utexas.edu
+RUNNING: mpd on i102-110.ranger.tacc.utexas.edu
+RUNNING: mpd on i102-111.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-203.ranger.tacc.utexas.edu  via  i102-110.ranger.tacc.utexas.edu
+RUNNING: mpd on i102-112.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-207.ranger.tacc.utexas.edu  via  i102-110.ranger.tacc.utexas.edu
+RUNNING: mpd on i102-109.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-208.ranger.tacc.utexas.edu  via  i102-110.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-209.ranger.tacc.utexas.edu  via  i102-110.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-211.ranger.tacc.utexas.edu  via  i102-109.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-301.ranger.tacc.utexas.edu  via  i102-109.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-302.ranger.tacc.utexas.edu  via  i102-109.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-305.ranger.tacc.utexas.edu  via  i102-109.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-308.ranger.tacc.utexas.edu  via  i102-112.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-311.ranger.tacc.utexas.edu  via  i102-112.ranger.tacc.utexas.edu
+LAUNCHED mpd on i102-312.ranger.tacc.utexas.edu  via  i102-112.ranger.tacc.utexas.edu
+RUNNING: mpd on i102-208.ranger.tacc.utexas.edu
+RUNNING: mpd on i102-203.ranger.tacc.utexas.edu
+mpdboot_i102-107.ranger.tacc.utexas.edu (handle_mpd_output 382): failed to handshake with mpd on i102-207.ranger.tacc.utexas.edu; recvd output={}
+
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+mpiexec_i102-107.ranger.tacc.utexas.edu (mpiexec 413): no msg recvd from mpd when expecting ack of request
+TACC: Shutting down parallel environment.
+mpdallexit: cannot connect to local mpd (/tmp/mpd2.console_minyard); possible causes:
+  1. no mpd is running on this host
+  2. an mpd is running but was started without a "console" (-n option)
+In case 1, you can start an mpd on this host with:
+    mpd &
+and you will be able to run jobs just on this host.
+For more details on starting mpds on a set of hosts, see
+the MPICH2 Installation Guide.
+TACC: Shutdown complete. Exiting.
+TACC: Cleaning up after job: 7998

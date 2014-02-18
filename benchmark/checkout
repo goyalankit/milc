@@ -1,0 +1,42 @@
+#!/usr/bin/perl
+#
+#  Check milc output
+#  Usage:  checkout <outputfile>
+#  
+#  Works for small, medium and large
+#  Compares the fermion action on the last "PBP:" line
+#
+#
+#
+
+%result = (
+	   16384,       5.79e-3,
+	   1048576,     4.51e-3,
+	   16777216,    5.84e-3
+	   );
+
+
+$z = 1;
+while (<>) {
+    if (/^n[xyzt]/) {
+	split;
+	$z *= $_[1];
+    }
+    elsif (/^PBP\:/) {
+	split;
+	$val = $_[3];
+    }
+}
+
+
+if (exists($result{$z})) {
+    $val -= $result{$z};
+    $val = -1.0*$val if ($val < 0.0);
+    if ($val < 1.e-5) {
+	printf("OK\n");
+	exit 0;
+    }
+}
+
+printf("Failed\n");
+exit 1;

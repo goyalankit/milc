@@ -1,0 +1,46 @@
+TACC: Setting memory limits for job 284768 to 1992294 KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#$ -N MILC_256.intel.v4_t2
+
+#$ -cwd
+#$ -o $JOB_NAME.o$JOB_ID
+#$ -j y
+
+#$ -q systest
+#$ -pe 16way 256
+#$ -V
+#$ -l h_rt=02:00:00
+#$ -A A-ccsc
+
+ibrun 'tacc_affinity ../../ks_imp_dyn2/su3_rmd.intel.v4 < large.in'
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Starting up job 284768
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+bash: MPISPAWN_ARGV_3=large.in: No such file or directory
+bash: MPISPAWN_ARGV_3=large.in: No such file or directory
+
+Child exited abnormally!
+Killing remote processes...bash: MPISPAWN_ARGV_3=large.in: No such file or directory
+bash: MPISPAWN_ARGV_3=large.in: No such file or directory
+bash: MPISPAWN_ARGV_3=large.in: No such file or directory
+bash: MPISPAWN_ARGV_3=large.in: No such file or directory
+bash: MPISPAWN_ARGV_3=large.in: No such file or directory
+bash: MPISPAWN_ARGV_3=large.in: No such file or directory
+bash: MPISPAWN_ARGV_3=large.in: No such file or directory
+bash: MPISPAWN_ARGV_3=large.in: No such file or directory
+bash: MPISPAWN_ARGV_3=large.in: No such file or directory
+bash: MPISPAWN_ARGV_3=large.in: No such file or directory
+bash: MPISPAWN_ARGV_3=large.in: No such file or directory
+bash: MPISPAWN_ARGV_3=large.in: No such file or directory
+bash: MPISPAWN_ARGV_3=large.in: No such file or directory
+bash: MPISPAWN_ARGV_3=large.in: No such file or directory
+DONE
+TACC: MPI job exited with code: 1
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+TACC: Cleaning up after job: 284768
+TACC: Done.

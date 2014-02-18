@@ -1,0 +1,27 @@
+TACC: Setting limits for 6217
+TACC: Setting memory limits to 1992294
+TACC: Setting up parallel environment for MPD.
+running mpdallexit on i101-101.ranger.tacc.utexas.edu
+LAUNCHED mpd on i101-101.ranger.tacc.utexas.edu  via  
+RUNNING: mpd on i101-101.ranger.tacc.utexas.edu
+LAUNCHED mpd on i101-102.ranger.tacc.utexas.edu  via  i101-101.ranger.tacc.utexas.edu
+LAUNCHED mpd on i101-103.ranger.tacc.utexas.edu  via  i101-101.ranger.tacc.utexas.edu
+LAUNCHED mpd on i101-104.ranger.tacc.utexas.edu  via  i101-101.ranger.tacc.utexas.edu
+RUNNING: mpd on i101-104.ranger.tacc.utexas.edu
+RUNNING: mpd on i101-103.ranger.tacc.utexas.edu
+RUNNING: mpd on i101-102.ranger.tacc.utexas.edu
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+SU3 with improved KS action
+Microcanonical simulation with refreshing
+MIMD version 6
+Machine = MPI (portable), with 64 nodes
+R algorithm
+type 0 for no prompts  or 1 for prompts
+
+get_prompt: ERROR IN INPUT: initial prompt
+exit: Tue Dec 18 17:39:06 2007
+
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+TACC: Cleaning up after job: 6217

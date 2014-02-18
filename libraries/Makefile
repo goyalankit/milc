@@ -1,0 +1,89 @@
+# Makefile for Libraries for QCD programs
+#
+# Library routines involve no communication, so are compiled
+# as for a scalar processor.
+
+# The specialized Makefiles are for processors for which we
+# have some assembly coded substitutes.
+#
+# This Makefile builds the purely C coded versions and should work
+# for all architectures with a suitable choice of CFLAGS and 
+# CC below
+
+# The FAST option uses "fast" variants of the code, where available, and is 
+# recommended.  The fast variants are C-coded with explicit loop unrolling
+# and inlining.
+
+# The SHORT32 option is required on machines with 64-bit int's
+
+MAKEFILE = Makefile
+
+# See Make_RS6K for IBM RS6000 assembly code
+# See Make_t3e for the Cray T3E assembly code
+# See Make_alpha for  DEC alpha assembly code
+# See Make_SSE_nasm for P3/P4 assembly code
+
+#----------------------------------------------------------------------
+#  User choices - edit to suit 
+#----------------------------------------------------------------------
+# 1. Compiler
+CC               = /work/01174/ashay/apps/intel/composerxe/bin/icc -g    # ( cc89 gcc xlc gcc pgcc cl g++ )
+#CC               = macpo.sh --macpo:vector-strides=mult_su3_na
+
+#----------------------------------------------------------------------
+# 2. Compiler optimization level
+OPT              = -O3 # ( -g -O, etc )
+OCFLAGS = # -funroll-loops -march=amdfam10
+#----------------------------------------------------------------------
+# 3. Other compiler optimization flags.  Uncomment stanza to suit.
+#-------------- Gnu C -------------------------------------
+#OCFLAGS = -Wall
+#OCCLAGS =  -fexpensive-optimizations   -fpeephole   -fstrength-reduce  -march=i586  # Simone's pick for PIII/gcc version 2.95.2.1 19991024 (release)
+#-------------- Portland Group ----------------------------
+#OCFLAGS = -tp p6 -Munroll=c:4,n:4
+
+#-------------- SUN SPARC ---------------------------------
+#OCFLAGS= -fast -dalign -libmil -fsimple=2 -fns  #Ultra
+
+#-------------- IBM RS6000 --------------------------------
+#CARCH = -qarch=pwr3 -qtune=pwr3   # Architecture: ( ppc pwr2 )
+#OCFLAGS= ${CARCH} -bmaxdata:0x40000000 -bmaxstack:0x8000000
+
+#-------------- MIPS --------------------------------------
+#OCFLAGS= -f 
+
+#-------------- SGI Origin single node  -------------------
+#OCFLAGS=  -64 -mips4 -r10000 -OPT:IEEE_arithmetic=3:roundoff=3:alias=restrict -TENV:X=1 
+
+#-------------- DEC Alpha ---------------------------------
+#OCFLAGS = -float -fptm n 
+
+#-------------- Convex Exemplar ----------------------------
+#OCFLAGS = +Oinfo +Onofltacc +Oaggressive +Onoautopar 	#NPACI Exemplar
+
+#-------------- NT cl compiler -----------------------------
+#OCFLAGS = -Fo$*.o -Ox -Oa -G6
+
+#-------------- Pathscale for Opteron -----------------------------
+#OCFLAGS = -mtune=opteron -march=opteron -m64 -mcpu=opteron    
+#OCFLAGS = -Fo$*.o -Ox -Oa -G6
+
+#----------------------------------------------------------------------
+# 4. Code alternatives 
+CODETYPE         = -DQSINLINE  # usually unchanged
+
+#----------------------------------------------------------------------
+# End of user choices.  PLEASE, ALSO, CHECK include/config.h.
+#----------------------------------------------------------------------
+
+# Complete set of compiler flags - do not change
+CFLAGS = ${OPT} ${OCFLAGS} ${CODETYPE}
+
+all:
+
+# Prefetch - compile with no optimization - The -g sometimes helps
+# prevent trivializing this routine
+prefetch.o: prefetch.c
+	${CC} -g ${OCFLAGS} -c prefetch.c
+
+include Make_template

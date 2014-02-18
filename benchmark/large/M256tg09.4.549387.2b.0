@@ -1,0 +1,352 @@
+TACC: Starting up job 549387
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+TACC: 0 Running 44 on socket 0
+TACC: 0 Running 164 on socket 0
+TACC: 0 Running 47 on socket 0
+TACC: 0 Running 46 on socket 0
+TACC: 0 Running 45 on socket 0
+TACC: 0 Running 167 on socket 0
+TACC: 0 Running 165 on socket 0
+TACC: 0 Running 166 on socket 0
+TACC: 0 Running 84 on socket 0
+TACC: 0 Running 168 on socket 0
+TACC: 0 Running 124 on socket 0
+TACC: 0 Running 169 on socket 0
+TACC: 0 Running 170 on socket 0
+TACC: 0 Running 87 on socket 0
+TACC: 0 Running 85 on socket 0
+TACC: 0 Running 127 on socket 0
+TACC: 0 Running 125 on socket 0
+TACC: 0 Running 126 on socket 0
+TACC: 0 Running 171 on socket 0
+TACC: 0 Running 86 on socket 0
+TACC: 0 Running 128 on socket 0
+TACC: 0 Running 129 on socket 0
+TACC: 0 Running 130 on socket 0
+TACC: 0 Running 246 on socket 0
+TACC: 0 Running 131 on socket 0
+TACC: 0 Running 244 on socket 0
+TACC: 0 Running 245 on socket 0
+TACC: 0 Running 247 on socket 0
+TACC: 0 Running 92 on socket 0
+TACC: 0 Running 40 on socket 0
+TACC: 0 Running 212 on socket 0
+TACC: 0 Running 93 on socket 0
+TACC: 0 Running 94 on socket 0
+TACC: 0 Running 95 on socket 0
+TACC: 0 Running 50 on socket 0
+TACC: 0 Running 41 on socket 0
+TACC: 0 Running 42 on socket 0
+TACC: 0 Running 176 on socket 0
+TACC: 0 Running 213 on socket 0
+TACC: 0 Running 214 on socket 0
+TACC: 0 Running 215 on socket 0
+TACC: 0 Running 52 on socket 0
+TACC: 0 Running 208 on socket 0
+TACC: 0 Running 51 on socket 0
+TACC: 0 Running 48 on socket 0
+TACC: 0 Running 177 on socket 0
+TACC: 0 Running 178 on socket 0
+TACC: 0 Running 54 on socket 0
+TACC: 0 Running 53 on socket 0
+TACC: 0 Running 55 on socket 0
+TACC: 0 Running 210 on socket 0
+TACC: 0 Running 209 on socket 0
+TACC: 0 Running 211 on socket 0
+TACC: 0 Running 97 on socket 0
+TACC: 0 Running 96 on socket 0
+TACC: 0 Running 98 on socket 0
+TACC: 0 Running 184 on socket 0
+TACC: 0 Running 172 on socket 0
+TACC: 0 Running 185 on socket 0
+TACC: 0 Running 186 on socket 0
+TACC: 0 Running 36 on socket 0
+TACC: 0 Running 175 on socket 0
+TACC: 0 Running 187 on socket 0
+TACC: 0 Running 28 on socket 0
+TACC: 0 Running 173 on socket 0
+TACC: 0 Running 37 on socket 0
+TACC: 0 Running 252 on socket 0
+TACC: 0 Running 89 on socket 0
+TACC: 0 Running 31 on socket 0
+TACC: 0 Running 192 on socket 0
+TACC: 0 Running 204 on socket 0
+TACC: 0 Running 180 on socket 0
+TACC: 0 Running 43 on socket 0
+TACC: 0 Running 174 on socket 0
+TACC: 0 Running 196 on socket 0
+TACC: 0 Running 0 on socket 0
+TACC: 0 Running 253 on socket 0
+TACC: 0 Running 216 on socket 0
+TACC: 0 Running 152 on socket 0
+TACC: 0 Running 38 on socket 0
+TACC: 0 Running 88 on socket 0
+TACC: 0 Running 29 on socket 0
+TACC: 0 Running 193 on socket 0
+TACC: 0 Running 254 on socket 0
+TACC: 0 Running 205 on socket 0
+TACC: 0 Running 207 on socket 0
+TACC: 0 Running 140 on socket 0
+TACC: 0 Running 24 on socket 0
+TACC: 0 Running 58 on socket 0
+TACC: 0 Running 182 on socket 0
+TACC: 0 Running 181 on socket 0
+TACC: 0 Running 183 on socket 0
+TACC: 0 Running 90 on socket 0
+TACC: 0 Running 112 on socket 0
+TACC: 0 Running 197 on socket 0
+TACC: 0 Running 198 on socket 0
+TACC: 0 Running 2 on socket 0
+TACC: 0 Running 1 on socket 0
+TACC: 0 Running 194 on socket 0
+TACC: 0 Running 248 on socket 0
+TACC: 0 Running 255 on socket 0
+TACC: 0 Running 217 on socket 0
+TACC: 0 Running 220 on socket 0
+TACC: 0 Running 232 on socket 0
+TACC: 0 Running 148 on socket 0
+TACC: 0 Running 3 on socket 0
+TACC: 0 Running 218 on socket 0
+TACC: 0 Running 153 on socket 0
+TACC: 0 Running 199 on socket 0
+TACC: 0 Running 141 on socket 0
+TACC: 0 Running 154 on socket 0
+TACC: 0 Running 60 on socket 0
+TACC: 0 Running 72 on socket 0
+TACC: 0 Running 202 on socket 0
+TACC: 0 Running 25 on socket 0
+TACC: 0 Running 219 on socket 0
+TACC: 0 Running 136 on socket 0
+TACC: 0 Running 113 on socket 0
+TACC: 0 Running 12 on socket 0
+TACC: 0 Running 195 on socket 0
+TACC: 0 Running 228 on socket 0
+TACC: 0 Running 142 on socket 0
+TACC: 0 Running 250 on socket 0
+TACC: 0 Running 26 on socket 0
+TACC: 0 Running 27 on socket 0
+TACC: 0 Running 104 on socket 0
+TACC: 0 Running 155 on socket 0
+TACC: 0 Running 149 on socket 0
+TACC: 0 Running 150 on socket 0
+TACC: 0 Running 249 on socket 0
+TACC: 0 Running 56 on socket 0
+TACC: 0 Running 76 on socket 0
+TACC: 0 Running 64 on socket 0
+TACC: 0 Running 221 on socket 0
+TACC: 0 Running 71 on socket 0
+TACC: 0 Running 61 on socket 0
+TACC: 0 Running 63 on socket 0
+TACC: 0 Running 73 on socket 0
+TACC: 0 Running 74 on socket 0
+TACC: 0 Running 116 on socket 0
+TACC: 0 Running 114 on socket 0
+TACC: 0 Running 233 on socket 0
+TACC: 0 Running 144 on socket 0
+TACC: 0 Running 13 on socket 0
+TACC: 0 Running 137 on socket 0
+TACC: 0 Running 151 on socket 0
+TACC: 0 Running 240 on socket 0
+TACC: 0 Running 139 on socket 0
+TACC: 0 Running 57 on socket 0
+TACC: 0 Running 32 on socket 0
+TACC: 0 Running 100 on socket 0
+TACC: 0 Running 229 on socket 0
+TACC: 0 Running 75 on socket 0
+TACC: 0 Running 80 on socket 0
+TACC: 0 Running 14 on socket 0
+TACC: 0 Running 231 on socket 0
+TACC: 0 Running 115 on socket 0
+TACC: 0 Running 105 on socket 0
+TACC: 0 Running 230 on socket 0
+TACC: 0 Running 132 on socket 0
+TACC: 0 Running 200 on socket 0
+TACC: 0 Running 4 on socket 0
+TACC: 0 Running 77 on socket 0
+TACC: 0 Running 78 on socket 0
+TACC: 0 Running 65 on socket 0
+TACC: 0 Running 66 on socket 0
+TACC: 0 Running 106 on socket 0
+TACC: 0 Running 15 on socket 0
+TACC: 0 Running 117 on socket 0
+TACC: 0 Running 118 on socket 0
+TACC: 0 Running 222 on socket 0
+TACC: 0 Running 201 on socket 0
+TACC: 0 Running 145 on socket 0
+TACC: 0 Running 146 on socket 0
+TACC: 0 Running 241 on socket 0
+TACC: 0 Running 242 on socket 0
+TACC: 0 Running 33 on socket 0
+TACC: 0 Running 34 on socket 0
+TACC: 0 Running 234 on socket 0
+TACC: 0 Running 101 on socket 0
+TACC: 0 Running 102 on socket 0
+TACC: 0 Running 223 on socket 0
+TACC: 0 Running 156 on socket 0
+TACC: 0 Running 160 on socket 0
+TACC: 0 Running 81 on socket 0
+TACC: 0 Running 82 on socket 0
+TACC: 0 Running 108 on socket 0
+TACC: 0 Running 134 on socket 0
+TACC: 0 Running 5 on socket 0
+TACC: 0 Running 6 on socket 0
+TACC: 0 Running 20 on socket 0
+TACC: 0 Running 19 on socket 0
+TACC: 0 Running 8 on socket 0
+TACC: 0 Running 99 on socket 0
+TACC: 0 Running 120 on socket 0
+TACC: 0 Running 49 on socket 0
+TACC: 0 Running 68 on socket 0
+TACC: 0 Running 135 on socket 0
+TACC: 0 Running 179 on socket 0
+TACC: 0 Running 7 on socket 0
+TACC: 0 Running 69 on socket 0
+TACC: 0 Running 133 on socket 0
+TACC: 0 Running 161 on socket 0
+TACC: 0 Running 162 on socket 0
+TACC: 0 Running 157 on socket 0
+TACC: 0 Running 158 on socket 0
+TACC: 0 Running 109 on socket 0
+TACC: 0 Running 110 on socket 0
+TACC: 0 Running 21 on socket 0
+TACC: 0 Running 22 on socket 0
+TACC: 0 Running 235 on socket 0
+TACC: 0 Running 16 on socket 0
+TACC: 0 Running 17 on socket 0
+TACC: 0 Running 9 on socket 0
+TACC: 0 Running 10 on socket 0
+TACC: 0 Running 188 on socket 0
+TACC: 0 Running 122 on socket 0
+TACC: 0 Running 159 on socket 0
+TACC: 0 Running 121 on socket 0
+TACC: 0 Running 18 on socket 0
+TACC: 0 Running 23 on socket 0
+TACC: 0 Running 189 on socket 0
+TACC: 0 Running 190 on socket 0
+TACC: 0 Running 224 on socket 0
+TACC: 0 Running 91 on socket 0
+TACC: 0 Running 143 on socket 0
+TACC: 0 Running 191 on socket 0
+TACC: 0 Running 67 on socket 0
+TACC: 0 Running 30 on socket 0
+TACC: 0 Running 119 on socket 0
+TACC: 0 Running 62 on socket 0
+TACC: 0 Running 225 on socket 0
+TACC: 0 Running 243 on socket 0
+TACC: 0 Running 107 on socket 0
+TACC: 0 Running 103 on socket 0
+TACC: 0 Running 79 on socket 0
+TACC: 0 Running 35 on socket 0
+TACC: 0 Running 147 on socket 0
+TACC: 0 Running 251 on socket 0
+TACC: 0 Running 138 on socket 0
+TACC: 0 Running 59 on socket 0
+TACC: 0 Running 11 on socket 0
+TACC: 0 Running 226 on socket 0
+TACC: 0 Running 203 on socket 0
+TACC: 0 Running 163 on socket 0
+TACC: 0 Running 39 on socket 0
+TACC: 0 Running 123 on socket 0
+TACC: 0 Running 236 on socket 0
+TACC: 0 Running 111 on socket 0
+TACC: 0 Running 70 on socket 0
+TACC: 0 Running 206 on socket 0
+TACC: 0 Running 83 on socket 0
+TACC: 0 Running 227 on socket 0
+TACC: 0 Running 239 on socket 0
+TACC: 0 Running 238 on socket 0
+TACC: 0 Running 237 on socket 0
+SU3 with improved KS action
+Microcanonical simulation with refreshing
+MIMD version 6
+Machine = MPI (portable), with 256 nodes
+R algorithm
+type 0 for no prompts  or 1 for prompts
+nflavors1 4
+nflavors2 4
+nx 64
+ny 64
+nz 64
+nt 64
+iseed 5682304
+LAYOUT = Hypercubes, options = EVENFIRST,
+ON EACH NODE 16 x 16 x 16 x 16
+Mallocing 73.9 MBytes per node for lattice
+Made lattice
+Made nn gathers
+Made 3nn gathers
+Finished setup
+
+
+warms 0
+trajecs 2
+traj_between_meas 1
+beta 5.6
+mass1 0.01
+mass2 0.01
+u0 0.8441
+microcanonical_time_step 0.02
+steps_per_trajectory 8
+max_cg_iterations 200
+error_per_site 1e-05
+error_for_propagator 1e-04
+fresh 
+forget 
+unit gauge configuration loaded
+CHECK PLAQ: 3.000000e+00 3.000000e+00
+Unitarity checked.  Max deviation 0.00e+00
+Time to check unitarity = 3.932095e-02
+Symanzik 1x1 + 1x2 + 1x1x1 action
+loop coefficients: nloop rep loop_coeff  multiplicity
+                    0 0      1.000000e+00     6
+                    1 0      -7.762509e-02     12
+                    2 0      -1.031171e-02     16
+"O(a^2): couplings(pi)=0, Naik term, No O(a^2) errors, tadpole weights"
+path coefficients: npath  path_coeff  multiplicity
+                    0      6.250000e-01     8
+                    1      -5.847914e-02     8
+                    2      -8.771872e-02     48
+                    3      3.077829e-02     192
+                    4      -7.199552e-03     384
+                    5      -1.231132e-01     48
+WARMUPS COMPLETED
+GFTIME:   time = 3.593458e+01 (Symanzik1) mflops = -1.531957e-01
+GFTIME:   time = 3.795663e+01 (Symanzik1) mflops = -1.450346e-01
+GFTIME:   time = 4.191714e+01 (Symanzik1) mflops = -1.313311e-01
+GFTIME:   time = 3.590334e+01 (Symanzik1) mflops = -1.533290e-01
+GFTIME:   time = 3.582358e+01 (Symanzik1) mflops = -1.536704e-01
+GFTIME:   time = 3.597843e+01 (Symanzik1) mflops = -1.530090e-01
+GFTIME:   time = 3.809172e+01 (Symanzik1) mflops = -1.445202e-01
+GFTIME:   time = 4.353075e+01 (Symanzik1) mflops = -1.264629e-01
+PLAQ:	2.658360	2.658338
+P_LOOP:	3.906136e-01	-1.507490e-03
+PBP: mass 1.000000e-02     5.142456e-03  5.259736e-03  9.184406e-05  8.852444e-05 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500418e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     5.042832e-03  5.353124e-03  -1.211425e-04  -1.268228e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.499398e+00 ( 1 of 1 )
+GFTIME:   time = 3.591974e+01 (Symanzik1) mflops = -1.532590e-01
+GFTIME:   time = 3.933214e+01 (Symanzik1) mflops = -1.399625e-01
+GFTIME:   time = 4.657486e+01 (Symanzik1) mflops = -1.181973e-01
+GFTIME:   time = 3.686065e+01 (Symanzik1) mflops = -1.493469e-01
+GFTIME:   time = 3.665509e+01 (Symanzik1) mflops = -1.501844e-01
+GFTIME:   time = 3.663690e+01 (Symanzik1) mflops = -1.502590e-01
+GFTIME:   time = 3.626403e+01 (Symanzik1) mflops = -1.518040e-01
+GFTIME:   time = 4.217547e+01 (Symanzik1) mflops = -1.305267e-01
+PLAQ:	2.443138	2.443153
+P_LOOP:	6.489682e-02	-2.984927e-03
+PBP: mass 1.000000e-02     5.879138e-03  5.866760e-03  5.887012e-05  6.416340e-05 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500384e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     5.840761e-03  5.897349e-03  1.108154e-04  1.073648e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500024e+00 ( 1 of 1 )
+RUNNING COMPLETED
+average cg iters for step= 2.130000e+02
+total_iters = 3778
+NERSC_TIME 2603.501 secs
+
+
+exit: Mon Feb 23 11:13:12 2009
+
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.

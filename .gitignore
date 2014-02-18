@@ -11,3 +11,7 @@
 *.lai
 *.la
 *.a
+
+
+ks_imp_dyn2/*.o
+libraries/*.o

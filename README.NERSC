@@ -1,0 +1,71 @@
+
+   MILC Benchmark
+
+   Compile
+   -------
+   In the libraries subdirectory, edit a makefile (Make_*)
+   similar to the target platform. Change compiler and flags
+   as appropriate. Type: 
+       make -f Make_<target> su3.a complex.a
+
+   Similarly, in the ks_imp_dyn2 subdirectory, edit a makefile
+   (Make_*) similar to the target platform. A suitable communication 
+   object file must be selected, usually "com_mpi.o", for 
+   MACHINE_DEP macro. Type:
+       make -f Make_<target> su3_rmd
+
+   Copy the executable, "su3_rmd" to the "benchmark"
+   directory. Modifications to the source are permitted to enable 
+   correct functionality. Modifications to optimize performance
+   are limited to 10% of lines changed, deleted or added.
+
+  
+   Running
+   -------
+   Three problem sizes are provided in the "benchmark"
+   directory; "small", "medium" and "large". The small case
+   should be used for testing. The benchmark timings are required 
+   for the medium,large and xl cases. Each case must be executed 
+   with a fixed concurrency. 
+
+        Problem Size    Concurrency
+        ----------------------------
+          small              4
+          medium            64
+          large            256
+          xl              2048
+
+   As originally distributed, the concurrency simply equals the
+   number of MPI tasks. Computational nodes employed in the
+   benchmark must be fully-packed, that is, the number
+   processes or threads executing must be equal to the number
+   of physical processors on the node.
+
+   Invoke the application with the syntax;
+       mpirun -np <#tasks> su3_rmd < <size>.in
+   where <size> is small, medium, large or xl. 
+
+   Use "checkout" to check correctness for all 3 cases. Prints
+   "OK" or "Failed". PBS and Loadleveler scripts are provided
+   for reference. Sample output from the NERSC IBM SP Power3
+   system is also provided. 
+
+   If it is not feasible to run the xl case, consult the sample 
+   output, "xl.out", for performance information to aid in
+   projections.
+ 
+
+
+   Reporting
+   ---------
+   For the medium and large cases, extract the elapsed run time
+   from the line labelled "NERSC_TIME" and record it in the
+   Application Benchmark table.
+
+   For the electronic submission, include all the source and
+   the makefiles used to build on the target platform. Do not
+   include object and executable files. Include all standard
+   output files.
+
+ 
+

@@ -1,0 +1,108 @@
+TACC: Setting memory limits for job 284562 to 1992294 KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#$ -N MILC_2048.intel.v3
+
+#$ -cwd
+#$ -o $JOB_NAME.o$JOB_ID
+#$ -j y
+
+#$ -q systest
+#$ -pe 16way 2048
+#$ -V
+#$ -l h_rt=02:00:00
+#$ -A A-ccsc
+
+ibrun tacc_affinity ../../ks_imp_dyn2/su3_rmd.intel.v3 < xl.in
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Starting up job 284562
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+SU3 with improved KS action
+Microcanonical simulation with refreshing
+MIMD version 6
+Machine = MPI (portable), with 2048 nodes
+R algorithm
+type 0 for no prompts  or 1 for prompts
+nflavors1 4
+nflavors2 4
+nx 128
+ny 128
+nz 128
+nt 128
+iseed 5682304
+LAYOUT = Hypercubes, options = EVENFIRST,
+ON EACH NODE 16 x 16 x 16 x 32
+Mallocing 147.8 MBytes per node for lattice
+Made lattice
+Made nn gathers
+Made 3nn gathers
+Finished setup
+
+
+warms 0
+trajecs 2
+traj_between_meas 1
+beta 5.6
+mass1 0.01
+mass2 0.01
+u0 0.8441
+microcanonical_time_step 0.02
+steps_per_trajectory 4
+max_cg_iterations 200
+error_per_site 1e-05
+error_for_propagator 1e-04
+fresh 
+forget 
+unit gauge configuration loaded
+CHECK PLAQ: 3.000000e+00 3.000000e+00
+Unitarity checked.  Max deviation 0.00e+00
+Time to check unitarity = 8.269596e-02
+Symanzik 1x1 + 1x2 + 1x1x1 action
+loop coefficients: nloop rep loop_coeff  multiplicity
+                    0 0      1.000000e+00     6
+                    1 0      -7.762509e-02     12
+                    2 0      -1.031171e-02     16
+"O(a^2): couplings(pi)=0, Naik term, No O(a^2) errors, tadpole weights"
+path coefficients: npath  path_coeff  multiplicity
+                    0      6.250000e-01     8
+                    1      -5.847914e-02     8
+                    2      -8.771872e-02     48
+                    3      3.077829e-02     192
+                    4      -7.199552e-03     384
+                    5      -1.231132e-01     48
+WARMUPS COMPLETED
+GFTIME:   time = 7.549802e+01 (Symanzik1) mflops = -6.944394e-03
+GFTIME:   time = 7.533839e+01 (Symanzik1) mflops = -6.959108e-03
+GFTIME:   time = 7.541550e+01 (Symanzik1) mflops = -6.951992e-03
+GFTIME:   time = 7.473692e+01 (Symanzik1) mflops = -7.015114e-03
+PLAQ:	2.902370	2.902438
+P_LOOP:	1.107338e+00	-6.379062e-05
+PBP: mass 1.000000e-02     4.547493e-03  4.597677e-03  -1.524810e-05  -1.275458e-05 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.499920e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     4.524670e-03  4.627289e-03  1.130208e-05  1.111699e-05 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500000e+00 ( 1 of 1 )
+GFTIME:   time = 7.545733e+01 (Symanzik1) mflops = -6.948138e-03
+GFTIME:   time = 7.544890e+01 (Symanzik1) mflops = -6.948915e-03
+GFTIME:   time = 7.542781e+01 (Symanzik1) mflops = -6.950858e-03
+GFTIME:   time = 7.544156e+01 (Symanzik1) mflops = -6.949591e-03
+PLAQ:	2.816257	2.816324
+P_LOOP:	3.882562e-01	6.490698e-04
+PBP: mass 1.000000e-02     4.753187e-03  4.809352e-03  4.471238e-05  4.736418e-05 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.499987e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     4.754437e-03  4.814938e-03  -5.083215e-05  -5.452964e-05 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500036e+00 ( 1 of 1 )
+RUNNING COMPLETED
+average cg iters for step= 3.610000e+02
+total_iters = 3203
+NERSC_TIME 3364.694 secs
+
+
+exit: Thu Oct 16 10:54:33 2008
+
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+TACC: Cleaning up after job: 284562
+TACC: Done.

@@ -1,0 +1,37 @@
+TACC: Setting memory limits for job 119475 to 1992294 KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#$ -N MILC
+
+#$ -cwd
+#$ -o $JOB_NAME.256.16way.o$JOB_ID
+#$ -j y
+
+##$ -q normal
+#$ -q clean
+#$ -pe 16way 256 
+#$ -V
+#$ -l h_rt=08:00:00
+#$ -A A-ccsc
+
+ibrun ./su3_rmd < large.in
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Starting up job 119475
+TACC: Setting up parallel environment for MVAPICH-1 mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+SU3 with improved KS action
+Microcanonical simulation with refreshing
+MIMD version 6
+Machine = MPI (portable), with 256 nodes
+R algorithm
+type 0 for no prompts  or 1 for prompts
+
+get_prompt: ERROR IN INPUT: initial prompt
+exit: Mon Jun  2 15:21:32 2008
+
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+TACC: Cleaning up after job: 119475
+TACC: Done.

@@ -1,0 +1,28 @@
+TACC: Setting memory limits for job 35508 to 1992294 KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#$ -N MILC
+
+#$ -cwd
+#$ -o $JOB_NAME.2048.o$JOB_ID
+#$ -j y
+
+#$ -q normal
+#$ -pe 16way 2048
+#$ -V
+#$ -l h_rt=08:00:00
+#$ -A A-ccsc
+
+wrap_ibrun.sh
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Starting up job 35508
+TACC: Setting up parallel environment for MVAPICH-1 mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+Timeout during client startup.
+Killing remote processes...DONE
+TACC: MPI job exited with code: 1
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+TACC: Cleaning up after job: 35508

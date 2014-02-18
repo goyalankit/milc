@@ -1,0 +1,82 @@
+TACC: Setting memory limits for job 549374 to 7969177 KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#$ -N M64tg09.4
+#$ -cwd
+#$ -o $JOB_NAME.o$JOB_ID
+#$ -j y
+
+#$ -q development
+#$ -pe 4way 256
+#$ -V
+#$ -l h_rt=02:00:00
+#$ -hold_jid M64tg09.4
+#$ -A A-ccsc
+
+# 1. Four in parallel
+ibrun ./tacc_affinity_0 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.1a.0 &
+ibrun ./tacc_affinity_1 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.1a.1 &
+ibrun ./tacc_affinity_2 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.1a.2 &
+ibrun ./tacc_affinity_3 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.1a.3 &
+wait
+
+# 2. Two in parallel
+ibrun ./tacc_affinity_0 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.2a.0 &
+ibrun ./tacc_affinity_1 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.2a.1 &
+wait
+ibrun ./tacc_affinity_0 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.2b.0 &
+ibrun ./tacc_affinity_2 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.2b.2 &
+wait
+ibrun ./tacc_affinity_0 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.2c.0 &
+ibrun ./tacc_affinity_3 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.2c.3 &
+wait
+ibrun ./tacc_affinity_1 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.2d.1 &
+ibrun ./tacc_affinity_2 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.2d.2 &
+wait
+ibrun ./tacc_affinity_1 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.2e.1 &
+ibrun ./tacc_affinity_3 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.2e.3 &
+wait
+ibrun ./tacc_affinity_2 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.2f.2 &
+ibrun ./tacc_affinity_3 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.2f.3 &
+wait
+
+# 3. Single Socket
+ibrun ./tacc_affinity_0 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.3a.0
+ibrun ./tacc_affinity_1 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.3a.1
+ibrun ./tacc_affinity_2 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.3a.2
+ibrun ./tacc_affinity_3 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.3a.3
+
+# 4. 4x mixed
+ibrun ./tacc_affinity su3_rmd < medium.in > $JOB_NAME.$JOB_ID.4a.0 &
+ibrun ./tacc_affinity su3_rmd < medium.in > $JOB_NAME.$JOB_ID.4a.1 &
+ibrun ./tacc_affinity su3_rmd < medium.in > $JOB_NAME.$JOB_ID.4a.2 &
+ibrun ./tacc_affinity su3_rmd < medium.in > $JOB_NAME.$JOB_ID.4a.3 &
+wait
+
+# 5. 2x mixed
+ibrun ./tacc_affinity su3_rmd < medium.in > $JOB_NAME.$JOB_ID.5a.0 &
+ibrun ./tacc_affinity su3_rmd < medium.in > $JOB_NAME.$JOB_ID.5a.1 &
+wait
+
+# 6. 1x mixed
+ibrun ./tacc_affinity su3_rmd < medium.in > $JOB_NAME.$JOB_ID.6a.0
+
+# 7. 4x mixed
+ibrun ./tacc_affinity_i su3_rmd < medium.in > $JOB_NAME.$JOB_ID.7a.0 &
+ibrun ./tacc_affinity_i su3_rmd < medium.in > $JOB_NAME.$JOB_ID.7a.1 &
+ibrun ./tacc_affinity_i su3_rmd < medium.in > $JOB_NAME.$JOB_ID.7a.2 &
+ibrun ./tacc_affinity_i su3_rmd < medium.in > $JOB_NAME.$JOB_ID.7a.3 &
+wait
+
+# 8. 2x mixed
+ibrun ./tacc_affinity_i su3_rmd < medium.in > $JOB_NAME.$JOB_ID.8a.0 &
+ibrun ./tacc_affinity_i su3_rmd < medium.in > $JOB_NAME.$JOB_ID.8a.1 &
+wait
+
+# 9. 1x mixed
+ibrun ./tacc_affinity_i su3_rmd < medium.in > $JOB_NAME.$JOB_ID.9a.0
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 549374
+TACC: Done.

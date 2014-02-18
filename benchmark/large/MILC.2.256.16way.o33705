@@ -1,0 +1,116 @@
+TACC: Setting memory limits for job 33705 to 1992294 KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#$ -N MILC
+
+#$ -cwd
+#$ -o $JOB_NAME.2.256.16way.o$JOB_ID
+#$ -j y
+
+##$ -q normal
+#$ -q clean
+#$ -pe 16way 256 
+#$ -V
+#$ -l h_rt=08:00:00
+#$ -A A-ccsc
+
+./wrap_ibrun.sh
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Starting up job 33705
+TACC: Setting up parallel environment for MVAPICH-1 mpirun.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+SU3 with improved KS action
+Microcanonical simulation with refreshing
+MIMD version 6
+Machine = MPI (portable), with 256 nodes
+R algorithm
+type 0 for no prompts  or 1 for prompts
+nflavors1 4
+nflavors2 4
+nx 64
+ny 64
+nz 64
+nt 64
+iseed 5682304
+LAYOUT = Hypercubes, options = EVENFIRST,
+ON EACH NODE 16 x 16 x 16 x 16
+Mallocing 73.9 MBytes per node for lattice
+Made lattice
+Made nn gathers
+Made 3nn gathers
+Finished setup
+
+
+warms 0
+trajecs 2
+traj_between_meas 1
+beta 5.6
+mass1 0.01
+mass2 0.01
+u0 0.8441
+microcanonical_time_step 0.02
+steps_per_trajectory 8
+max_cg_iterations 200
+error_per_site 1e-05
+error_for_propagator 1e-04
+fresh 
+forget 
+unit gauge configuration loaded
+CHECK PLAQ: 3.000000e+00 3.000000e+00
+Unitarity checked.  Max deviation 0.00e+00
+Time to check unitarity = 4.411101e-02
+Symanzik 1x1 + 1x2 + 1x1x1 action
+loop coefficients: nloop rep loop_coeff  multiplicity
+                    0 0      1.000000e+00     6
+                    1 0      -7.762509e-02     12
+                    2 0      -1.031171e-02     16
+"O(a^2): couplings(pi)=0, Naik term, No O(a^2) errors, tadpole weights"
+path coefficients: npath  path_coeff  multiplicity
+                    0      6.250000e-01     8
+                    1      -5.847914e-02     8
+                    2      -8.771872e-02     48
+                    3      3.077829e-02     192
+                    4      -7.199552e-03     384
+                    5      -1.231132e-01     48
+WARMUPS COMPLETED
+GFTIME:   time = 3.915186e+01 (Symanzik1) mflops = -1.406070e-01
+GFTIME:   time = 3.877035e+01 (Symanzik1) mflops = -1.419906e-01
+GFTIME:   time = 3.863238e+01 (Symanzik1) mflops = -1.424977e-01
+GFTIME:   time = 3.859585e+01 (Symanzik1) mflops = -1.426325e-01
+GFTIME:   time = 3.863130e+01 (Symanzik1) mflops = -1.425017e-01
+GFTIME:   time = 3.859757e+01 (Symanzik1) mflops = -1.426262e-01
+GFTIME:   time = 3.860771e+01 (Symanzik1) mflops = -1.425887e-01
+GFTIME:   time = 3.855307e+01 (Symanzik1) mflops = -1.427908e-01
+PLAQ:	2.658360	2.658338
+P_LOOP:	3.906136e-01	-1.507490e-03
+PBP: mass 1.000000e-02     5.142456e-03  5.259736e-03  9.184406e-05  8.852444e-05 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500418e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     5.042832e-03  5.353124e-03  -1.211425e-04  -1.268228e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.499398e+00 ( 1 of 1 )
+GFTIME:   time = 3.864280e+01 (Symanzik1) mflops = -1.424593e-01
+GFTIME:   time = 3.867590e+01 (Symanzik1) mflops = -1.423373e-01
+GFTIME:   time = 3.870141e+01 (Symanzik1) mflops = -1.422435e-01
+GFTIME:   time = 3.869017e+01 (Symanzik1) mflops = -1.422848e-01
+GFTIME:   time = 3.866491e+01 (Symanzik1) mflops = -1.423778e-01
+GFTIME:   time = 3.871032e+01 (Symanzik1) mflops = -1.422107e-01
+GFTIME:   time = 3.872583e+01 (Symanzik1) mflops = -1.421538e-01
+GFTIME:   time = 3.865487e+01 (Symanzik1) mflops = -1.424147e-01
+PLAQ:	2.443138	2.443153
+P_LOOP:	6.489682e-02	-2.984927e-03
+PBP: mass 1.000000e-02     5.879138e-03  5.866760e-03  5.887012e-05  6.416340e-05 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500384e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     5.840761e-03  5.897349e-03  1.108154e-04  1.073648e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500024e+00 ( 1 of 1 )
+RUNNING COMPLETED
+average cg iters for step= 2.130000e+02
+total_iters = 3778
+NERSC_TIME 2809.793 secs
+
+
+exit: Tue Mar  4 14:02:28 2008
+
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+TACC: Cleaning up after job: 33705

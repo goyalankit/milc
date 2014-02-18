@@ -1,0 +1,10 @@
+#!/bin/ksh
+#PBS -l ncpus=64,walltime=01:25:00,mem=5Gb
+#PBS -q batch
+#PBS -N n
+#PBS -o medium.out
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+mpirun -np 64 ./su3_rmd < medium.in
+

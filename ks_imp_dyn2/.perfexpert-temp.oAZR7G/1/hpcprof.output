@@ -1,0 +1,4 @@
+msg: STRUCTURE: /home1/01174/ashay/milc/ks_imp_dyn2/su3_rmd
+msg: Line map : /opt/apps/hpctoolkit/5.3.2/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0
+msg: Line map : /lib64/libc-2.12.so
+msg: Populating Experiment database: /home1/01174/ashay/milc/ks_imp_dyn2/.perfexpert-temp.oAZR7G/1/database

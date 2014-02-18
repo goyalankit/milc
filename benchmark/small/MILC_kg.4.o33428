@@ -1,0 +1,37 @@
+TACC: Setting memory limits for job 33428 to 7969177 KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#$ -N MILC_kg
+
+#$ -cwd
+#$ -o $JOB_NAME.4.o$JOB_ID
+#$ -j y
+
+#$ -q systest
+#$ -pe 4way 16 
+#$ -V
+#$ -l h_rt=00:05:00
+#$ -A A-ccsc
+
+ibrun ./numascript_4way.sh ./su3_rmd < small.in
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Starting up job 33428
+TACC: Setting up parallel environment for MVAPICH-2 MPD.
+running mpdallexit on i143-304.ranger.tacc.utexas.edu
+LAUNCHED mpd on i143-304.ranger.tacc.utexas.edu  via  
+RUNNING: mpd on i143-304.ranger.tacc.utexas.edu
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+Running 2 on socket 2
+Running 0 on socket 0
+Running 3 on socket 3
+Running 1 on socket 1
+PMGR_COLLECTIVE ERROR: unitialized MPI task: Missing required environment variable: MPIRUN_RANK
+PMGR_COLLECTIVE ERROR: unitialized MPI task: Missing required environment variable: MPIRUN_RANK
+PMGR_COLLECTIVE ERROR: unitialized MPI task: Missing required environment variable: MPIRUN_RANK
+PMGR_COLLECTIVE ERROR: unitialized MPI task: Missing required environment variable: MPIRUN_RANK
+TACC: MPI job exited with code: 1
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+TACC: Cleaning up after job: 33428

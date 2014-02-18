@@ -1,0 +1,111 @@
+ATTENTION: 0031-408  2048 tasks allocated by LoadLeveler, continuing...
+SU3 with improved KS action
+Microcanonical simulation with refreshing
+MIMD version 6
+Machine = MPI (portable), with 2048 nodes
+R algorithm
+type 0 for no prompts  or 1 for prompts
+nflavors1 4
+nflavors2 4
+nx 128
+ny 128
+nz 128
+nt 128
+iseed 5682304
+LAYOUT = Hypercubes, options = EVENFIRST,
+ON EACH NODE 16 x 16 x 16 x 32
+Mallocing 141.6 MBytes per node for lattice
+Made lattice
+Made nn gathers
+Made 3nn gathers
+Finished setup
+
+
+warms 0
+trajecs 2
+traj_between_meas 1
+beta 5.6
+mass1 0.01
+mass2 0.01
+u0 0.8441
+microcanonical_time_step 0.02
+steps_per_trajectory 4
+max_cg_iterations 200
+error_per_site 1e-05
+error_for_propagator 0.0001
+fresh 
+forget 
+unit gauge configuration loaded
+CHECK PLAQ: 3.000000e+00 3.000000e+00
+Unitarity checked.  Max deviation 0.00e+00
+Time to check unitarity = 5.816610e-01
+Symanzik 1x1 + 1x2 + 1x1x1 action
+loop coefficients: nloop rep loop_coeff  multiplicity
+                    0 0      1.000000e+00     6
+                    1 0      -7.762509e-02     12
+                    2 0      -1.031171e-02     16
+"O(a^2): couplings(pi)=0, Naik term, No O(a^2) errors, tadpole weights"
+path coefficients: npath  path_coeff  multiplicity
+                    0      6.250000e-01     8
+                    1      -5.847914e-02     8
+                    2      -8.771872e-02     48
+                    3      3.077829e-02     192
+                    4      -7.199552e-03     384
+                    5      -1.231132e-01     48
+WARMUPS COMPLETED
+PLAQ:	2.902370	2.902438
+P_LOOP:	1.107337e+00	-6.405068e-05
+PBP: mass 1.000000e-02     4.547410e-03  4.604241e-03  -1.525937e-05  -1.276672e-05 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.499920e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     4.524624e-03  4.633818e-03  1.125179e-05  1.106382e-05 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500000e+00 ( 1 of 1 )
+PLAQ:	2.816257	2.816324
+P_LOOP:	3.882561e-01	6.490843e-04
+PBP: mass 1.000000e-02     4.753252e-03  4.815772e-03  4.480093e-05  4.746425e-05 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.499987e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     4.754391e-03  4.821477e-03  -5.081364e-05  -5.451641e-05 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500036e+00 ( 1 of 1 )
+RUNNING COMPLETED
+average cg iters for step= 3.610000e+02
+total_iters = 3203
+NERSC_TIME 12697.256 secs
+
+
+exit: Mon Mar 28 06:56:50 2005
+
+##IPMv0.85#####################################################################
+# 
+# command : ./su3_rmd (completed)
+# host    : s06209/006037294C00_AIX        mpi_tasks : 2048 on 128 nodes
+# start   : 03/28/05/03:23:12              wallclock : 12818.580800 sec
+# stop    : 03/28/05/06:56:50              %comm     : 18.39 
+# gbytes  : 1.10560e+03 total              gflop/sec : 2.45193e+02 total
+#
+#
+#                           [total]         <avg>           min           max 
+# wallclock              2.62473e+07         12816       12813.1       12818.6
+# user                    2.6108e+07       12748.1       12715.2       12775.2
+# system                     86845.2       42.4049         29.07         66.47
+# mpi                    4.82635e+06       2356.61       2163.61        2604.2
+# %comm                                     18.388        16.879         20.32
+# gflop/sec                  245.193      0.119723      0.118377      0.119741
+# gbytes                      1105.6      0.539844      0.539616      0.540115
+# PM_FPU0_CMPL           1.15279e+15   5.62888e+11   5.62193e+11   5.63665e+11
+# PM_FPU1_CMPL           7.62439e+14   3.72285e+11   3.71514e+11   3.73007e+11
+# PM_FPU_FMA             1.22779e+15   5.99507e+11    5.8244e+11   5.99658e+11
+# PM_LD_CMPL             2.09603e+15   1.02345e+12   9.37777e+11   1.10661e+12
+# PM_ST_CMPL             1.30089e+15   6.35199e+11   5.75748e+11    6.9139e+11
+# PM_TLB_MISS            4.19141e+13   2.04659e+10   1.69598e+10   2.74343e+10
+# PM_INST_CMPL           6.12879e+15   2.99257e+12   2.74969e+12   3.22808e+12
+# PM_CYC                  9.6988e+15   4.73574e+12   4.72007e+12   4.74339e+12
+#
+#                            [time]       [calls]        <%mpi>      <%wall>
+# MPI_Wait               2.58577e+06   5.36871e+08         53.58         9.85
+# MPI_Allreduce           2.0333e+06   6.77888e+06         42.13         7.75
+# MPI_Isend                   179664   2.68435e+08          3.72         0.68
+# MPI_Irecv                  26956.8   2.68435e+08          0.56         0.10
+# MPI_Comm_size              521.725   4.03372e+08          0.01         0.00
+# MPI_Barrier                120.155          4096          0.00         0.00
+# MPI_Bcast                  18.8894          6144          0.00         0.00
+# MPI_Comm_rank            0.0177031          2048          0.00         0.00
+###############################################################################

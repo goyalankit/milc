@@ -1,0 +1,37 @@
+#$ -N M64tg09.8
+#$ -cwd
+#$ -o $JOB_NAME.o$JOB_ID
+#$ -j y
+
+#$ -q development
+#$ -pe 8way 128
+#$ -V
+#$ -l h_rt=02:00:00
+#$ -hold_jid M64tg09.8
+#$ -A A-ccsc
+
+# 1. Front and Back in parallel
+ibrun ./tacc_affinity_03 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.1.03 &
+ibrun ./tacc_affinity_12 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.1.12 &
+wait
+
+# 2. Front
+ibrun ./tacc_affinity_03 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.2.03
+# 2. Back
+ibrun ./tacc_affinity_12 su3_rmd < medium.in > $JOB_NAME.$JOB_ID.2.12
+
+# 3. 2x mixed
+ibrun ./tacc_affinity    su3_rmd    < medium.in > $JOB_NAME.$JOB_ID.3.1 &
+ibrun ./tacc_affinity    su3_rmd    < medium.in > $JOB_NAME.$JOB_ID.3.2 &
+wait
+
+# 4. 1x mixed
+ibrun ./tacc_affinity    su3_rmd    < medium.in > $JOB_NAME.$JOB_ID.4.1
+
+# 5. 2x mixed memory interleaved
+ibrun ./tacc_affinity_i  su3_rmd    < medium.in > $JOB_NAME.$JOB_ID.5.1 &
+ibrun ./tacc_affinity_i  su3_rmd    < medium.in > $JOB_NAME.$JOB_ID.5.2 &
+wait
+
+# 6. 1x mixed memory interleaved
+ibrun ./tacc_affinity_i  su3_rmd    < medium.in > $JOB_NAME.$JOB_ID.6.1

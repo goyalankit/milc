@@ -1,0 +1,494 @@
+/bin/rm -f *.o
+make -f Makefile target "MYTARGET= su3_rmd" \
+	"DEFINES= -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS" \
+	"GAUGE = symanzik_1loop_action.h" \
+	"QUARK = asqtad_action.h" \
+	"EXTRA_OBJECTS= dslash_fn2.o d_congrad5_fn.o"
+make[1]: Entering directory `/home1/01174/ashay/milc/ks_imp_dyn2'
+Building libraries with Makefile
+cd ../libraries ;\
+	make -f Makefile   "APP_CC=macpo.sh --macpo:check-alignment=mult_su3_an" all
+make[2]: Entering directory `/home1/01174/ashay/milc/libraries'
+================================================================
+PLEASE CHECK COMPILERS: Libraries: /work/01174/ashay/apps/intel/composerxe/bin/icc -g . Application: macpo.sh --macpo:check-alignment=mult_su3_an
+================================================================
+make[2]: Leaving directory `/home1/01174/ashay/milc/libraries'
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  control.c 
+"/home1/01174/ashay/milc/ks_imp_dyn2/control.c", line 24: warning: variable "i"
+          was declared but never referenced
+      int i;
+          ^
+
+"/home1/01174/ashay/milc/ks_imp_dyn2/control.c", line 27: warning: variable
+          "ssplaq" was declared but never referenced
+      float ssplaq,stplaq;
+            ^
+
+"/home1/01174/ashay/milc/ks_imp_dyn2/control.c", line 27: warning: variable
+          "stplaq" was declared but never referenced
+      float ssplaq,stplaq;
+                   ^
+
+"/home1/01174/ashay/milc/ks_imp_dyn2/control.c", line 28: warning: variable
+          "avspect_iters" was set but never used
+      int s_iters,avs_iters,avspect_iters,
+                            ^
+
+"/home1/01174/ashay/milc/ks_imp_dyn2/control.c", line 29: warning: variable
+          "avbcorr_iters" was set but never used
+          avbcorr_iters;
+          ^
+
+In file included from ks_imp_includes.h:12,
+                 from rose_control.c:14:
+../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic_ks/f_meas.c
+"/home1/01174/ashay/milc/generic_ks/f_meas.c", line 34: warning: variable
+          "pbp_pbp" was declared but never referenced
+      double pbp_pbp;
+             ^
+
+In file included from ./../include/su3.h:4,
+                 from ./lattice.h:26,
+                 from /home1/01174/ashay/milc/generic_ks/generic_ks_includes.h:12,
+                 from rose_f_meas.c:19:
+./../include/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+./../include/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+./../include/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  gauge_info.c 
+In file included from ks_imp_includes.h:12,
+                 from rose_gauge_info.c:16:
+../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  setup.c 
+"/home1/01174/ashay/milc/ks_imp_dyn2/setup.c", line 136: warning: variable "i"
+          was declared but never referenced
+       int i;
+           ^
+
+"/home1/01174/ashay/milc/ks_imp_dyn2/setup.c", line 137: warning: variable
+          "request_buf" was declared but never referenced
+       char request_buf[MAX_SPECTRUM_REQUEST];
+            ^
+
+"/home1/01174/ashay/milc/ks_imp_dyn2/setup.c", line 289: warning: variable "tt"
+          was declared but never referenced
+     void *tt[16];
+           ^
+
+In file included from ks_imp_includes.h:12,
+                 from rose_setup.c:20:
+../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  update.c 
+In file included from ks_imp_includes.h:12,
+                 from rose_update.c:16:
+../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  update_h.c 
+In file included from ks_imp_includes.h:12,
+                 from rose_update_h.c:10:
+../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  update_u.c 
+"/home1/01174/ashay/milc/ks_imp_dyn2/update_u.c", line 21: warning: variable
+          "temp4" was declared but never referenced
+  su3_matrix temp4,temp3;
+             ^
+
+"/home1/01174/ashay/milc/ks_imp_dyn2/update_u.c", line 21: warning: variable
+          "temp3" was declared but never referenced
+  su3_matrix temp4,temp3;
+                   ^
+
+In file included from ks_imp_includes.h:12,
+                 from rose_update_u.c:12:
+../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic/layout_hyper_tstretch.c 
+In file included from /home1/01174/ashay/milc/generic/generic_includes.h:11,
+                 from rose_layout_hyper_tstretch.c:37:
+/home1/01174/ashay/milc/generic/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+/home1/01174/ashay/milc/generic/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+/home1/01174/ashay/milc/generic/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic/check_unitarity.c 
+In file included from /home1/01174/ashay/milc/generic/generic_includes.h:11,
+                 from rose_check_unitarity.c:10:
+/home1/01174/ashay/milc/generic/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+/home1/01174/ashay/milc/generic/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+/home1/01174/ashay/milc/generic/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic/d_plaq4.c 
+In file included from /home1/01174/ashay/milc/generic/generic_includes.h:11,
+                 from rose_d_plaq4.c:8:
+/home1/01174/ashay/milc/generic/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+/home1/01174/ashay/milc/generic/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+/home1/01174/ashay/milc/generic/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic/gaugefix2.c 
+In file included from /home1/01174/ashay/milc/generic/generic_includes.h:11,
+                 from rose_gaugefix2.c:59:
+/home1/01174/ashay/milc/generic/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+/home1/01174/ashay/milc/generic/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+/home1/01174/ashay/milc/generic/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic/gauge_stuff.c
+In file included from /home1/01174/ashay/milc/generic/generic_includes.h:11,
+                 from rose_gauge_stuff.c:10:
+/home1/01174/ashay/milc/generic/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+/home1/01174/ashay/milc/generic/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+/home1/01174/ashay/milc/generic/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic/io_helpers.c 
+In file included from /home1/01174/ashay/milc/generic/generic_includes.h:11,
+                 from rose_io_helpers.c:7:
+/home1/01174/ashay/milc/generic/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+/home1/01174/ashay/milc/generic/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+/home1/01174/ashay/milc/generic/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic/io_lat4.c 
+"/home1/01174/ashay/milc/generic/io_lat4.c", line 188: warning: conversion
+          from pointer to smaller integer
+      len = (int) q - (int) line;
+            ^
+
+"/home1/01174/ashay/milc/generic/io_lat4.c", line 188: warning: conversion
+          from pointer to smaller integer
+      len = (int) q - (int) line;
+                      ^
+
+"/home1/01174/ashay/milc/generic/io_lat4.c", line 1692: warning: variable "gh"
+          was set but never used
+    gauge_header *gh;
+                  ^
+
+"/home1/01174/ashay/milc/generic/io_lat4.c", line 1694: warning: variable
+          "byterevflag" was set but never used
+    int byterevflag;
+        ^
+
+"/home1/01174/ashay/milc/generic/io_lat4.c", line 1696: warning: variable
+          "gauge_check_size" was set but never used
+    off_t gauge_check_size;   /* Size of gauge configuration checksum record */
+          ^
+
+"/home1/01174/ashay/milc/generic/io_lat4.c", line 2026: warning: variable "gh"
+          was set but never used
+    gauge_header *gh;
+                  ^
+
+"/home1/01174/ashay/milc/generic/io_lat4.c", line 2450: warning: variable
+          "byterevflag" was set but never used
+    int byterevflag;
+        ^
+
+In file included from /home1/01174/ashay/milc/generic/generic_includes.h:11,
+                 from rose_io_lat4.c:18:
+/home1/01174/ashay/milc/generic/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+/home1/01174/ashay/milc/generic/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+/home1/01174/ashay/milc/generic/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+rose_io_lat4.c: In function ‘qcdhdr_get_hdr’:
+rose_io_lat4.c:187: warning: cast from pointer to integer of different size
+rose_io_lat4.c:187: warning: cast from pointer to integer of different size
+rose_io_lat4.c: In function ‘read_gauge_hdr’:
+rose_io_lat4.c:1083: warning: cast to pointer from integer of different size
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic/make_lattice.c 
+In file included from /home1/01174/ashay/milc/generic/generic_includes.h:11,
+                 from rose_make_lattice.c:8:
+/home1/01174/ashay/milc/generic/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+/home1/01174/ashay/milc/generic/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+/home1/01174/ashay/milc/generic/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic/path_product.c 
+"/home1/01174/ashay/milc/generic/path_product.c", line 49: warning: argument
+          of type "su3_matrix **" is incompatible with parameter of type
+          "void **"
+      posix_memalign(&tempmat3t, 256, sites_on_node*sizeof(su3_matrix) );
+                     ^
+
+"/home1/01174/ashay/milc/generic/path_product.c", line 50: warning: argument
+          of type "su3_matrix **" is incompatible with parameter of type
+          "void **"
+      posix_memalign(&tempmat2t, 256, sites_on_node*sizeof(su3_matrix) );
+                     ^
+
+In file included from /home1/01174/ashay/milc/generic/generic_includes.h:11,
+                 from rose_path_product.c:7:
+/home1/01174/ashay/milc/generic/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+/home1/01174/ashay/milc/generic/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+/home1/01174/ashay/milc/generic/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+rose_path_product.c: In function ‘path_product’:
+rose_path_product.c:48: warning: passing argument 1 of ‘posix_memalign’ from incompatible pointer type
+/usr/include/stdlib.h:508: note: expected ‘void **’ but argument is of type ‘struct su3_matrix **’
+rose_path_product.c:49: warning: passing argument 1 of ‘posix_memalign’ from incompatible pointer type
+/usr/include/stdlib.h:508: note: expected ‘void **’ but argument is of type ‘struct su3_matrix **’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic/ploop3.c 
+In file included from /home1/01174/ashay/milc/generic/generic_includes.h:11,
+                 from rose_ploop3.c:12:
+/home1/01174/ashay/milc/generic/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+/home1/01174/ashay/milc/generic/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+/home1/01174/ashay/milc/generic/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic/ranmom.c 
+In file included from /home1/01174/ashay/milc/generic/generic_includes.h:11,
+                 from rose_ranmom.c:4:
+/home1/01174/ashay/milc/generic/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+/home1/01174/ashay/milc/generic/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+/home1/01174/ashay/milc/generic/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic/ranstuff.c 
+In file included from /home1/01174/ashay/milc/generic/generic_includes.h:11,
+                 from rose_ranstuff.c:7:
+/home1/01174/ashay/milc/generic/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+/home1/01174/ashay/milc/generic/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+/home1/01174/ashay/milc/generic/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic/reunitarize2.c 
+In file included from /home1/01174/ashay/milc/generic/generic_includes.h:11,
+                 from rose_reunitarize2.c:9:
+/home1/01174/ashay/milc/generic/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+/home1/01174/ashay/milc/generic/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+/home1/01174/ashay/milc/generic/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic_ks/grsource_imp.c
+In file included from ./../include/su3.h:4,
+                 from ./lattice.h:26,
+                 from /home1/01174/ashay/milc/generic_ks/generic_ks_includes.h:12,
+                 from rose_grsource_imp.c:7:
+./../include/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+./../include/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+./../include/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic_ks/mat_invert.c
+In file included from ./../include/su3.h:4,
+                 from ./lattice.h:26,
+                 from /home1/01174/ashay/milc/generic_ks/generic_ks_includes.h:12,
+                 from rose_mat_invert.c:11:
+./../include/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+./../include/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+./../include/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic_ks/quark_stuff4.c
+"/home1/01174/ashay/milc/generic_ks/quark_stuff4.c", line 666: warning: 
+          variable "one_link2" was declared but never referenced
+    float one_link,one_link2; /* needed to fix the problem with the Lepage
+                   ^
+
+"/home1/01174/ashay/milc/generic_ks/quark_stuff4.c", line 1773: warning: 
+          variable "pFAT1" was declared but never referenced
+      su3_matrix *pTMAT1, *pTMAT2, **pFAT1;
+                                     ^
+
+"/home1/01174/ashay/milc/generic_ks/quark_stuff4.c", line 1846: warning: 
+          argument of type "su3_matrix **" is incompatible with parameter of
+          type "void **"
+    posix_memalign(&tempmat, 256, sites_on_node*sizeof(su3_matrix) );
+                   ^
+
+In file included from ./../include/su3.h:4,
+                 from ./lattice.h:26,
+                 from /home1/01174/ashay/milc/generic_ks/generic_ks_includes.h:12,
+                 from rose_quark_stuff4.c:41:
+./../include/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+./../include/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+./../include/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+rose_quark_stuff4.c: In function ‘compute_gen_staple’:
+rose_quark_stuff4.c:1532: warning: passing argument 1 of ‘posix_memalign’ from incompatible pointer type
+/usr/include/stdlib.h:508: note: expected ‘void **’ but argument is of type ‘struct su3_matrix **’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic_ks/rephase.c
+In file included from ./../include/su3.h:4,
+                 from ./lattice.h:26,
+                 from /home1/01174/ashay/milc/generic_ks/generic_ks_includes.h:12,
+                 from rose_rephase.c:2:
+./../include/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+./../include/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+./../include/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic_ks/dslash_fn2.c
+In file included from ./../include/su3.h:4,
+                 from ./lattice.h:26,
+                 from /home1/01174/ashay/milc/generic_ks/generic_ks_includes.h:12,
+                 from rose_dslash_fn2.c:14:
+./../include/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+./../include/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+./../include/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic_ks/d_congrad5_fn.c
+"/home1/01174/ashay/milc/generic_ks/d_congrad5_fn.c", line 74: warning: 
+          variable "dtimed" was declared but never referenced
+  double dtimed,dtimec;
+         ^
+
+In file included from ./../include/su3.h:4,
+                 from ./lattice.h:26,
+                 from /home1/01174/ashay/milc/generic_ks/generic_ks_includes.h:12,
+                 from rose_d_congrad5_fn.c:33:
+./../include/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+./../include/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+./../include/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic/com_vanilla.c
+"/home1/01174/ashay/milc/generic/com_vanilla.c", line 576: warning: variable
+          "j" was declared but never referenced
+    int i,j,subl;	        /* scratch */
+          ^
+
+In file included from /home1/01174/ashay/milc/generic/generic_includes.h:11,
+                 from rose_com_vanilla.c:99:
+/home1/01174/ashay/milc/generic/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+/home1/01174/ashay/milc/generic/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+/home1/01174/ashay/milc/generic/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an -c -O3   -DVANILLA -DINLINE -DNOPREFETCH -DCGTIME -DFFTIME -DLLTIME -DGFTIME    -I. -DFN -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS  ../generic/io_ansi.c 
+In file included from /home1/01174/ashay/milc/generic/generic_includes.h:11,
+                 from rose_io_ansi.c:11:
+/home1/01174/ashay/milc/generic/../include/complex.h:105: warning: conflicting types for built-in function ‘cexp’
+/home1/01174/ashay/milc/generic/../include/complex.h:106: warning: conflicting types for built-in function ‘clog’
+/home1/01174/ashay/milc/generic/../include/complex.h:107: warning: conflicting types for built-in function ‘csqrt’
+macpo.sh --macpo:check-alignment=mult_su3_an  -o su3_rmd \
+	control.o f_meas.o gauge_info.o setup.o update.o update_h.o update_u.o layout_hyper_tstretch.o check_unitarity.o d_plaq4.o gaugefix2.o gauge_stuff.o io_helpers.o io_lat4.o make_lattice.o path_product.o ploop3.o ranmom.o ranstuff.o reunitarize2.o grsource_imp.o mat_invert.o quark_stuff4.o rephase.o dslash_fn2.o d_congrad5_fn.o com_vanilla.o io_ansi.o  ../libraries/*.o  -lm
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+second call 
+../libraries/ce_itheta.o: In function `ce_itheta':
+/home1/01174/ashay/milc/libraries/ce_itheta.c:11: undefined reference to `__libm_sse2_sincos'
+../libraries/cexp.o: In function `cexp':
+/home1/01174/ashay/milc/libraries/cexp.c:13: undefined reference to `__libm_sse2_sincos'
+../libraries/copy_wvec.o: In function `copy_wvec':
+/home1/01174/ashay/milc/libraries/copy_wvec.c:12: undefined reference to `_intel_fast_memcpy'
+../libraries/dce_itheta.o: In function `dce_itheta':
+/home1/01174/ashay/milc/libraries/dce_itheta.c:11: undefined reference to `__libm_sse2_sincos'
+../libraries/dcexp.o: In function `dcexp':
+/home1/01174/ashay/milc/libraries/dcexp.c:13: undefined reference to `__libm_sse2_sincos'
+collect2: ld returned 1 exit status
+
+Failed to run the following two commands:
+/work/01174/ashay/apps/opttran/bin/macpo -I/work/01174/ashay/apps/opttran/include -L/work/01174/ashay/apps/opttran/lib --macpo:check-alignment=mult_su3_an -o su3_rmd control.o f_meas.o gauge_info.o setup.o update.o update_h.o update_u.o layout_hyper_tstretch.o check_unitarity.o d_plaq4.o gaugefix2.o gauge_stuff.o io_helpers.o io_lat4.o make_lattice.o path_product.o ploop3.o ranmom.o ranstuff.o reunitarize2.o grsource_imp.o mat_invert.o quark_stuff4.o rephase.o dslash_fn2.o d_congrad5_fn.o com_vanilla.o io_ansi.o ../libraries/addmat.o ../libraries/addvec.o ../libraries/add_wvec.o ../libraries/byterevn.o ../libraries/cadd.o ../libraries/cdiv.o ../libraries/ce_itheta.o ../libraries/cexp.o ../libraries/clear_mat.o ../libraries/clearvec.o ../libraries/clear_wvec.o ../libraries/clog.o ../libraries/cmp_ahmat.o ../libraries/cmplx.o ../libraries/cmul.o ../libraries/complextr.o ../libraries/conjg.o ../libraries/copy_wvec.o ../libraries/cs_m_a_mat.o ../libraries/cs_m_a_vec.o ../libraries/cs_m_a_wvec2.o ../libraries/cs_m_a_wvec.o ../libraries/cs_m_mat.o ../libraries/cs_m_s_mat.o ../libraries/cs_m_s_vec.o ../libraries/cs_m_vec.o ../libraries/cs_m_wvec.o ../libraries/csqrt.o ../libraries/csub.o ../libraries/dcadd.o ../libraries/dcdiv.o ../libraries/dce_itheta.o ../libraries/dcexp.o ../libraries/dclog.o ../libraries/dcmplx.o ../libraries/dcmul.o ../libraries/dconjg.o ../libraries/dcsqrt.o ../libraries/dcsub.o ../libraries/det_su3.o ../libraries/dumpmat.o ../libraries/dumpsu2.o ../libraries/dumpvec.o ../libraries/dump_wvec.o ../libraries/flush_to_zero.o ../libraries/gaussrand.o ../libraries/grow4wvecs.o ../libraries/l_su2_hit_n.o ../libraries/make_ahmat.o ../libraries/m_amat_hwvec.o ../libraries/m_amatvec_ns.o ../libraries/m_amatvec.o ../libraries/m_amatvec_s.o ../libraries/m_amat_wvec.o ../libraries/m_amv_4dir.o ../libraries/m_amv_4vec.o ../libraries/mb_gamma_l.o ../libraries/mb_gamma.o ../libraries/mb_gamma_r.o ../libraries/m_mat_an.o ../libraries/m_mat_hwvec.o ../libraries/m_mat_na.o ../libraries/m_mat_nn.o ../libraries/m_matvec_ns.o ../libraries/m_matvec.o ../libraries/m_matvec_s.o ../libraries/m_mat_wvec.o ../libraries/m_mv_s_4dir.o ../libraries/msq_su3vec.o ../libraries/msq_wvec.o ../libraries/m_su2_mat_vec_a.o ../libraries/m_su2_mat_vec_n.o ../libraries/mswvb_gamma_l.o ../libraries/mswvb_gamma_r.o ../libraries/prefetch.o ../libraries/rand_ahmat.o ../libraries/realtr.o ../libraries/r_su2_hit_a.o ../libraries/s_m_a_mat.o ../libraries/s_m_atm_wvec.o ../libraries/s_m_a_vec.o ../libraries/s_m_a_wvec.o ../libraries/s_m_hwvec.o ../libraries/s_m_mat.o ../libraries/s_m_s_mat.o ../libraries/s_m_sum_vec.o ../libraries/s_m_s_vec.o ../libraries/s_m_vec.o ../libraries/s_m_wvec.o ../libraries/su3_adjoint.o ../libraries/su3_dot.o ../libraries/su3mat_copy.o ../libraries/su3_proj.o ../libraries/su3_proj_w.o ../libraries/su3_rdot.o ../libraries/su3vec_copy.o ../libraries/sub4vecs.o ../libraries/submat.o ../libraries/subvec.o ../libraries/sub_wvec.o ../libraries/trace_su3.o ../libraries/uncmp_ahmat.o ../libraries/wp_grow_a.o ../libraries/wp_grow.o ../libraries/wp_shrink4.o ../libraries/wp_shrink.o ../libraries/wvec2_dot.o ../libraries/wvec_dot.o ../libraries/wvec_rdot.o -lm -lmrt -lstdc++
+/usr/bin/gfortran -L/work/01174/ashay/apps/opttran/lib --macpo:check-alignment=mult_su3_an -o su3_rmd control.o f_meas.o gauge_info.o setup.o update.o update_h.o update_u.o layout_hyper_tstretch.o check_unitarity.o d_plaq4.o gaugefix2.o gauge_stuff.o io_helpers.o io_lat4.o make_lattice.o path_product.o ploop3.o ranmom.o ranstuff.o reunitarize2.o grsource_imp.o mat_invert.o quark_stuff4.o rephase.o dslash_fn2.o d_congrad5_fn.o com_vanilla.o io_ansi.o ../libraries/addmat.o ../libraries/addvec.o ../libraries/add_wvec.o ../libraries/byterevn.o ../libraries/cadd.o ../libraries/cdiv.o ../libraries/ce_itheta.o ../libraries/cexp.o ../libraries/clear_mat.o ../libraries/clearvec.o ../libraries/clear_wvec.o ../libraries/clog.o ../libraries/cmp_ahmat.o ../libraries/cmplx.o ../libraries/cmul.o ../libraries/complextr.o ../libraries/conjg.o ../libraries/copy_wvec.o ../libraries/cs_m_a_mat.o ../libraries/cs_m_a_vec.o ../libraries/cs_m_a_wvec2.o ../libraries/cs_m_a_wvec.o ../libraries/cs_m_mat.o ../libraries/cs_m_s_mat.o ../libraries/cs_m_s_vec.o ../libraries/cs_m_vec.o ../libraries/cs_m_wvec.o ../libraries/csqrt.o ../libraries/csub.o ../libraries/dcadd.o ../libraries/dcdiv.o ../libraries/dce_itheta.o ../libraries/dcexp.o ../libraries/dclog.o ../libraries/dcmplx.o ../libraries/dcmul.o ../libraries/dconjg.o ../libraries/dcsqrt.o ../libraries/dcsub.o ../libraries/det_su3.o ../libraries/dumpmat.o ../libraries/dumpsu2.o ../libraries/dumpvec.o ../libraries/dump_wvec.o ../libraries/flush_to_zero.o ../libraries/gaussrand.o ../libraries/grow4wvecs.o ../libraries/l_su2_hit_n.o ../libraries/make_ahmat.o ../libraries/m_amat_hwvec.o ../libraries/m_amatvec_ns.o ../libraries/m_amatvec.o ../libraries/m_amatvec_s.o ../libraries/m_amat_wvec.o ../libraries/m_amv_4dir.o ../libraries/m_amv_4vec.o ../libraries/mb_gamma_l.o ../libraries/mb_gamma.o ../libraries/mb_gamma_r.o ../libraries/m_mat_an.o ../libraries/m_mat_hwvec.o ../libraries/m_mat_na.o ../libraries/m_mat_nn.o ../libraries/m_matvec_ns.o ../libraries/m_matvec.o ../libraries/m_matvec_s.o ../libraries/m_mat_wvec.o ../libraries/m_mv_s_4dir.o ../libraries/msq_su3vec.o ../libraries/msq_wvec.o ../libraries/m_su2_mat_vec_a.o ../libraries/m_su2_mat_vec_n.o ../libraries/mswvb_gamma_l.o ../libraries/mswvb_gamma_r.o ../libraries/prefetch.o ../libraries/rand_ahmat.o ../libraries/realtr.o ../libraries/r_su2_hit_a.o ../libraries/s_m_a_mat.o ../libraries/s_m_atm_wvec.o ../libraries/s_m_a_vec.o ../libraries/s_m_a_wvec.o ../libraries/s_m_hwvec.o ../libraries/s_m_mat.o ../libraries/s_m_s_mat.o ../libraries/s_m_sum_vec.o ../libraries/s_m_s_vec.o ../libraries/s_m_vec.o ../libraries/s_m_wvec.o ../libraries/su3_adjoint.o ../libraries/su3_dot.o ../libraries/su3mat_copy.o ../libraries/su3_proj.o ../libraries/su3_proj_w.o ../libraries/su3_rdot.o ../libraries/su3vec_copy.o ../libraries/sub4vecs.o ../libraries/submat.o ../libraries/subvec.o ../libraries/sub_wvec.o ../libraries/trace_su3.o ../libraries/uncmp_ahmat.o ../libraries/wp_grow_a.o ../libraries/wp_grow.o ../libraries/wp_shrink4.o ../libraries/wp_shrink.o ../libraries/wvec2_dot.o ../libraries/wvec_dot.o ../libraries/wvec_rdot.o -lm -lmrt -lstdc++
+touch localmake
+make[1]: Leaving directory `/home1/01174/ashay/milc/ks_imp_dyn2'

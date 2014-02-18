@@ -1,0 +1,17 @@
+#$ -N MILC_64.intel.vall
+
+#$ -cwd
+#$ -o $JOB_NAME.o$JOB_ID
+#$ -j y
+
+#$ -q systest
+#$ -pe 16way 64 
+#$ -V
+#$ -l h_rt=02:00:00
+#$ -A A-ccsc
+
+ibrun tacc_affinity script_redirect ../../ks_imp_dyn2/su3_rmd.intel.v0 medium.in
+ibrun tacc_affinity script_redirect ../../ks_imp_dyn2/su3_rmd.intel.v1 medium.in
+ibrun tacc_affinity script_redirect ../../ks_imp_dyn2/su3_rmd.intel.v2 medium.in
+ibrun tacc_affinity script_redirect ../../ks_imp_dyn2/su3_rmd.intel.v3 medium.in
+ibrun tacc_affinity script_redirect ../../ks_imp_dyn2/su3_rmd.intel.v4 medium.in

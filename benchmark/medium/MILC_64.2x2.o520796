@@ -1,0 +1,642 @@
+TACC: Setting memory limits for job 520796 to 3984588 KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#$ -N MILC_64.2x2
+#$ -cwd
+#$ -o $JOB_NAME.o$JOB_ID
+#$ -j y
+
+#$ -q development
+#$ -pe 8way 128
+#$ -V
+#$ -l h_rt=00:30:00
+#$ -A A-ccsc
+
+ibrun ./tacc_affinity_03 su3_rmd_03 < medium.in &
+ibrun ./tacc_affinity_12 su3_rmd_12 < medium.in &
+wait
+
+ibrun ./tacc_affinity    su3_rmd    < medium.in &
+ibrun ./tacc_affinity    su3_rmd    < medium.in &
+wait
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Starting up job 520796
+TACC: Starting up job 520796
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setup complete. Running job script.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+TACC: starting parallel tasks...
+TACC: 03 Running 8 on socket 0
+TACC: 03 Running 17 on socket 0
+TACC: 03 Running 17 on socket 1
+TACC: 03 Running 30 on socket 2
+TACC: 03 Running 28 on socket 3
+TACC: 03 Running 32 on socket 0
+TACC: 03 Running 8 on socket 1
+TACC: 03 Running 16 on socket 0
+TACC: 03 Running 18 on socket 0
+TACC: 03 Running 9 on socket 0
+TACC: 03 Running 10 on socket 0
+TACC: 03 Running 12 on socket 3
+TACC: 03 Running 11 on socket 0
+TACC: 03 Running 56 on socket 0
+TACC: 03 Running 19 on socket 0
+TACC: 03 Running 32 on socket 1
+TACC: 03 Running 13 on socket 3
+TACC: 03 Running 21 on socket 3
+TACC: 03 Running 16 on socket 1
+TACC: 03 Running 18 on socket 1
+TACC: 03 Running 19 on socket 1
+TACC: 03 Running 20 on socket 2
+TACC: 03 Running 22 on socket 3
+TACC: 03 Running 24 on socket 1
+TACC: 03 Running 56 on socket 1
+TACC: 03 Running 25 on socket 1
+TACC: 03 Running 20 on socket 3
+TACC: 03 Running 26 on socket 1
+TACC: 03 Running 24 on socket 0
+TACC: 03 Running 25 on socket 0
+TACC: 03 Running 26 on socket 0
+TACC: 03 Running 27 on socket 0
+TACC: 03 Running 29 on socket 3
+TACC: 03 Running 21 on socket 2
+TACC: 03 Running 22 on socket 2
+TACC: 03 Running 30 on socket 3
+TACC: 03 Running 11 on socket 1
+TACC: 03 Running 10 on socket 1
+TACC: 03 Running 9 on socket 1
+TACC: 03 Running 12 on socket 2
+TACC: 03 Running 36 on socket 3
+TACC: 03 Running 37 on socket 3
+TACC: 03 Running 38 on socket 3
+TACC: 03 Running 33 on socket 0
+TACC: 03 Running 34 on socket 0
+TACC: 03 Running 35 on socket 0
+TACC: 03 Running 23 on socket 3
+TACC: 03 Running 28 on socket 2
+TACC: 03 Running 15 on socket 3
+TACC: 03 Running 23 on socket 2
+TACC: 03 Running 39 on socket 3
+TACC: 03 Running 29 on socket 2
+TACC: 03 Running 40 on socket 0
+TACC: 03 Running 14 on socket 3
+TACC: 03 Running 31 on socket 3
+TACC: 03 Running 33 on socket 1
+TACC: 03 Running 57 on socket 0
+TACC: 03 Running 58 on socket 0
+TACC: 03 Running 59 on socket 0
+TACC: 03 Running 34 on socket 1
+TACC: 03 Running 40 on socket 1
+TACC: 03 Running 3 on socket 0
+TACC: 03 Running 27 on socket 1
+TACC: 03 Running 14 on socket 2
+TACC: 03 Running 60 on socket 3
+TACC: 03 Running 35 on socket 1
+TACC: 03 Running 50 on socket 0
+TACC: 03 Running 31 on socket 2
+TACC: 03 Running 57 on socket 1
+TACC: 03 Running 58 on socket 1
+TACC: 03 Running 1 on socket 1
+TACC: 03 Running 36 on socket 2
+TACC: 03 Running 37 on socket 2
+TACC: 03 Running 13 on socket 2
+TACC: 03 Running 59 on socket 1
+TACC: 03 Running 60 on socket 2
+TACC: 03 Running 41 on socket 0
+TACC: 03 Running 42 on socket 0
+TACC: 03 Running 43 on socket 0
+TACC: 03 Running 44 on socket 3
+TACC: 03 Running 45 on socket 3
+TACC: 03 Running 15 on socket 2
+TACC: 03 Running 61 on socket 3
+TACC: 03 Running 48 on socket 1
+TACC: 03 Running 46 on socket 3
+TACC: 03 Running 38 on socket 2
+TACC: 03 Running 62 on socket 3
+TACC: 03 Running 47 on socket 3
+TACC: 03 Running 0 on socket 0
+TACC: 03 Running 1 on socket 0
+TACC: 03 Running 2 on socket 0
+TACC: 03 Running 63 on socket 3
+TACC: 03 Running 45 on socket 2
+TACC: 03 Running 61 on socket 2
+TACC: 03 Running 41 on socket 1
+TACC: 03 Running 48 on socket 0
+TACC: 03 Running 52 on socket 3
+TACC: 03 Running 42 on socket 1
+TACC: 03 Running 6 on socket 2
+TACC: 03 Running 0 on socket 1
+TACC: 03 Running 2 on socket 1
+TACC: 03 Running 4 on socket 2
+TACC: 03 Running 39 on socket 2
+TACC: 03 Running 49 on socket 0
+TACC: 03 Running 62 on socket 2
+TACC: 03 Running 51 on socket 0
+TACC: 03 Running 3 on socket 1
+TACC: 03 Running 43 on socket 1
+TACC: 03 Running 63 on socket 2
+TACC: 03 Running 53 on socket 3
+TACC: 03 Running 4 on socket 3
+TACC: 03 Running 44 on socket 2
+TACC: 03 Running 5 on socket 2
+TACC: 03 Running 46 on socket 2
+TACC: 03 Running 49 on socket 1
+TACC: 03 Running 50 on socket 1
+TACC: 03 Running 5 on socket 3
+TACC: 03 Running 47 on socket 2
+TACC: 03 Running 55 on socket 3
+TACC: 03 Running 7 on socket 2
+TACC: 03 Running 54 on socket 3
+TACC: 03 Running 51 on socket 1
+TACC: 03 Running 52 on socket 2
+TACC: 03 Running 7 on socket 3
+TACC: 03 Running 6 on socket 3
+TACC: 03 Running 53 on socket 2
+TACC: 03 Running 54 on socket 2
+TACC: 03 Running 55 on socket 2
+SU3 with improved KS action
+Microcanonical simulation with refreshing
+MIMD version 6
+Machine = MPI (portable), with 64 nodes
+R algorithm
+type 0 for no prompts  or 1 for prompts
+nflavors1 4
+nflavors2 4
+nx 32
+ny 32
+nz 32
+nt 32
+iseed 5682304
+LAYOUT = Hypercubes, options = EVENFIRST,
+ON EACH NODE 8 x 8 x 16 x 16
+Mallocing 18.5 MBytes per node for lattice
+SU3 with improved KS action
+Microcanonical simulation with refreshing
+MIMD version 6
+Machine = MPI (portable), with 64 nodes
+R algorithm
+type 0 for no prompts  or 1 for prompts
+nflavors1 4
+nflavors2 4
+nx 32
+ny 32
+nz 32
+nt 32
+iseed 5682304
+LAYOUT = Hypercubes, options = EVENFIRST,
+ON EACH NODE 8 x 8 x 16 x 16
+Mallocing 18.5 MBytes per node for lattice
+Made lattice
+Made lattice
+Made nn gathers
+Made 3nn gathers
+Finished setup
+
+
+warms 0
+trajecs 2
+traj_between_meas 1
+beta 5.6
+mass1 0.01
+mass2 0.01
+u0 0.8441
+microcanonical_time_step 0.02
+steps_per_trajectory 5
+max_cg_iterations 200
+error_per_site 1e-05
+error_for_propagator 1e-04
+fresh 
+forget 
+unit gauge configuration loaded
+Made nn gathers
+CHECK PLAQ: 3.000000e+00 3.000000e+00
+Unitarity checked.  Max deviation 0.00e+00
+Time to check unitarity = 9.969950e-03
+Symanzik 1x1 + 1x2 + 1x1x1 action
+loop coefficients: nloop rep loop_coeff  multiplicity
+                    0 0      1.000000e+00     6
+                    1 0      -7.762509e-02     12
+                    2 0      -1.031171e-02     16
+"O(a^2): couplings(pi)=0, Naik term, No O(a^2) errors, tadpole weights"
+path coefficients: npath  path_coeff  multiplicity
+                    0      6.250000e-01     8
+                    1      -5.847914e-02     8
+                    2      -8.771872e-02     48
+                    3      3.077829e-02     192
+                    4      -7.199552e-03     384
+                    5      -1.231132e-01     48
+WARMUPS COMPLETED
+Made 3nn gathers
+Finished setup
+
+
+warms 0
+trajecs 2
+traj_between_meas 1
+beta 5.6
+mass1 0.01
+mass2 0.01
+u0 0.8441
+microcanonical_time_step 0.02
+steps_per_trajectory 5
+max_cg_iterations 200
+error_per_site 1e-05
+error_for_propagator 1e-04
+fresh 
+forget 
+unit gauge configuration loaded
+CHECK PLAQ: 3.000000e+00 3.000000e+00
+Unitarity checked.  Max deviation 0.00e+00
+Time to check unitarity = 9.336948e-03
+Symanzik 1x1 + 1x2 + 1x1x1 action
+loop coefficients: nloop rep loop_coeff  multiplicity
+                    0 0      1.000000e+00     6
+                    1 0      -7.762509e-02     12
+                    2 0      -1.031171e-02     16
+"O(a^2): couplings(pi)=0, Naik term, No O(a^2) errors, tadpole weights"
+path coefficients: npath  path_coeff  multiplicity
+                    0      6.250000e-01     8
+                    1      -5.847914e-02     8
+                    2      -8.771872e-02     48
+                    3      3.077829e-02     192
+                    4      -7.199552e-03     384
+                    5      -1.231132e-01     48
+WARMUPS COMPLETED
+GFTIME:   time = 9.167900e+00 (Symanzik1) mflops = 2.594876e+00
+GFTIME:   time = 9.688683e+00 (Symanzik1) mflops = 2.455397e+00
+GFTIME:   time = 9.281086e+00 (Symanzik1) mflops = 2.563231e+00
+GFTIME:   time = 9.673878e+00 (Symanzik1) mflops = 2.459155e+00
+GFTIME:   time = 9.347377e+00 (Symanzik1) mflops = 2.545053e+00
+GFTIME:   time = 9.657283e+00 (Symanzik1) mflops = 2.463381e+00
+GFTIME:   time = 9.308367e+00 (Symanzik1) mflops = 2.555719e+00
+GFTIME:   time = 9.646959e+00 (Symanzik1) mflops = 2.466017e+00
+GFTIME:   time = 9.219735e+00 (Symanzik1) mflops = 2.580288e+00
+GFTIME:   time = 9.631021e+00 (Symanzik1) mflops = 2.470098e+00
+PLAQ:	2.851314	2.851312
+P_LOOP:	1.978400e+00	2.390053e-04
+PBP: mass 1.000000e-02     5.006013e-03  4.358316e-03  3.828520e-04  3.944717e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.499912e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     4.909927e-03  4.479543e-03  3.926050e-04  3.853635e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500789e+00 ( 1 of 1 )
+PLAQ:	2.851314	2.851312
+P_LOOP:	1.978400e+00	2.390053e-04
+PBP: mass 1.000000e-02     5.006013e-03  4.358316e-03  3.828520e-04  3.944717e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.499912e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     4.909927e-03  4.479543e-03  3.926050e-04  3.853635e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500789e+00 ( 1 of 1 )
+GFTIME:   time = 9.064665e+00 (Symanzik1) mflops = 2.624429e+00
+GFTIME:   time = 9.633344e+00 (Symanzik1) mflops = 2.469503e+00
+GFTIME:   time = 9.033992e+00 (Symanzik1) mflops = 2.633339e+00
+GFTIME:   time = 9.626948e+00 (Symanzik1) mflops = 2.471143e+00
+GFTIME:   time = 9.084246e+00 (Symanzik1) mflops = 2.618772e+00
+GFTIME:   time = 9.579641e+00 (Symanzik1) mflops = 2.483347e+00
+GFTIME:   time = 9.111711e+00 (Symanzik1) mflops = 2.610878e+00
+GFTIME:   time = 9.674402e+00 (Symanzik1) mflops = 2.459022e+00
+GFTIME:   time = 9.112591e+00 (Symanzik1) mflops = 2.610626e+00
+PLAQ:	2.728670	2.728834
+P_LOOP:	1.336464e+00	1.797533e-03
+PBP: mass 1.000000e-02     4.443193e-03  5.563885e-03  7.129270e-04  7.028686e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.501289e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     4.514134e-03  5.499287e-03  -5.426678e-04  -5.304175e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.497696e+00 ( 1 of 1 )
+RUNNING COMPLETED
+average cg iters for step= 1.165000e+02
+total_iters = 1375
+NERSC_TIME  367.789 secs
+
+
+exit: Mon Feb 16 12:55:42 2009
+
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+GFTIME:   time = 9.686515e+00 (Symanzik1) mflops = 2.455947e+00
+PLAQ:	2.728670	2.728834
+P_LOOP:	1.336464e+00	1.797533e-03
+PBP: mass 1.000000e-02     4.443193e-03  5.563885e-03  7.129270e-04  7.028686e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.501289e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     4.514134e-03  5.499287e-03  -5.426678e-04  -5.304175e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.497696e+00 ( 1 of 1 )
+RUNNING COMPLETED
+average cg iters for step= 1.165000e+02
+total_iters = 1375
+NERSC_TIME  392.866 secs
+
+
+exit: Mon Feb 16 12:56:07 2009
+
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 520796
+TACC: Starting up job 520796
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setting up parallel environment for MVAPICH ssh-based mpirun.
+TACC: Setup complete. Running job script.
+TACC: Setup complete. Running job script.
+TACC: starting parallel tasks...
+TACC: starting parallel tasks...
+TACC: df Running 53 on socket 2
+TACC: df Running 17 on socket 0
+TACC: df Running 28 on socket 2
+TACC: df Running 56 on socket 0
+TACC: df Running 0 on socket 0
+TACC: df Running 56 on socket 0
+TACC: df Running 11 on socket 1
+TACC: df Running 41 on socket 0
+TACC: df Running 35 on socket 1
+TACC: df Running 49 on socket 0
+TACC: df Running 0 on socket 0
+TACC: df Running 9 on socket 0
+TACC: df Running 17 on socket 0
+TACC: df Running 26 on socket 1
+TACC: df Running 42 on socket 1
+TACC: df Running 32 on socket 0
+TACC: df Running 49 on socket 0
+TACC: df Running 48 on socket 0
+TACC: df Running 50 on socket 1
+TACC: df Running 52 on socket 2
+TACC: df Running 51 on socket 1
+TACC: df Running 54 on socket 3
+TACC: df Running 55 on socket 3
+TACC: df Running 26 on socket 1
+TACC: df Running 27 on socket 1
+TACC: df Running 24 on socket 0
+TACC: df Running 30 on socket 3
+TACC: df Running 25 on socket 0
+TACC: df Running 31 on socket 3
+TACC: df Running 29 on socket 2
+TACC: df Running 16 on socket 0
+TACC: df Running 19 on socket 1
+TACC: df Running 21 on socket 2
+TACC: df Running 20 on socket 2
+TACC: df Running 22 on socket 3
+TACC: df Running 18 on socket 1
+TACC: df Running 23 on socket 3
+TACC: df Running 58 on socket 1
+TACC: df Running 57 on socket 0
+TACC: df Running 60 on socket 2
+TACC: df Running 61 on socket 2
+TACC: df Running 63 on socket 3
+TACC: df Running 62 on socket 3
+TACC: df Running 59 on socket 1
+TACC: df Running 1 on socket 0
+TACC: df Running 3 on socket 1
+TACC: df Running 4 on socket 2
+TACC: df Running 7 on socket 3
+TACC: df Running 6 on socket 3
+TACC: df Running 5 on socket 2
+TACC: df Running 2 on socket 1
+TACC: df Running 58 on socket 1
+TACC: df Running 60 on socket 2
+TACC: df Running 59 on socket 1
+TACC: df Running 62 on socket 3
+TACC: df Running 57 on socket 0
+TACC: df Running 63 on socket 3
+TACC: df Running 61 on socket 2
+TACC: df Running 48 on socket 0
+TACC: df Running 50 on socket 1
+TACC: df Running 51 on socket 1
+TACC: df Running 52 on socket 2
+TACC: df Running 53 on socket 2
+TACC: df Running 54 on socket 3
+TACC: df Running 55 on socket 3
+TACC: df Running 8 on socket 0
+TACC: df Running 9 on socket 0
+TACC: df Running 10 on socket 1
+TACC: df Running 12 on socket 2
+TACC: df Running 13 on socket 2
+TACC: df Running 15 on socket 3
+TACC: df Running 14 on socket 3
+TACC: df Running 44 on socket 2
+TACC: df Running 40 on socket 0
+TACC: df Running 42 on socket 1
+TACC: df Running 45 on socket 2
+TACC: df Running 47 on socket 3
+TACC: df Running 46 on socket 3
+TACC: df Running 43 on socket 1
+TACC: df Running 33 on socket 0
+TACC: df Running 32 on socket 0
+TACC: df Running 34 on socket 1
+TACC: df Running 37 on socket 2
+TACC: df Running 38 on socket 3
+TACC: df Running 39 on socket 3
+TACC: df Running 36 on socket 2
+TACC: df Running 8 on socket 0
+TACC: df Running 12 on socket 2
+TACC: df Running 10 on socket 1
+TACC: df Running 11 on socket 1
+TACC: df Running 14 on socket 3
+TACC: df Running 15 on socket 3
+TACC: df Running 13 on socket 2
+TACC: df Running 1 on socket 0
+TACC: df Running 2 on socket 1
+TACC: df Running 3 on socket 1
+TACC: df Running 4 on socket 2
+TACC: df Running 6 on socket 3
+TACC: df Running 7 on socket 3
+TACC: df Running 5 on socket 2
+TACC: df Running 18 on socket 1
+TACC: df Running 16 on socket 0
+TACC: df Running 19 on socket 1
+TACC: df Running 20 on socket 2
+TACC: df Running 22 on socket 3
+TACC: df Running 23 on socket 3
+TACC: df Running 21 on socket 2
+TACC: df Running 43 on socket 1
+TACC: df Running 40 on socket 0
+TACC: df Running 44 on socket 2
+TACC: df Running 41 on socket 0
+TACC: df Running 47 on socket 3
+TACC: df Running 45 on socket 2
+TACC: df Running 46 on socket 3
+TACC: df Running 24 on socket 0
+TACC: df Running 25 on socket 0
+TACC: df Running 29 on socket 2
+TACC: df Running 28 on socket 2
+TACC: df Running 30 on socket 3
+TACC: df Running 27 on socket 1
+TACC: df Running 31 on socket 3
+TACC: df Running 39 on socket 3
+TACC: df Running 37 on socket 2
+TACC: df Running 33 on socket 0
+TACC: df Running 38 on socket 3
+TACC: df Running 34 on socket 1
+TACC: df Running 35 on socket 1
+TACC: df Running 36 on socket 2
+SU3 with improved KS action
+Microcanonical simulation with refreshing
+MIMD version 6
+Machine = MPI (portable), with 64 nodes
+R algorithm
+SU3 with improved KS action
+Microcanonical simulation with refreshing
+MIMD version 6
+Machine = MPI (portable), with 64 nodes
+type 0 for no prompts  or 1 for prompts
+nflavors1 4
+nflavors2 4
+nx 32
+ny 32
+nz 32
+nt 32
+iseed 5682304
+R algorithm
+type 0 for no prompts  or 1 for prompts
+nflavors1 4
+nflavors2 4
+nx 32
+ny 32
+nz 32
+nt 32
+iseed 5682304
+LAYOUT = Hypercubes, options = EVENFIRST,
+ON EACH NODE 8 x 8 x 16 x 16
+Mallocing 18.5 MBytes per node for lattice
+LAYOUT = Hypercubes, options = EVENFIRST,
+ON EACH NODE 8 x 8 x 16 x 16
+Mallocing 18.5 MBytes per node for lattice
+Made lattice
+Made lattice
+Made nn gathers
+Made nn gathers
+Made 3nn gathers
+Made 3nn gathers
+Finished setup
+Finished setup
+
+
+warms 0
+trajecs 2
+traj_between_meas 1
+beta 
+
+warms 0
+trajecs 2
+traj_between_meas 1
+beta 5.6
+mass1 0.01
+mass2 0.01
+u0 0.8441
+microcanonical_time_step 0.02
+steps_per_trajectory 5
+max_cg_iterations 200
+error_per_site 1e-05
+5.6
+mass1 0.01
+mass2 0.01
+u0 0.8441
+microcanonical_time_step 0.02
+steps_per_trajectory 5
+max_cg_iterations 200
+error_per_site 1e-05
+error_for_propagator 1e-04
+fresh 
+forget 
+error_for_propagator 1e-04
+fresh 
+forget 
+unit gauge configuration loaded
+unit gauge configuration loaded
+CHECK PLAQ: 3.000000e+00 3.000000e+00
+CHECK PLAQ: 3.000000e+00 3.000000e+00
+Unitarity checked.  Max deviation 0.00e+00
+Time to check unitarity = 1.026011e-02
+Unitarity checked.  Max deviation 0.00e+00
+Time to check unitarity = 1.031399e-02
+Symanzik 1x1 + 1x2 + 1x1x1 action
+loop coefficients: nloop rep loop_coeff  multiplicity
+                    0 0      1.000000e+00     6
+                    1 0      -7.762509e-02     12
+                    2 0      -1.031171e-02     16
+"O(a^2): couplings(pi)=0, Naik term, No O(a^2) errors, tadpole weights"
+path coefficients: npath  path_coeff  multiplicity
+                    0      6.250000e-01     8
+                    1      -5.847914e-02     8
+                    2      -8.771872e-02     48
+                    3      3.077829e-02     192
+                    4      -7.199552e-03     384
+Symanzik 1x1 + 1x2 + 1x1x1 action
+loop coefficients: nloop rep loop_coeff  multiplicity
+                    0 0      1.000000e+00     6
+                    1 0      -7.762509e-02     12
+                    2 0      -1.031171e-02     16
+"O(a^2): couplings(pi)=0, Naik term, No O(a^2) errors, tadpole weights"
+path coefficients: npath  path_coeff  multiplicity
+                    0      6.250000e-01     8
+                    1      -5.847914e-02     8
+                    2      -8.771872e-02     48
+                    5      -1.231132e-01     48
+WARMUPS COMPLETED
+                    3      3.077829e-02     192
+                    4      -7.199552e-03     384
+                    5      -1.231132e-01     48
+WARMUPS COMPLETED
+GFTIME:   time = 9.394933e+00 (Symanzik1) mflops = 2.532170e+00
+GFTIME:   time = 9.577951e+00 (Symanzik1) mflops = 2.483785e+00
+GFTIME:   time = 9.408287e+00 (Symanzik1) mflops = 2.528576e+00
+GFTIME:   time = 9.551881e+00 (Symanzik1) mflops = 2.490564e+00
+GFTIME:   time = 9.402462e+00 (Symanzik1) mflops = 2.530142e+00
+GFTIME:   time = 9.400178e+00 (Symanzik1) mflops = 2.530757e+00
+GFTIME:   time = 9.432415e+00 (Symanzik1) mflops = 2.522108e+00
+GFTIME:   time = 9.445076e+00 (Symanzik1) mflops = 2.518727e+00
+GFTIME:   time = 9.410652e+00 (Symanzik1) mflops = 2.527940e+00
+GFTIME:   time = 9.439148e+00 (Symanzik1) mflops = 2.520309e+00
+PLAQ:	2.851314	2.851312
+P_LOOP:	1.978400e+00	2.390053e-04
+PLAQ:	2.851314	2.851312
+P_LOOP:	1.978400e+00	2.390053e-04
+PBP: mass 1.000000e-02     5.006013e-03  4.358316e-03  3.828520e-04  3.944717e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.499912e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     5.006013e-03  4.358316e-03  3.828520e-04  3.944717e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.499912e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     4.909927e-03  4.479543e-03  3.926050e-04  3.853635e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500789e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     4.909927e-03  4.479543e-03  3.926050e-04  3.853635e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.500789e+00 ( 1 of 1 )
+GFTIME:   time = 9.409580e+00 (Symanzik1) mflops = 2.528228e+00
+GFTIME:   time = 9.401668e+00 (Symanzik1) mflops = 2.530356e+00
+GFTIME:   time = 9.396081e+00 (Symanzik1) mflops = 2.531861e+00
+GFTIME:   time = 9.435275e+00 (Symanzik1) mflops = 2.521343e+00
+GFTIME:   time = 9.413426e+00 (Symanzik1) mflops = 2.527196e+00
+GFTIME:   time = 9.403247e+00 (Symanzik1) mflops = 2.529931e+00
+GFTIME:   time = 9.401047e+00 (Symanzik1) mflops = 2.530523e+00
+GFTIME:   time = 9.386059e+00 (Symanzik1) mflops = 2.534564e+00
+GFTIME:   time = 9.383681e+00 (Symanzik1) mflops = 2.535206e+00
+GFTIME:   time = 9.396292e+00 (Symanzik1) mflops = 2.531804e+00
+PLAQ:	2.728670	2.728834
+P_LOOP:	1.336464e+00	1.797533e-03
+PLAQ:	2.728670	2.728834
+P_LOOP:	1.336464e+00	1.797533e-03
+PBP: mass 1.000000e-02     4.443193e-03  5.563885e-03  7.129270e-04  7.028686e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.501289e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     4.514134e-03  5.499287e-03  -5.426678e-04  -5.304175e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.497696e+00 ( 1 of 1 )
+RUNNING COMPLETED
+average cg iters for step= 1.165000e+02
+total_iters = 1375
+NERSC_TIME  385.275 secs
+
+
+exit: Mon Feb 16 13:02:36 2009
+
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+PBP: mass 1.000000e-02     4.443193e-03  5.563885e-03  7.129270e-04  7.028686e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.501289e+00 ( 1 of 1 )
+PBP: mass 1.000000e-02     4.514134e-03  5.499287e-03  -5.426678e-04  -5.304175e-04 ( 1 of 1 )
+FACTION: mass = 1.000000e-02,  1.497696e+00 ( 1 of 1 )
+RUNNING COMPLETED
+average cg iters for step= 1.165000e+02
+total_iters = 1375
+NERSC_TIME  387.591 secs
+
+
+exit: Mon Feb 16 13:02:38 2009
+
+TACC: Shutting down parallel environment.
+TACC: Shutdown complete. Exiting.
+TACC: Cleaning up after job: 520796
+TACC: Done.
