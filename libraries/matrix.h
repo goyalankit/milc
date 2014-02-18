@@ -249,7 +249,7 @@ static inline su3_matrix_mod su3_matrix_to_su3_matrix_mod( su3_matrix *a){
 
 static inline su3_matrix su3_matrix_mod_to_su3_matrix( su3_matrix_mod s3mm){
     int i, j;
-    su3_matrix_mod *a;
+    su3_matrix *a;
     for(i=0; i<3; i++){
         for(j=0; j<3; j++){
              a->e[i][j].real = s3mm.real[i][j];
