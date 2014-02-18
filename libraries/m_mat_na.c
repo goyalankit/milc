@@ -49,7 +49,7 @@ void mult_su3_na(  su3_matrix *a, su3_matrix *b, su3_matrix *c ){
 #pragma vector aligned always
             for(k=0;k<3;k++){
 
-                MCMULJ_( am.real[k][i], am.imag[k][i] , bm.real[k][j], bm.imag[k][j], y );
+                MCMULJ_( am.real[i][k], am.imag[i][k] , bm.real[j][k], bm.imag[j][k], y );
                 CSUM( x , y );
             }
             cm.real[i][j] = x.real;
