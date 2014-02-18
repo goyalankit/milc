@@ -13,6 +13,10 @@
 /* SU(3) */
 typedef struct { fcomplex e[3][3] __attribute__((aligned(64))); } fsu3_matrix;
 typedef struct { complex e[3][3] __attribute__((aligned(64))); } su3_matrix;
+typedef struct { float real[3][3] __attribute__((aligned(64))); 
+                  float imag[3][3] __attribute__((aligned(64))); } su3_matrix_mod;
+
+
 typedef struct { fcomplex c[3] __attribute__((aligned(64))); } fsu3_vector;
 typedef struct { complex c[3] __attribute__((aligned(64))); } su3_vector;
 typedef struct
