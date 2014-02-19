@@ -9,7 +9,7 @@
 #include "../include/su3.h"
 
 #ifndef FAST
-#ifdef NDS
+#ifndef NDS
 
 void mult_su3_nn( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
     register int i,j,k;
