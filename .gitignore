@@ -15,3 +15,9 @@
 
 ks_imp_dyn2/*.o
 libraries/*.o
+
+# Build-related files
+ks_imp_dyn2/.lastmake.Makefile.su3_rmd
+ks_imp_dyn2/gauge_action.h
+ks_imp_dyn2/quark_action.h
+ks_imp_dyn2/su3_rmd
