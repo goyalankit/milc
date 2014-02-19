@@ -31,9 +31,19 @@ register int i,j;
 #ifndef NDS
 
 static inline void mult_su3_nn( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
-  int j;
+  int i, j;
   register float a0r,a0i,a1r,a1i,a2r,a2i;
   register float b0r,b0i,b1r,b1i,b2r,b2i;
+
+  // Warm up the cache to ensure fair comparison.
+  float sum = 0.0f;
+  for(i=0;i<3;i++){
+      for(j=0;j<3;j++){
+          sum += a->e[i][j].real + a->e[i][j].imag;
+          sum += b->e[i][j].real + b->e[i][j].imag;
+          sum += c->e[i][j].real + c->e[i][j].imag;
+      }
+  }
   
   double tick = clock();
   for(j=0;j<3;j++){
@@ -192,10 +202,20 @@ static inline void su3_projector( su3_vector *a, su3_vector *b, su3_matrix *c ){
 
 #ifndef NDS
 static inline void mult_su3_an( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
-  int j;
+  int i, j;
 
   register float a0r,a0i,a1r,a1i,a2r,a2i;
   register float b0r,b0i,b1r,b1i,b2r,b2i;
+
+  // Warm up the cache to ensure fair comparison.
+  float sum = 0.0f;
+  for(i=0;i<3;i++){
+      for(j=0;j<3;j++){
+          sum += a->e[i][j].real + a->e[i][j].imag;
+          sum += b->e[i][j].real + b->e[i][j].imag;
+          sum += c->e[i][j].real + c->e[i][j].imag;
+      }
+  }
 
     double tick = clock();
   for(j=0;j<3;j++){
