@@ -17,10 +17,6 @@ void mult_su3_nn( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
     for(i=0;i<3;i++) {
         for(j=0;j<3;j++){
             x.real=x.imag=0.0;
-            //    __assume_aligned(&(a->e[0][0]), 64);
-            //    __assume_aligned(&(b->e[0][0]), 64);
-            //    __assume_aligned(&(c->e[0][0]), 64);
-#pragma vector aligned always
             for(k=0;k<3;k++){
                 CMUL( a->e[i][k] , b->e[k][j] , y );
                 CSUM( x , y );
