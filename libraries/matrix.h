@@ -35,6 +35,7 @@ static inline void mult_su3_nn( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
   register float a0r,a0i,a1r,a1i,a2r,a2i;
   register float b0r,b0i,b1r,b1i,b2r,b2i;
   
+  double tick = clock();
   for(j=0;j<3;j++){
     
     a0r=a->e[0][0].real; a0i=a->e[0][0].imag;
@@ -68,6 +69,7 @@ static inline void mult_su3_nn( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
     c->e[2][j].imag = a0r*b0i + a0i*b0r + a1r*b1i + a1i*b1r + a2r*b2i + a2i*b2r;
     
   }
+  mat_time += (clock() - tick);
 }
 
 #endif
@@ -195,6 +197,7 @@ static inline void mult_su3_an( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
   register float a0r,a0i,a1r,a1i,a2r,a2i;
   register float b0r,b0i,b1r,b1i,b2r,b2i;
 
+    double tick = clock();
   for(j=0;j<3;j++){
     
     a0r=a->e[0][0].real; a0i=a->e[0][0].imag;
@@ -228,6 +231,8 @@ static inline void mult_su3_an( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
     c->e[2][j].imag = a0r*b0i - a0i*b0r + a1r*b1i - a1i*b1r + a2r*b2i - a2i*b2r;
   
     }
+
+    mat_time += (clock() - tick);
 }
 #endif
 

@@ -15,6 +15,7 @@
 void mult_su3_an( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
     int i,j,k;
     complex x,y;
+    double tick = clock();
     for(i=0;i<3;i++) {
         for(j=0;j<3;j++){
             x.real=x.imag=0.0;
@@ -25,6 +26,7 @@ void mult_su3_an( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
             c->e[i][j] = x;
         }
     }
+    mat_time += (clock() - tick);
 }
 #else
 
@@ -36,6 +38,7 @@ void mult_su3_an( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
     su3_matrix_mod bm = su3_matrix_to_su3_matrix_mod(b);
     su3_matrix_mod cm = su3_matrix_to_su3_matrix_mod(c);
 
+    double tick = clock();
     for(i=0;i<3;i++) {
         for(j=0;j<3;j++){
             x.real=x.imag=0.0;
@@ -51,6 +54,7 @@ void mult_su3_an( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
             cm.imag[i][j] = x.imag;
         }
     }
+    mat_time += (clock() - tick);
     
     *a = su3_matrix_mod_to_su3_matrix(am);
     *b = su3_matrix_mod_to_su3_matrix(bm);
@@ -76,6 +80,7 @@ void mult_su3_an( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
     register float b0r,b0i,b1r,b1i,b2r,b2i;
 #endif
 
+    double tick = clock();
     for(j=0;j<3;j++){
 
         a0r=a->e[0][0].real; a0i=a->e[0][0].imag;
@@ -109,6 +114,7 @@ void mult_su3_an( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
         c->e[2][j].imag = a0r*b0i - a0i*b0r + a1r*b1i - a1i*b1r + a2r*b2i - a2i*b2r;
 
     }
+    mat_time += (clock() - tick);
 }
 
 #endif	/* End of "#ifdef FAST" */

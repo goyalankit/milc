@@ -18,6 +18,7 @@
 /* MIMD version 6 */
 #define IF_OK if(status==0)
 
+#include <time.h>
 #include "ks_imp_includes.h"	/* definitions files and prototypes */
 
 EXTERN gauge_header start_lat_hdr;
@@ -229,8 +230,10 @@ int readin(int prompt) {
     /* Node 0 broadcasts parameter buffer to all other nodes */
     broadcast_bytes((char *)&par_buf,sizeof(par_buf));
 
-    if( par_buf.stopflag != 0 )
+    if( par_buf.stopflag != 0 ) {
+        fprintf (stdout, "matrix_time: %.2lf\n", mat_time / CLOCKS_PER_SEC);
       normal_exit(0);
+    }
 
     warms = par_buf.warms;
     trajecs = par_buf.trajecs;

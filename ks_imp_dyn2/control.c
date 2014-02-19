@@ -20,6 +20,8 @@ EXTERN  gauge_header start_lat_hdr;     /* Input gauge field header */
 char* szInputFile = "properties.in";
 FILE* fpInput;
 
+double mat_time = 0.0;
+
 int main( int argc, char **argv ){
     int i;
     int meascount,traj_done;

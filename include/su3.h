@@ -4,6 +4,8 @@
 #include "../include/complex.h"
 #include "../include/random.h"
 
+extern double mat_time;
+
 /******************************  su3.h **********************************
 *									*
 *  Defines and subroutine declarations for SU3 simulation		*
