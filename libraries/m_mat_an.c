@@ -49,13 +49,10 @@ void mult_su3_an( su3_matrix *a, su3_matrix *b, su3_matrix *c ){
     su3_matrix_mod cm = su3_matrix_to_su3_matrix_mod(c);
 
     double tick = clock();
+#pragma simd
     for(i=0;i<3;i++) {
         for(j=0;j<3;j++){
             x.real=x.imag=0.0;
-            //    __assume_aligned(&(a->e[0][0]), 64);
-            //    __assume_aligned(&(b->e[0][0]), 64);
-            //    __assume_aligned(&(c->e[0][0]), 64);
-#pragma vector aligned always
             for(k=0;k<3;k++){
                 MCMULJ_( am.real[k][i], am.imag[k][i] , bm.real[k][j], bm.imag[k][j], y );
                 CSUM( x , y );
